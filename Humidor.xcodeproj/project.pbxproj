@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2254D3F279B4C1200219DAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2254D3E279B4C1200219DAE /* AppDelegate.swift */; };
+		D2254D41279B4C1200219DAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2254D40279B4C1200219DAE /* SceneDelegate.swift */; };
+		D2254D43279B4C1200219DAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2254D42279B4C1200219DAE /* ViewController.swift */; };
+		D2254D46279B4C1200219DAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2254D44279B4C1200219DAE /* Main.storyboard */; };
+		D2254D49279B4C1200219DAE /* Humidor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2254D47279B4C1200219DAE /* Humidor.xcdatamodeld */; };
+		D2254D4B279B4C1300219DAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2254D4A279B4C1300219DAE /* Assets.xcassets */; };
+		D2254D4E279B4C1300219DAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2254D4C279B4C1300219DAE /* LaunchScreen.storyboard */; };
+		D2254D59279B4C1300219DAE /* HumidorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2254D58279B4C1300219DAE /* HumidorTests.swift */; };
+		D2254D63279B4C1300219DAE /* HumidorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2254D62279B4C1300219DAE /* HumidorUITests.swift */; };
+		D2254D65279B4C1300219DAE /* HumidorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2254D64279B4C1300219DAE /* HumidorUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2254D55279B4C1300219DAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2254D33279B4C1200219DAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2254D3A279B4C1200219DAE;
+			remoteInfo = Humidor;
+		};
+		D2254D5F279B4C1300219DAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2254D33279B4C1200219DAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2254D3A279B4C1200219DAE;
+			remoteInfo = Humidor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D2254D3B279B4C1200219DAE /* Humidor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Humidor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2254D3E279B4C1200219DAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D2254D40279B4C1200219DAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D2254D42279B4C1200219DAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D2254D45279B4C1200219DAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2254D48279B4C1200219DAE /* Humidor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Humidor.xcdatamodel; sourceTree = "<group>"; };
+		D2254D4A279B4C1300219DAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2254D4D279B4C1300219DAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D2254D4F279B4C1300219DAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2254D54279B4C1300219DAE /* HumidorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HumidorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2254D58279B4C1300219DAE /* HumidorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumidorTests.swift; sourceTree = "<group>"; };
+		D2254D5E279B4C1300219DAE /* HumidorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HumidorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2254D62279B4C1300219DAE /* HumidorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumidorUITests.swift; sourceTree = "<group>"; };
+		D2254D64279B4C1300219DAE /* HumidorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumidorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2254D38279B4C1200219DAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2254D51279B4C1300219DAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2254D5B279B4C1300219DAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2254D32279B4C1200219DAE = {
+			isa = PBXGroup;
+			children = (
+				D2254D3D279B4C1200219DAE /* Humidor */,
+				D2254D57279B4C1300219DAE /* HumidorTests */,
+				D2254D61279B4C1300219DAE /* HumidorUITests */,
+				D2254D3C279B4C1200219DAE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2254D3C279B4C1200219DAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2254D3B279B4C1200219DAE /* Humidor.app */,
+				D2254D54279B4C1300219DAE /* HumidorTests.xctest */,
+				D2254D5E279B4C1300219DAE /* HumidorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2254D3D279B4C1200219DAE /* Humidor */ = {
+			isa = PBXGroup;
+			children = (
+				D2254D3E279B4C1200219DAE /* AppDelegate.swift */,
+				D2254D40279B4C1200219DAE /* SceneDelegate.swift */,
+				D2254D42279B4C1200219DAE /* ViewController.swift */,
+				D2254D44279B4C1200219DAE /* Main.storyboard */,
+				D2254D4A279B4C1300219DAE /* Assets.xcassets */,
+				D2254D4C279B4C1300219DAE /* LaunchScreen.storyboard */,
+				D2254D4F279B4C1300219DAE /* Info.plist */,
+				D2254D47279B4C1200219DAE /* Humidor.xcdatamodeld */,
+			);
+			path = Humidor;
+			sourceTree = "<group>";
+		};
+		D2254D57279B4C1300219DAE /* HumidorTests */ = {
+			isa = PBXGroup;
+			children = (
+				D2254D58279B4C1300219DAE /* HumidorTests.swift */,
+			);
+			path = HumidorTests;
+			sourceTree = "<group>";
+		};
+		D2254D61279B4C1300219DAE /* HumidorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D2254D62279B4C1300219DAE /* HumidorUITests.swift */,
+				D2254D64279B4C1300219DAE /* HumidorUITestsLaunchTests.swift */,
+			);
+			path = HumidorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2254D3A279B4C1200219DAE /* Humidor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2254D68279B4C1300219DAE /* Build configuration list for PBXNativeTarget "Humidor" */;
+			buildPhases = (
+				D2254D37279B4C1200219DAE /* Sources */,
+				D2254D38279B4C1200219DAE /* Frameworks */,
+				D2254D39279B4C1200219DAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Humidor;
+			productName = Humidor;
+			productReference = D2254D3B279B4C1200219DAE /* Humidor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2254D53279B4C1300219DAE /* HumidorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2254D6B279B4C1300219DAE /* Build configuration list for PBXNativeTarget "HumidorTests" */;
+			buildPhases = (
+				D2254D50279B4C1300219DAE /* Sources */,
+				D2254D51279B4C1300219DAE /* Frameworks */,
+				D2254D52279B4C1300219DAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2254D56279B4C1300219DAE /* PBXTargetDependency */,
+			);
+			name = HumidorTests;
+			productName = HumidorTests;
+			productReference = D2254D54279B4C1300219DAE /* HumidorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D2254D5D279B4C1300219DAE /* HumidorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2254D6E279B4C1300219DAE /* Build configuration list for PBXNativeTarget "HumidorUITests" */;
+			buildPhases = (
+				D2254D5A279B4C1300219DAE /* Sources */,
+				D2254D5B279B4C1300219DAE /* Frameworks */,
+				D2254D5C279B4C1300219DAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2254D60279B4C1300219DAE /* PBXTargetDependency */,
+			);
+			name = HumidorUITests;
+			productName = HumidorUITests;
+			productReference = D2254D5E279B4C1300219DAE /* HumidorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2254D33279B4C1200219DAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					D2254D3A279B4C1200219DAE = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					D2254D53279B4C1300219DAE = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = D2254D3A279B4C1200219DAE;
+					};
+					D2254D5D279B4C1300219DAE = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = D2254D3A279B4C1200219DAE;
+					};
+				};
+			};
+			buildConfigurationList = D2254D36279B4C1200219DAE /* Build configuration list for PBXProject "Humidor" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2254D32279B4C1200219DAE;
+			productRefGroup = D2254D3C279B4C1200219DAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2254D3A279B4C1200219DAE /* Humidor */,
+				D2254D53279B4C1300219DAE /* HumidorTests */,
+				D2254D5D279B4C1300219DAE /* HumidorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2254D39279B4C1200219DAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2254D4E279B4C1300219DAE /* LaunchScreen.storyboard in Resources */,
+				D2254D4B279B4C1300219DAE /* Assets.xcassets in Resources */,
+				D2254D46279B4C1200219DAE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2254D52279B4C1300219DAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2254D5C279B4C1300219DAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2254D37279B4C1200219DAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2254D49279B4C1200219DAE /* Humidor.xcdatamodeld in Sources */,
+				D2254D43279B4C1200219DAE /* ViewController.swift in Sources */,
+				D2254D3F279B4C1200219DAE /* AppDelegate.swift in Sources */,
+				D2254D41279B4C1200219DAE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2254D50279B4C1300219DAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2254D59279B4C1300219DAE /* HumidorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2254D5A279B4C1300219DAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2254D63279B4C1300219DAE /* HumidorUITests.swift in Sources */,
+				D2254D65279B4C1300219DAE /* HumidorUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2254D56279B4C1300219DAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2254D3A279B4C1200219DAE /* Humidor */;
+			targetProxy = D2254D55279B4C1300219DAE /* PBXContainerItemProxy */;
+		};
+		D2254D60279B4C1300219DAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2254D3A279B4C1200219DAE /* Humidor */;
+			targetProxy = D2254D5F279B4C1300219DAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D2254D44279B4C1200219DAE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2254D45279B4C1200219DAE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D2254D4C279B4C1300219DAE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2254D4D279B4C1300219DAE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2254D66279B4C1300219DAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D2254D67279B4C1300219DAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2254D69279B4C1300219DAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UJ8B9FFXUA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Humidor/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kiko.Humidor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2254D6A279B4C1300219DAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UJ8B9FFXUA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Humidor/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kiko.Humidor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D2254D6C279B4C1300219DAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UJ8B9FFXUA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kiko.HumidorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Humidor.app/Humidor";
+			};
+			name = Debug;
+		};
+		D2254D6D279B4C1300219DAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UJ8B9FFXUA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kiko.HumidorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Humidor.app/Humidor";
+			};
+			name = Release;
+		};
+		D2254D6F279B4C1300219DAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UJ8B9FFXUA;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kiko.HumidorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Humidor;
+			};
+			name = Debug;
+		};
+		D2254D70279B4C1300219DAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UJ8B9FFXUA;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kiko.HumidorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Humidor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2254D36279B4C1200219DAE /* Build configuration list for PBXProject "Humidor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2254D66279B4C1300219DAE /* Debug */,
+				D2254D67279B4C1300219DAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2254D68279B4C1300219DAE /* Build configuration list for PBXNativeTarget "Humidor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2254D69279B4C1300219DAE /* Debug */,
+				D2254D6A279B4C1300219DAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2254D6B279B4C1300219DAE /* Build configuration list for PBXNativeTarget "HumidorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2254D6C279B4C1300219DAE /* Debug */,
+				D2254D6D279B4C1300219DAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2254D6E279B4C1300219DAE /* Build configuration list for PBXNativeTarget "HumidorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2254D6F279B4C1300219DAE /* Debug */,
+				D2254D70279B4C1300219DAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D2254D47279B4C1200219DAE /* Humidor.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D2254D48279B4C1200219DAE /* Humidor.xcdatamodel */,
+			);
+			currentVersion = D2254D48279B4C1200219DAE /* Humidor.xcdatamodel */;
+			path = Humidor.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D2254D33279B4C1200219DAE /* Project object */;
+}
