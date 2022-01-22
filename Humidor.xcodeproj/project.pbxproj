@@ -7,16 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04E25E88FF20E01EA90FFD3E /* Pods_Humidor_HumidorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D86D9919C3E8CCEECE6450E /* Pods_Humidor_HumidorUITests.framework */; };
+		216C7F7DC70BE70615F7BFEA /* Pods_HumidorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74B0300B81831596F033011 /* Pods_HumidorTests.framework */; };
 		D2254D3F279B4C1200219DAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2254D3E279B4C1200219DAE /* AppDelegate.swift */; };
 		D2254D41279B4C1200219DAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2254D40279B4C1200219DAE /* SceneDelegate.swift */; };
-		D2254D43279B4C1200219DAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2254D42279B4C1200219DAE /* ViewController.swift */; };
-		D2254D46279B4C1200219DAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2254D44279B4C1200219DAE /* Main.storyboard */; };
+		D2254D43279B4C1200219DAE /* MySigarsAddSigarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2254D42279B4C1200219DAE /* MySigarsAddSigarsViewController.swift */; };
 		D2254D49279B4C1200219DAE /* Humidor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2254D47279B4C1200219DAE /* Humidor.xcdatamodeld */; };
 		D2254D4B279B4C1300219DAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2254D4A279B4C1300219DAE /* Assets.xcassets */; };
 		D2254D4E279B4C1300219DAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2254D4C279B4C1300219DAE /* LaunchScreen.storyboard */; };
 		D2254D59279B4C1300219DAE /* HumidorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2254D58279B4C1300219DAE /* HumidorTests.swift */; };
 		D2254D63279B4C1300219DAE /* HumidorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2254D62279B4C1300219DAE /* HumidorUITests.swift */; };
 		D2254D65279B4C1300219DAE /* HumidorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2254D64279B4C1300219DAE /* HumidorUITestsLaunchTests.swift */; };
+		D2254DA0279C954500219DAE /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2254D9F279C954500219DAE /* TabBar.swift */; };
+		D2254DA3279C959900219DAE /* ViewControllerSplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2254DA2279C959900219DAE /* ViewControllerSplashScreen.swift */; };
+		D2254DA5279C95C900219DAE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2254DA4279C95C900219DAE /* ProfileViewController.swift */; };
+		D2254DA7279C95F000219DAE /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2254DA6279C95F000219DAE /* HistoryViewController.swift */; };
+		F64AA6B4EA0EC820269FDAF8 /* Pods_Humidor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 646C05B686A163B1514990C8 /* Pods_Humidor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +43,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D0A0DFEF58A92E33CF721EA /* Pods-Humidor-HumidorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Humidor-HumidorUITests.debug.xcconfig"; path = "Target Support Files/Pods-Humidor-HumidorUITests/Pods-Humidor-HumidorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		17EE0A86E04D8079A4142F72 /* Pods-Humidor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Humidor.release.xcconfig"; path = "Target Support Files/Pods-Humidor/Pods-Humidor.release.xcconfig"; sourceTree = "<group>"; };
+		276A94F22BD44DB0CB62F5CD /* Pods-Humidor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Humidor.debug.xcconfig"; path = "Target Support Files/Pods-Humidor/Pods-Humidor.debug.xcconfig"; sourceTree = "<group>"; };
+		45B95B3E67D7BB2B7E98EEC5 /* Pods-Humidor-HumidorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Humidor-HumidorUITests.release.xcconfig"; path = "Target Support Files/Pods-Humidor-HumidorUITests/Pods-Humidor-HumidorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4D86D9919C3E8CCEECE6450E /* Pods_Humidor_HumidorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Humidor_HumidorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		646C05B686A163B1514990C8 /* Pods_Humidor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Humidor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C8D25925AE3E3765A8AEC84 /* Pods-HumidorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumidorTests.release.xcconfig"; path = "Target Support Files/Pods-HumidorTests/Pods-HumidorTests.release.xcconfig"; sourceTree = "<group>"; };
+		A74B0300B81831596F033011 /* Pods_HumidorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HumidorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B967B00A8D895D06FFF145CD /* Pods-HumidorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumidorTests.debug.xcconfig"; path = "Target Support Files/Pods-HumidorTests/Pods-HumidorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D2254D3B279B4C1200219DAE /* Humidor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Humidor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2254D3E279B4C1200219DAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2254D40279B4C1200219DAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D2254D42279B4C1200219DAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D2254D45279B4C1200219DAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2254D42279B4C1200219DAE /* MySigarsAddSigarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySigarsAddSigarsViewController.swift; sourceTree = "<group>"; };
 		D2254D48279B4C1200219DAE /* Humidor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Humidor.xcdatamodel; sourceTree = "<group>"; };
 		D2254D4A279B4C1300219DAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2254D4D279B4C1300219DAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +65,10 @@
 		D2254D5E279B4C1300219DAE /* HumidorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HumidorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2254D62279B4C1300219DAE /* HumidorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumidorUITests.swift; sourceTree = "<group>"; };
 		D2254D64279B4C1300219DAE /* HumidorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumidorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D2254D9F279C954500219DAE /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		D2254DA2279C959900219DAE /* ViewControllerSplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSplashScreen.swift; sourceTree = "<group>"; };
+		D2254DA4279C95C900219DAE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D2254DA6279C95F000219DAE /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F64AA6B4EA0EC820269FDAF8 /* Pods_Humidor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				216C7F7DC70BE70615F7BFEA /* Pods_HumidorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +92,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E25E88FF20E01EA90FFD3E /* Pods_Humidor_HumidorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01683C9E536D2E34A36B9B43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				646C05B686A163B1514990C8 /* Pods_Humidor.framework */,
+				4D86D9919C3E8CCEECE6450E /* Pods_Humidor_HumidorUITests.framework */,
+				A74B0300B81831596F033011 /* Pods_HumidorTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4FAB8F4E91B701EE344EC423 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				276A94F22BD44DB0CB62F5CD /* Pods-Humidor.debug.xcconfig */,
+				17EE0A86E04D8079A4142F72 /* Pods-Humidor.release.xcconfig */,
+				0D0A0DFEF58A92E33CF721EA /* Pods-Humidor-HumidorUITests.debug.xcconfig */,
+				45B95B3E67D7BB2B7E98EEC5 /* Pods-Humidor-HumidorUITests.release.xcconfig */,
+				B967B00A8D895D06FFF145CD /* Pods-HumidorTests.debug.xcconfig */,
+				7C8D25925AE3E3765A8AEC84 /* Pods-HumidorTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D2254D32279B4C1200219DAE = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +129,8 @@
 				D2254D57279B4C1300219DAE /* HumidorTests */,
 				D2254D61279B4C1300219DAE /* HumidorUITests */,
 				D2254D3C279B4C1200219DAE /* Products */,
+				4FAB8F4E91B701EE344EC423 /* Pods */,
+				01683C9E536D2E34A36B9B43 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,8 +149,11 @@
 			children = (
 				D2254D3E279B4C1200219DAE /* AppDelegate.swift */,
 				D2254D40279B4C1200219DAE /* SceneDelegate.swift */,
-				D2254D42279B4C1200219DAE /* ViewController.swift */,
-				D2254D44279B4C1200219DAE /* Main.storyboard */,
+				D2254D9F279C954500219DAE /* TabBar.swift */,
+				D2254DA1279C956700219DAE /* SplashScreen */,
+				D2254D42279B4C1200219DAE /* MySigarsAddSigarsViewController.swift */,
+				D2254DA4279C95C900219DAE /* ProfileViewController.swift */,
+				D2254DA6279C95F000219DAE /* HistoryViewController.swift */,
 				D2254D4A279B4C1300219DAE /* Assets.xcassets */,
 				D2254D4C279B4C1300219DAE /* LaunchScreen.storyboard */,
 				D2254D4F279B4C1300219DAE /* Info.plist */,
@@ -130,6 +179,14 @@
 			path = HumidorUITests;
 			sourceTree = "<group>";
 		};
+		D2254DA1279C956700219DAE /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D2254DA2279C959900219DAE /* ViewControllerSplashScreen.swift */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2254D68279B4C1300219DAE /* Build configuration list for PBXNativeTarget "Humidor" */;
 			buildPhases = (
+				437AFE737F1D9DF95D6CA4D6 /* [CP] Check Pods Manifest.lock */,
 				D2254D37279B4C1200219DAE /* Sources */,
 				D2254D38279B4C1200219DAE /* Frameworks */,
 				D2254D39279B4C1200219DAE /* Resources */,
+				676F2CCEB812BD0A5ECE8F7A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2254D6B279B4C1300219DAE /* Build configuration list for PBXNativeTarget "HumidorTests" */;
 			buildPhases = (
+				32996862187B9243FF0DC5B3 /* [CP] Check Pods Manifest.lock */,
 				D2254D50279B4C1300219DAE /* Sources */,
 				D2254D51279B4C1300219DAE /* Frameworks */,
 				D2254D52279B4C1300219DAE /* Resources */,
@@ -172,9 +232,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2254D6E279B4C1300219DAE /* Build configuration list for PBXNativeTarget "HumidorUITests" */;
 			buildPhases = (
+				65BDF300C27E665045B60F44 /* [CP] Check Pods Manifest.lock */,
 				D2254D5A279B4C1300219DAE /* Sources */,
 				D2254D5B279B4C1300219DAE /* Frameworks */,
 				D2254D5C279B4C1300219DAE /* Resources */,
+				9C6936B264B3379D60B1046A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,7 +298,6 @@
 			files = (
 				D2254D4E279B4C1300219DAE /* LaunchScreen.storyboard in Resources */,
 				D2254D4B279B4C1300219DAE /* Assets.xcassets in Resources */,
-				D2254D46279B4C1200219DAE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,15 +317,122 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		32996862187B9243FF0DC5B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HumidorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		437AFE737F1D9DF95D6CA4D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Humidor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65BDF300C27E665045B60F44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Humidor-HumidorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		676F2CCEB812BD0A5ECE8F7A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Humidor/Pods-Humidor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Humidor/Pods-Humidor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Humidor/Pods-Humidor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C6936B264B3379D60B1046A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Humidor-HumidorUITests/Pods-Humidor-HumidorUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Humidor-HumidorUITests/Pods-Humidor-HumidorUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Humidor-HumidorUITests/Pods-Humidor-HumidorUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D2254D37279B4C1200219DAE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2254DA3279C959900219DAE /* ViewControllerSplashScreen.swift in Sources */,
 				D2254D49279B4C1200219DAE /* Humidor.xcdatamodeld in Sources */,
-				D2254D43279B4C1200219DAE /* ViewController.swift in Sources */,
+				D2254D43279B4C1200219DAE /* MySigarsAddSigarsViewController.swift in Sources */,
 				D2254D3F279B4C1200219DAE /* AppDelegate.swift in Sources */,
+				D2254DA5279C95C900219DAE /* ProfileViewController.swift in Sources */,
 				D2254D41279B4C1200219DAE /* SceneDelegate.swift in Sources */,
+				D2254DA0279C954500219DAE /* TabBar.swift in Sources */,
+				D2254DA7279C95F000219DAE /* HistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +469,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D2254D44279B4C1200219DAE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D2254D45279B4C1200219DAE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D2254D4C279B4C1300219DAE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -438,6 +598,7 @@
 		};
 		D2254D69279B4C1300219DAE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 276A94F22BD44DB0CB62F5CD /* Pods-Humidor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -448,7 +609,6 @@
 				INFOPLIST_FILE = Humidor/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -466,6 +626,7 @@
 		};
 		D2254D6A279B4C1300219DAE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17EE0A86E04D8079A4142F72 /* Pods-Humidor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -476,7 +637,6 @@
 				INFOPLIST_FILE = Humidor/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -494,6 +654,7 @@
 		};
 		D2254D6C279B4C1300219DAE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B967B00A8D895D06FFF145CD /* Pods-HumidorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +680,7 @@
 		};
 		D2254D6D279B4C1300219DAE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C8D25925AE3E3765A8AEC84 /* Pods-HumidorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -544,6 +706,7 @@
 		};
 		D2254D6F279B4C1300219DAE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D0A0DFEF58A92E33CF721EA /* Pods-Humidor-HumidorUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -567,6 +730,7 @@
 		};
 		D2254D70279B4C1300219DAE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45B95B3E67D7BB2B7E98EEC5 /* Pods-Humidor-HumidorUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
