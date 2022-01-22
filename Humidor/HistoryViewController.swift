@@ -7,12 +7,13 @@
 
 import UIKit
 
-class HistoryViewController: UIViewController {
+class HistoryViewController: UIViewController
+{
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+  {
         super.viewDidLoad()
+      view.backgroundColor = .orange
 
-      view.backgroundColor = .orange    }
-
-
+  }
 }
