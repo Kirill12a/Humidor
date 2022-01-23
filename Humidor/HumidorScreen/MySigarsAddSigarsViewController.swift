@@ -14,7 +14,7 @@ class MySigarsAddSigarsViewController: UIViewController
   private var myCollectionView: UICollectionView?
 
   // пока не будет бд
-  var  im = ["sigar", "sigar", "sigar"]  // это фотки
+  var  im = ["sif", "sif", "sif"]  // это фотки
   var tx =  ["tesr","tesr",    "tesr" ] // это текст
 
   override func viewDidLoad()
@@ -23,14 +23,14 @@ class MySigarsAddSigarsViewController: UIViewController
     create()
 
     let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-    layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
-    layout.itemSize = CGSize(width: 430 , height: 300) // размер самой ячейки
+    layout.sectionInset = UIEdgeInsets(top: 60, left: 10, bottom: 60, right: 10)
+    layout.itemSize = CGSize(width: 430 , height: 430) // размер самой ячейки
 
 
     myCollectionView = UICollectionView(frame: self.view.frame(forAlignmentRect: CGRect(x: 0, y: view.center.y, width: view.bounds.width, height: view.bounds.height / 2 - tabBarController!.tabBar.frame.size.height)), collectionViewLayout: layout)// размеры самой коллекции
     myCollectionView?.register(SigarsCollectionViewCell.self, forCellWithReuseIdentifier: "MyCell")
     //    myCollectionView?.backgroundColor = UIColor.white
-    myCollectionView?.backgroundColor = .black
+    myCollectionView?.backgroundColor = .white
     myCollectionView?.dataSource = self
     view.addSubview(myCollectionView ?? UICollectionView())
   }
@@ -78,7 +78,8 @@ extension MySigarsAddSigarsViewController: UICollectionViewDataSource {
 
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath) as! SigarsCollectionViewCell
-    //        myCell.backgroundColor = UIColor.blue
+            myCell.backgroundColor = UIColor.blue // это ячейка
+    myCell.layer.cornerRadius = myCell.bounds.height / 2
     myCell.characterImageView.image =  UIImage(named: im[indexPath.row])
     myCell.nameLabel.text = tx[indexPath.row]
     return myCell
