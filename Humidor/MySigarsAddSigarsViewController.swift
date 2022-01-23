@@ -27,7 +27,7 @@ class MySigarsAddSigarsViewController: UIViewController
     layout.itemSize = CGSize(width: 430 , height: 300) // размер самой ячейки
 
 
-    myCollectionView = UICollectionView(frame: self.view.frame(forAlignmentRect: CGRect(x: 0, y: view.center.y, width: 430, height: view.bounds.height / 2 - tabBarController!.tabBar.frame.size.height)), collectionViewLayout: layout)// размеры самой коллекции
+    myCollectionView = UICollectionView(frame: self.view.frame(forAlignmentRect: CGRect(x: 0, y: view.center.y, width: view.bounds.width, height: view.bounds.height / 2 - tabBarController!.tabBar.frame.size.height)), collectionViewLayout: layout)// размеры самой коллекции
     myCollectionView?.register(SigarsCollectionViewCell.self, forCellWithReuseIdentifier: "MyCell")
     //    myCollectionView?.backgroundColor = UIColor.white
     myCollectionView?.backgroundColor = .black
@@ -73,7 +73,7 @@ class MySigarsAddSigarsViewController: UIViewController
 
 extension MySigarsAddSigarsViewController: UICollectionViewDataSource {
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return im.count 
+    return im.count
   }
 
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -81,7 +81,6 @@ extension MySigarsAddSigarsViewController: UICollectionViewDataSource {
     //        myCell.backgroundColor = UIColor.blue
     myCell.characterImageView.image =  UIImage(named: im[indexPath.row])
     myCell.nameLabel.text = tx[indexPath.row]
-
     return myCell
   }
 }
@@ -89,6 +88,5 @@ extension MySigarsAddSigarsViewController: UICollectionViewDelegate {
 
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     print("User tapped on item \(indexPath.row)")
-
   }
 }
