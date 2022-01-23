@@ -11,13 +11,11 @@ import SnapKit
 
 class MySigarsAddSigarsViewController: UIViewController
 {
-
-
-private var myCollectionView: UICollectionView?
+  private var myCollectionView: UICollectionView?
 
   // пока не будет бд
-  var  im = ["sigar", "sigar", "sigar"] // это фотки
-  var tx = ["tesr","tesr", "tesr"] // это текст
+  var  im = ["sigar", "sigar", "sigar"]  // это фотки
+  var tx =  ["tesr","tesr",    "tesr" ] // это текст
 
   override func viewDidLoad()
   {
@@ -29,19 +27,16 @@ private var myCollectionView: UICollectionView?
     layout.itemSize = CGSize(width: 430 , height: 300) // размер самой ячейки
 
 
-    myCollectionView = UICollectionView(frame: self.view.frame(forAlignmentRect: CGRect(x: 0, y: 500, width: 430, height: 300)), collectionViewLayout: layout)
-
+    myCollectionView = UICollectionView(frame: self.view.frame(forAlignmentRect: CGRect(x: 0, y: view.center.y, width: 430, height: view.bounds.height / 2 - tabBarController!.tabBar.frame.size.height)), collectionViewLayout: layout)// размеры самой коллекции
     myCollectionView?.register(SigarsCollectionViewCell.self, forCellWithReuseIdentifier: "MyCell")
-    myCollectionView?.backgroundColor = UIColor.white
-
+    //    myCollectionView?.backgroundColor = UIColor.white
+    myCollectionView?.backgroundColor = .black
     myCollectionView?.dataSource = self
     view.addSubview(myCollectionView ?? UICollectionView())
-
   }
 
   func create()
   {
-
     let addSigar: UIButton =
     {
       let button = UIButton(type: .custom)
@@ -57,7 +52,6 @@ private var myCollectionView: UICollectionView?
       make.height.equalTo(200)
       make.left.right.equalToSuperview().offset(5)
     }
-
 
     let line = UIView()
     line.backgroundColor = UIColor.lightGray
@@ -75,27 +69,26 @@ private var myCollectionView: UICollectionView?
     print("Hrllo")
 
   }
-
 }
 
 extension MySigarsAddSigarsViewController: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-      return im.count // How many cells to display
-    }
+  func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    return im.count 
+  }
 
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath) as! SigarsCollectionViewCell
-//        myCell.backgroundColor = UIColor.blue
-      myCell.characterImageView.image =  UIImage(named: im[indexPath.row])
-      myCell.nameLabel.text = tx[indexPath.row]
+  func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath) as! SigarsCollectionViewCell
+    //        myCell.backgroundColor = UIColor.blue
+    myCell.characterImageView.image =  UIImage(named: im[indexPath.row])
+    myCell.nameLabel.text = tx[indexPath.row]
 
-        return myCell
-    }
+    return myCell
+  }
 }
 extension MySigarsAddSigarsViewController: UICollectionViewDelegate {
 
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-       print("User tapped on item \(indexPath.row)")
+  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    print("User tapped on item \(indexPath.row)")
 
-    }
+  }
 }
