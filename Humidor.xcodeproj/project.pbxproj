@@ -22,6 +22,7 @@
 		D2254DA3279C959900219DAE /* ViewControllerSplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2254DA2279C959900219DAE /* ViewControllerSplashScreen.swift */; };
 		D2254DA5279C95C900219DAE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2254DA4279C95C900219DAE /* ProfileViewController.swift */; };
 		D2254DA7279C95F000219DAE /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2254DA6279C95F000219DAE /* HistoryViewController.swift */; };
+		D2254DD1279DDE8A00219DAE /* SigarsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2254DD0279DDE8A00219DAE /* SigarsCollectionViewCell.swift */; };
 		F64AA6B4EA0EC820269FDAF8 /* Pods_Humidor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 646C05B686A163B1514990C8 /* Pods_Humidor.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,7 @@
 		D2254DA2279C959900219DAE /* ViewControllerSplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSplashScreen.swift; sourceTree = "<group>"; };
 		D2254DA4279C95C900219DAE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D2254DA6279C95F000219DAE /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		D2254DD0279DDE8A00219DAE /* SigarsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigarsCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,14 +149,14 @@
 		D2254D3D279B4C1200219DAE /* Humidor */ = {
 			isa = PBXGroup;
 			children = (
-				D2254D3E279B4C1200219DAE /* AppDelegate.swift */,
-				D2254D40279B4C1200219DAE /* SceneDelegate.swift */,
+				D2254DA8279C9EF800219DAE /* DelegateFile */,
 				D2254D9F279C954500219DAE /* TabBar.swift */,
 				D2254DA1279C956700219DAE /* SplashScreen */,
 				D2254D42279B4C1200219DAE /* MySigarsAddSigarsViewController.swift */,
+				D2254DD0279DDE8A00219DAE /* SigarsCollectionViewCell.swift */,
 				D2254DA4279C95C900219DAE /* ProfileViewController.swift */,
 				D2254DA6279C95F000219DAE /* HistoryViewController.swift */,
-				D2254D4A279B4C1300219DAE /* Assets.xcassets */,
+				D2254DA9279C9F1400219DAE /* Image */,
 				D2254D4C279B4C1300219DAE /* LaunchScreen.storyboard */,
 				D2254D4F279B4C1300219DAE /* Info.plist */,
 				D2254D47279B4C1200219DAE /* Humidor.xcdatamodeld */,
@@ -185,6 +187,23 @@
 				D2254DA2279C959900219DAE /* ViewControllerSplashScreen.swift */,
 			);
 			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		D2254DA8279C9EF800219DAE /* DelegateFile */ = {
+			isa = PBXGroup;
+			children = (
+				D2254D3E279B4C1200219DAE /* AppDelegate.swift */,
+				D2254D40279B4C1200219DAE /* SceneDelegate.swift */,
+			);
+			path = DelegateFile;
+			sourceTree = "<group>";
+		};
+		D2254DA9279C9F1400219DAE /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				D2254D4A279B4C1300219DAE /* Assets.xcassets */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -430,6 +449,7 @@
 				D2254D43279B4C1200219DAE /* MySigarsAddSigarsViewController.swift in Sources */,
 				D2254D3F279B4C1200219DAE /* AppDelegate.swift in Sources */,
 				D2254DA5279C95C900219DAE /* ProfileViewController.swift in Sources */,
+				D2254DD1279DDE8A00219DAE /* SigarsCollectionViewCell.swift in Sources */,
 				D2254D41279B4C1200219DAE /* SceneDelegate.swift in Sources */,
 				D2254DA0279C954500219DAE /* TabBar.swift in Sources */,
 				D2254DA7279C95F000219DAE /* HistoryViewController.swift in Sources */,
