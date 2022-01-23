@@ -150,12 +150,10 @@
 			isa = PBXGroup;
 			children = (
 				D2254DA8279C9EF800219DAE /* DelegateFile */,
-				D2254D9F279C954500219DAE /* TabBar.swift */,
-				D2254DA1279C956700219DAE /* SplashScreen */,
-				D2254D42279B4C1200219DAE /* MySigarsAddSigarsViewController.swift */,
-				D2254DD0279DDE8A00219DAE /* SigarsCollectionViewCell.swift */,
-				D2254DA4279C95C900219DAE /* ProfileViewController.swift */,
-				D2254DA6279C95F000219DAE /* HistoryViewController.swift */,
+				D2254DD5279DF08400219DAE /* ImportantFiles */,
+				D2254DD2279DF01400219DAE /* HumidorScreen */,
+				D2254DD4279DF05700219DAE /* ProfileUser */,
+				D2254DD3279DF04500219DAE /* HistorySigar */,
 				D2254DA9279C9F1400219DAE /* Image */,
 				D2254D4C279B4C1300219DAE /* LaunchScreen.storyboard */,
 				D2254D4F279B4C1300219DAE /* Info.plist */,
@@ -204,6 +202,48 @@
 				D2254D4A279B4C1300219DAE /* Assets.xcassets */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		D2254DD2279DF01400219DAE /* HumidorScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D2254D42279B4C1200219DAE /* MySigarsAddSigarsViewController.swift */,
+				D2254DD0279DDE8A00219DAE /* SigarsCollectionViewCell.swift */,
+			);
+			path = HumidorScreen;
+			sourceTree = "<group>";
+		};
+		D2254DD3279DF04500219DAE /* HistorySigar */ = {
+			isa = PBXGroup;
+			children = (
+				D2254DA6279C95F000219DAE /* HistoryViewController.swift */,
+			);
+			path = HistorySigar;
+			sourceTree = "<group>";
+		};
+		D2254DD4279DF05700219DAE /* ProfileUser */ = {
+			isa = PBXGroup;
+			children = (
+				D2254DA4279C95C900219DAE /* ProfileViewController.swift */,
+			);
+			path = ProfileUser;
+			sourceTree = "<group>";
+		};
+		D2254DD5279DF08400219DAE /* ImportantFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D2254DD6279DF0A100219DAE /* TabBar */,
+				D2254DA1279C956700219DAE /* SplashScreen */,
+			);
+			path = ImportantFiles;
+			sourceTree = "<group>";
+		};
+		D2254DD6279DF0A100219DAE /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				D2254D9F279C954500219DAE /* TabBar.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
