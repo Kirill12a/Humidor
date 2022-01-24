@@ -15,7 +15,7 @@ class MySigarsAddSigarsViewController: UIViewController
 
   // пока не будет бд
   var  im = ["sif", "sif", "sif","sif", "sif", "sif","sif", "sif", "sif","sif", "sif", "sif"]  // это фотки
-  var tx =  ["tesr","tesr",    "tesr", "tesr","tesr", "tesr","tesr","tesr",    "tesr", "tesr","tesr",    "tesr" ] // это текст
+  var tx =  ["Montecristo 1935 Anniversary Nicaragua No. 2","tesr",    "tesr", "tesr","tesr", "tesr","tesr","tesr",    "tesr", "tesr","tesr",    "tesr" ] // это текст
 
   override func viewDidLoad()
   {
@@ -27,7 +27,7 @@ class MySigarsAddSigarsViewController: UIViewController
     layout.sectionInset = UIEdgeInsets(top: 60, left: 0, bottom: 60, right: 0)
     layout.itemSize = CGSize(width: 300 , height: 300) // размер самой ячейки
 //    layout.minimumInteritemSpacing = 40
-    layout.minimumLineSpacing = 50 // расстояние между ячейками
+    layout.minimumLineSpacing = 100 // расстояние между ячейками
 
     myCollectionView = UICollectionView(frame: self.view.frame(forAlignmentRect: CGRect(x: 0, y: view.center.y, width: view.bounds.width, height: view.bounds.height / 2 - tabBarController!.tabBar.frame.size.height)), collectionViewLayout: layout)// размеры самой коллекции
     myCollectionView?.register(SigarsCollectionViewCell.self, forCellWithReuseIdentifier: "MyCell")
@@ -35,7 +35,14 @@ class MySigarsAddSigarsViewController: UIViewController
     myCollectionView?.backgroundColor = .white
     myCollectionView?.dataSource = self
     view.addSubview(myCollectionView ?? UICollectionView())
+
   }
+
+
+  override func viewWillAppear(_ animated: Bool) {
+      (UIApplication.shared.delegate as! AppDelegate).restrictRotation = .portrait
+  }
+
 
   func create()
   {

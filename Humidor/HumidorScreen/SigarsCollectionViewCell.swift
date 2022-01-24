@@ -29,10 +29,11 @@ class SigarsCollectionViewCell: UICollectionViewCell {
      lazy var nameLabel: UILabel = {
         let label = UILabel()
         label.textColor = .label
-        label.font = .systemFont(ofSize: 12, weight: .bold)
+//        label.font = .systemFont(ofSize: 12, weight: .bold)
+       label.font = UIFont(name: "Domine", size: 26)
         label.numberOfLines = 0
-        label.textAlignment = .left
-      label.textColor = .green
+        label.textAlignment = .center
+       label.textColor = UIColor(red: 38/255, green: 38/255, blue: 38/255, alpha: 100)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -46,6 +47,8 @@ class SigarsCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 
+  
+
 
     func setupUI() {
         addSubview(characterImageView)
@@ -54,8 +57,9 @@ class SigarsCollectionViewCell: UICollectionViewCell {
         nameLabel.snp.makeConstraints { make in
 //            make.bottom.equalToSuperview().inset(-16)
 //          make.left.right.equalTo(contentView.bounds.width / 2 - 40)
+          make.width.equalTo(contentView.bounds.width)
           make.centerX.equalToSuperview()
-          make.centerY.equalTo(contentView.bounds.height + 6)
+          make.centerY.equalTo(contentView.bounds.height + 40)
         }
 
         characterImageView.snp.makeConstraints { make in
