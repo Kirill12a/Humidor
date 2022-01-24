@@ -14,18 +14,20 @@ class MySigarsAddSigarsViewController: UIViewController
   private var myCollectionView: UICollectionView?
 
   // пока не будет бд
-  var  im = ["sif", "sif", "sif"]  // это фотки
-  var tx =  ["tesr","tesr",    "tesr" ] // это текст
+  var  im = ["sif", "sif", "sif","sif", "sif", "sif","sif", "sif", "sif","sif", "sif", "sif"]  // это фотки
+  var tx =  ["tesr","tesr",    "tesr", "tesr","tesr", "tesr","tesr","tesr",    "tesr", "tesr","tesr",    "tesr" ] // это текст
 
   override func viewDidLoad()
   {
     super.viewDidLoad()
     create()
 
-    let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-    layout.sectionInset = UIEdgeInsets(top: 60, left: 10, bottom: 60, right: 10)
-    layout.itemSize = CGSize(width: 430 , height: 430) // размер самой ячейки
 
+    let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+    layout.sectionInset = UIEdgeInsets(top: 60, left: 0, bottom: 60, right: 0)
+    layout.itemSize = CGSize(width: 300 , height: 300) // размер самой ячейки
+//    layout.minimumInteritemSpacing = 40
+    layout.minimumLineSpacing = 50 // расстояние между ячейками
 
     myCollectionView = UICollectionView(frame: self.view.frame(forAlignmentRect: CGRect(x: 0, y: view.center.y, width: view.bounds.width, height: view.bounds.height / 2 - tabBarController!.tabBar.frame.size.height)), collectionViewLayout: layout)// размеры самой коллекции
     myCollectionView?.register(SigarsCollectionViewCell.self, forCellWithReuseIdentifier: "MyCell")
