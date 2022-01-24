@@ -14,8 +14,10 @@ class SigarsCollectionViewCell: UICollectionViewCell {
     // Character Image
      lazy var characterImageView: UIImageView = {
         let imageView = UIImageView()
-       imageView.layer.cornerRadius = 32
+       imageView.layer.cornerRadius = 150
       imageView.backgroundColor = .purple
+       imageView.layer.borderWidth = 2
+       imageView.layer.borderColor = UIColor(red: 74/255, green: 27/255, blue: 0/255, alpha: 100).cgColor
 
         imageView.layer.masksToBounds = true
         imageView.contentMode = .scaleAspectFit
@@ -50,14 +52,17 @@ class SigarsCollectionViewCell: UICollectionViewCell {
         addSubview(nameLabel)
 
         nameLabel.snp.makeConstraints { make in
-            make.bottom.equalToSuperview().inset(-16)
-            make.left.equalToSuperview().inset(15)
+//            make.bottom.equalToSuperview().inset(-16)
+//          make.left.right.equalTo(contentView.bounds.width / 2 - 40)
+          make.centerX.equalToSuperview()
+          make.centerY.equalTo(contentView.bounds.height + 6)
         }
 
         characterImageView.snp.makeConstraints { make in
 //            make.left.top.right.equalToSuperview().inset(20)
 //          make.bottom.equalToSuperview().inset(30)
           make.width.height.equalTo(300)
+          make.center.equalToSuperview()
 
         }
     }
