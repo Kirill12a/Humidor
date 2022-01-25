@@ -60,7 +60,7 @@ class SigarsCollectionViewCell: UICollectionViewCell {
 //          make.left.right.equalTo(contentView.bounds.width / 2 - 40)
           make.width.equalTo(contentView.bounds.width)
           make.centerX.equalToSuperview()
-          make.centerY.equalTo(contentView.bounds.height + 43)
+          make.centerY.equalTo(contentView.bounds.height + 48)
         }
 
         characterImageView.snp.makeConstraints { make in

@@ -1,0 +1,6 @@
+framework module Pods_Humidor {
+  umbrella header "Pods-Humidor-umbrella.h"
+
+  export *
+  module * { export * }
+}
