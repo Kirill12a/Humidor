@@ -92,6 +92,8 @@ class MySigarsAddSigarsViewController: UIViewController
       UIView.animate(withDuration: 0.6) {
         button.transform = CGAffineTransform.identity
 
+        let createVC = CreateUiViewController()
+        self.present(createVC, animated:true, completion:nil)
       }
 
     })
