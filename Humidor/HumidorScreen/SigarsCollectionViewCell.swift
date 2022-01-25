@@ -15,7 +15,7 @@ class SigarsCollectionViewCell: UICollectionViewCell {
      lazy var characterImageView: UIImageView = {
         let imageView = UIImageView()
        imageView.layer.cornerRadius = 150
-      imageView.backgroundColor = .purple
+//      imageView.backgroundColor = .purple
        imageView.layer.borderWidth = 2
        imageView.layer.borderColor = UIColor(red: 74/255, green: 27/255, blue: 0/255, alpha: 100).cgColor
 
