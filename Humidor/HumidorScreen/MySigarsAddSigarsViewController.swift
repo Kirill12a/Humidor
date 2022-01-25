@@ -12,7 +12,7 @@ import SnapKit
 class MySigarsAddSigarsViewController: UIViewController
 {
   private var myCollectionView: UICollectionView?
-
+  
   // пока не будет бд
   var  im = ["sif", "sif", "sif"]  // это фотки
   var tx =  ["Montecristo 1935 Anniversary Nicaragua No. 2", "Padrón 1964 Anniversary Series Torpedo (Natural)", "Montecristo 1935 Anniversary Nicaragua No. 2"] // это текст
@@ -33,6 +33,7 @@ class MySigarsAddSigarsViewController: UIViewController
     myCollectionView?.layer.cornerRadius = 30
     myCollectionView?.register(SigarsCollectionViewCell.self, forCellWithReuseIdentifier: "MyCell")
     myCollectionView?.backgroundColor = .white
+    myCollectionView?.delegate = self
     myCollectionView?.dataSource = self
     self.myCollectionView?.showsVerticalScrollIndicator = false
     view.addSubview(myCollectionView ?? UICollectionView())
