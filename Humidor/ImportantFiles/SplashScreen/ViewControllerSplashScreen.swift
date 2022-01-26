@@ -23,7 +23,7 @@ class ViewControllerSpash: UIViewController
     {
         super.viewDidLoad()
         view.addSubview(imageView)
-        view.backgroundColor = .white
+        view.backgroundColor =  UIColor(red: 135/255, green: 100/255, blue: 68/255, alpha: 100)
     }
 
     override func viewWillLayoutSubviews()
