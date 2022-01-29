@@ -7,6 +7,10 @@ target 'Humidor' do
 
   # Pods for Humidor
 pod'SnapKit'
+pod 'MaterialComponents/TextControls+FilledTextAreas'
+pod 'MaterialComponents/TextControls+FilledTextFields'
+pod 'MaterialComponents/TextControls+OutlinedTextAreas'
+pod 'MaterialComponents/TextControls+OutlinedTextFields'
 
   target 'HumidorTests' do
     inherit! :search_paths

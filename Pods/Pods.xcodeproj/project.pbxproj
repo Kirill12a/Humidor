@@ -7,164 +7,456 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		007C5C97DBDC5993474CE56C2F579E14 /* MDCTextControlGradientManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B4252DC9C15920AA7E99E13F69969A /* MDCTextControlGradientManager.m */; };
+		0228109C37B0228AED9F5DCF3F45C063 /* MDCFilledTextArea.m in Sources */ = {isa = PBXBuildFile; fileRef = F2179B901D9FAB63EDBB214B0FFE4F51 /* MDCFilledTextArea.m */; };
+		03219B99BEEC9AB447188784DFDF4E19 /* UIImage+MaterialRTL.m in Sources */ = {isa = PBXBuildFile; fileRef = E7058074A7314C403CE09C4020199B82 /* UIImage+MaterialRTL.m */; };
+		04B50B00F32791E7A9F96715F7AAFB13 /* MDCTextControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFE3F0C348AC36EF35D0C68C6280AD8 /* MDCTextControl.m */; };
+		05FD4EFFD2FD95AEF332F8A2A2468304 /* MDCTextControlAssistiveLabelViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DB6DF0827B9C63B350ED742FBDB87F /* MDCTextControlAssistiveLabelViewLayout.m */; };
+		072DEF48E55F91F4B4A3EA62FAB80D2D /* MDCTextControlState.h in Headers */ = {isa = PBXBuildFile; fileRef = 62073D652E8024AA009DD8DE24073D6D /* MDCTextControlState.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		09255A4673AB414C78DE6DDF2744A9D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		144DA93A55A598F5197F10C729FBDD69 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9341666EAC154422A032092A7DC2D7 /* UILayoutSupport+Extensions.swift */; };
-		17BE0F4E51B0FB968125F1A520607FD8 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AB9BB47A2175181386A432C07253AE /* ConstraintMultiplierTarget.swift */; };
-		1E9EEA756F2774D73347F1660EEFE3E9 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9055CEA7890517265589BD23D73A49 /* ConstraintView+Extensions.swift */; };
-		274DF0E2BF04F6F4F9F1E70CF513A4F2 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A46A8054577838D49C60142EB88B13 /* ConstraintLayoutSupportDSL.swift */; };
-		2EAB7456415D3F81CCBFCF2A04D192E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		3B60C02F6E42FD06B128473E00A94224 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D705690D879064ED84970813189D8D4 /* ConstraintLayoutSupport.swift */; };
-		3CD5FAFC746A76D73C3F501734199DFF /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E066869A95E00B949CBA4D2284C35F /* Typealiases.swift */; };
-		3DEDFA52B3A196F6D3E1F0937617628A /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BF299D2EEB87E7DD02630E87B96224 /* ConstraintLayoutGuide+Extensions.swift */; };
-		43863B6D6A0E47B6648BB7B469736EDD /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C5B72775F6AF0891BF331F32FE10D /* LayoutConstraint.swift */; };
+		0B217BD4EF873E6392E3E05A79A5A35F /* MDCTextControlVerticalPositioningReferenceOutlined.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE2C5986FF5E27BBE64FF8F94A0FBF9 /* MDCTextControlVerticalPositioningReferenceOutlined.m */; };
+		0CABC2638472D3DE53BC7F92612122E5 /* MDCTextControlColorViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = EC2CC15E0BBAED6D835A884ABD5C3A81 /* MDCTextControlColorViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EC38533DD24E59FAD14E193F9338334 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		1062EDD2C5C3B8D7A91592F639600D74 /* MDFInternationalization.h in Headers */ = {isa = PBXBuildFile; fileRef = 753A58966247AB5DA4DF92EF22B4E9EA /* MDFInternationalization.h */; };
+		11296E523965D9EC9F3C3F761A1F0EBE /* MDCTextControlPlaceholderSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 0754FAA6DDE5DF88A4628FF77E7AB0F9 /* MDCTextControlPlaceholderSupport.m */; };
+		124EEAE22B8077371D55FDB1AC4F4D30 /* NSString+MaterialBidi.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB43AE7ED0B9017907C35CA25537F35 /* NSString+MaterialBidi.m */; };
+		12B032A37293C0520B963FC0A1A2B32C /* MaterialComponents-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FEE8E1128979AA1A15743518A97BC30 /* MaterialComponents-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		144DA93A55A598F5197F10C729FBDD69 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F924871CE03442DE51BD51CBF9D56CE /* UILayoutSupport+Extensions.swift */; };
+		15B1A1C32C8028DFD17710A44C15F2E8 /* MDCTextControlGradientManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0617316AA9152991DA103D3AAF6CA7 /* MDCTextControlGradientManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17BE0F4E51B0FB968125F1A520607FD8 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA27E637F5B0E1544A28D09BE9C5B59 /* ConstraintMultiplierTarget.swift */; };
+		1DCF9A800AE274F89C29078A6E212B7D /* MDFInternationalization-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FFA47CDD9113763B3C105F2EACF9FC9D /* MDFInternationalization-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E9EEA756F2774D73347F1660EEFE3E9 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4149E52E880640EF573F70B09B95028 /* ConstraintView+Extensions.swift */; };
+		23AC06556CD25C4B62BF41BB2F54AD2E /* MDCTextControlLabelAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A7F32CFEE28B0BD7D1CC1211AC00C4 /* MDCTextControlLabelAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		253084827ED3434F9212A11BD87760DE /* MDCTextControlAssistiveLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD99183BFC6D86728F3C4959EB3D912 /* MDCTextControlAssistiveLabelView.m */; };
+		2548B16B2B0F69922C2B87EC1FF22CC5 /* MDCTextControlTextFieldSideViewAlignment.h in Headers */ = {isa = PBXBuildFile; fileRef = EA080838EB1822501DF447FD4AF00890 /* MDCTextControlTextFieldSideViewAlignment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25ABCCB506CD51393434BE44F446AD5F /* MDFInternationalization-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6566795890ACE2178505A391BCCE37 /* MDFInternationalization-dummy.m */; };
+		274DF0E2BF04F6F4F9F1E70CF513A4F2 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CB72945D9A885E3A734E9F25BE9ED8 /* ConstraintLayoutSupportDSL.swift */; };
+		2C2ADE31160D3E8DB654FC76B87BE180 /* MDCTextControlLabelAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 713BC7338C1453A6BDECC88625967477 /* MDCTextControlLabelAnimation.m */; };
+		2C8DEBF5DF71615E42933C9B9B3D7143 /* MDCTextControlAssistiveLabelDrawPriority.h in Headers */ = {isa = PBXBuildFile; fileRef = 94D00B38FC0AFFCA095DC0B1AD5D1890 /* MDCTextControlAssistiveLabelDrawPriority.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F03407BC545C9A7DBFF712BC43D079D /* MDCTextControlVerticalPositioningReferenceBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CE2F241473C7F483AED2022DA066A52 /* MDCTextControlVerticalPositioningReferenceBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32E0DDD45AFC662B79B819CCE50FB0F0 /* MDCTextControlAssistiveLabelView.h in Headers */ = {isa = PBXBuildFile; fileRef = CF6D8B32FDE062AB63DE85CD04BB4E2C /* MDCTextControlAssistiveLabelView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		341C48BB7DF44AE0395A0AA48C805536 /* MDCTextControlVerticalPositioningReference.h in Headers */ = {isa = PBXBuildFile; fileRef = 4165EF4133DB4E3E96BF2BD4F35071CE /* MDCTextControlVerticalPositioningReference.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34923FB60759B3E9955FA72D21870179 /* MDCTextControlVerticalPositioningReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 097725B96D7924F9AC5242EB293D4092 /* MDCTextControlVerticalPositioningReference.m */; };
+		3B60C02F6E42FD06B128473E00A94224 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38911BDCE8C50545E74A3EADA147B364 /* ConstraintLayoutSupport.swift */; };
+		3CD5FAFC746A76D73C3F501734199DFF /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE001F97BF0CF7CF10B115F6D45D81A /* Typealiases.swift */; };
+		3CE30BDD410305F4D3C8C13D12507A4A /* NSLocale+MaterialRTL.h in Headers */ = {isa = PBXBuildFile; fileRef = C0B25827DA5FF5F33A3E390F598C7BD6 /* NSLocale+MaterialRTL.h */; };
+		3DCCF761B72AB77C921C6347AD39D34E /* NSLocale+MaterialRTL.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = C0B25827DA5FF5F33A3E390F598C7BD6 /* NSLocale+MaterialRTL.h */; };
+		3DEDFA52B3A196F6D3E1F0937617628A /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614D2EB48F603F71309E0B964B4B0EE7 /* ConstraintLayoutGuide+Extensions.swift */; };
+		3E80840DE673EA7ED8065D4AEAFA85C6 /* UIBezierPath+MDCTextControlStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 12BA4AE77406C4A33107B6EF5B08BD1D /* UIBezierPath+MDCTextControlStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F2E51186E01B77851DDE955FD336CF8 /* UIView+MDCTimingFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = F244F990893241C8FC71F48FF5A8213F /* UIView+MDCTimingFunction.m */; };
+		405E0314BBA01011B9A49D5CFE9F67D9 /* MaterialTextControlsPrivate+TextFields.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CEE4365123CD7019C2BBAC2220A2827 /* MaterialTextControlsPrivate+TextFields.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40C1FC4AAE66027394D96C17488A3315 /* MDCTextControlVerticalPositioningReferenceUnderlined.h in Headers */ = {isa = PBXBuildFile; fileRef = 26D55D3144BCF0165BC8CEA9A2BBF0DC /* MDCTextControlVerticalPositioningReferenceUnderlined.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42325916E3EEFE4773DFB7BCC533944D /* MDCTextControlStyleUnderlined.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A6383E0F981B1E148F17D1ED5F74756 /* MDCTextControlStyleUnderlined.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43863B6D6A0E47B6648BB7B469736EDD /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E91A2EED341CAE1C4BF9346C2BEC06 /* LayoutConstraint.swift */; };
 		463FF5F90957DC9514B13E2D01F8B888 /* Pods-HumidorTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9754A0BF5B11083D23C89EF03A1AC67 /* Pods-HumidorTests-dummy.m */; };
-		4CA13A0527BC57DE2C54A0F3B5ED8652 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464C01543F3BCEDEE51ABAA696513D0B /* LayoutConstraintItem.swift */; };
-		51A4A1046676D304410544EB56732A49 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50380F281EC3EE769C85035CCEA77226 /* Constraint.swift */; };
-		5E8BA529DFB4529006967624044FEC1C /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56006AA49A060CA2830F32CD6F394823 /* ConstraintViewDSL.swift */; };
-		62F299B4704A7C95FB5866C6CDE2E2FD /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B200BD964F52F6693D4168248B8645 /* ConstraintOffsetTarget.swift */; };
-		70BC18252A6163289193962AF2D10A28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		7187F0A4E5C5E95037704B662ADA388D /* Pods-Humidor-HumidorUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 01D89DAE4F5EE04DEE88E33CB1F9C1E6 /* Pods-Humidor-HumidorUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7580FAAB1BDA52F5A969E5571D1A5973 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F460233F2A555D41511B6CCA66A124 /* ConstraintAttributes.swift */; };
-		7764AA5F6BBFC6ECE43959923DD007D3 /* ConstraintDirectionalInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D358AA1606C7B2CDC8555485807E9E /* ConstraintDirectionalInsetTarget.swift */; };
-		825062025906CE93C5D124E1FD9A811E /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F10DE451FED17810D9B5C237324A5 /* ConstraintMakerExtendable.swift */; };
-		8449EB1DFD43E222D687D5A8D2088D2D /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0BE9F3D55FDB29EF516F6D6B1B6BCA /* ConstraintLayoutGuideDSL.swift */; };
-		8ABA888894BDF352BABE02AF04AF0EC3 /* Pods-Humidor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA642EDD0903A5888F02ECA3D6F29A1E /* Pods-Humidor-dummy.m */; };
-		8C6546C1EF4F153DF3795CC6FE189E5B /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549471CD1FE3A1E1865DD172864918D3 /* ConstraintInsets.swift */; };
-		8FD9CD608C4EAAFDE6AC7B8B9EF0FF5E /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1D9F6F4E2364DFAF158E04AF5D5EAA /* ConstraintDescription.swift */; };
-		90FD5AE525E138A473723FD79AF73273 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE00ECC24C5CC6DC938204FF42AD0E5 /* ConstraintDSL.swift */; };
-		968B4874A9F12D67C8B901136C9C8157 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E13B89FFD81AACB7530769CA05EEA26B /* SnapKit-dummy.m */; };
-		A0F754C88A64972A40A9008B0AD52109 /* ConstraintDirectionalInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91164BE769DA144776663FBF46785561 /* ConstraintDirectionalInsets.swift */; };
-		A4467357581E8345DD348683CC4111AF /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0116B84A6773B75FCBFCB479E740F0F3 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A53D3AF15CE8D348306EF11619C5D166 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3B0B200350EAC8F42EF635FF31BD1 /* ConstraintMakerEditable.swift */; };
+		48518D2E3050A7C8973AA35FB75D276F /* MDCOutlinedTextArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 7530177BE289503AA245F85352527FCE /* MDCOutlinedTextArea.m */; };
+		4A966063828AC0CD5A1C3CCBD880F0DC /* Pods-Humidor-HumidorUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5A8EAD72FF711EA888A7A051ACE8B5 /* Pods-Humidor-HumidorUITests-dummy.m */; };
+		4AEF106BFB28503CA7C014D8E4FB8898 /* MaterialTextControls+FilledTextAreas.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C5DFE5218673B5ECD24016BDA276DF9 /* MaterialTextControls+FilledTextAreas.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CA13A0527BC57DE2C54A0F3B5ED8652 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB51292B47BCD8436BB36212998D87F4 /* LayoutConstraintItem.swift */; };
+		4DEE99EC8F255916DABF6363F56DFEB6 /* MDCFilledTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BA121FEA0523B89350335C9EA903AF /* MDCFilledTextField.m */; };
+		4F25441140C67D1CDA646B1DB0772CF3 /* MaterialTextControls+BaseTextFields.h in Headers */ = {isa = PBXBuildFile; fileRef = 9752B40D9FE525EC11C374A5802B6B02 /* MaterialTextControls+BaseTextFields.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51A4A1046676D304410544EB56732A49 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EB9C73EC1C8F5C3B3AA7DDB4843D23 /* Constraint.swift */; };
+		53626279701D93866AA6E1953AC9A443 /* MDCTextControlLabelBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D19B9881787176A1663F6F7A34B5E42 /* MDCTextControlLabelBehavior.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		546594038A39C1C5480919C5C51FFF46 /* NSString+MaterialBidi.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = AFDC6B581A8D9F47C91CE9498CBBD1E0 /* NSString+MaterialBidi.h */; };
+		551209FDC6B570118F89380CFC81CC53 /* MDCAvailability.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CC5A85B96D32EE7F359E9107BECEFE3 /* MDCAvailability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		560CF187B29A0ABBA54FD59E13F131AA /* MDCBaseTextAreaDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = BA53758FE5159D05857C58391B313D1D /* MDCBaseTextAreaDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56CE1F81921448A64249E6FEE166B248 /* MDCFilledTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 877B23349ED57E9981B8502DAB5DFD18 /* MDCFilledTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57B87EDFFA3D8E03625F611BC22914FC /* MDCBaseTextFieldLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ACDEBB4F1FE916BA0C44EADEA66002 /* MDCBaseTextFieldLayout.m */; };
+		5AC4580D8A232C0CEE1D6553C00B3D83 /* MDCTextControlStyleBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 570EA209E4DA7E9BAAE8E81E0954F3A2 /* MDCTextControlStyleBase.m */; };
+		5E8BA529DFB4529006967624044FEC1C /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5BAD0391754C0AC2E514A91A446597 /* ConstraintViewDSL.swift */; };
+		61E7985A1B3CA128703657A0FAF48C33 /* MDCTextControlState.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DC88802D11FAFB408336476B768242 /* MDCTextControlState.m */; };
+		62EF3C9F2794CDB16FB26B816210AF9F /* MaterialTextControlsPrivate+FilledStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 62A1DB0585745DBD263D82E8BC6BD4DE /* MaterialTextControlsPrivate+FilledStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62F299B4704A7C95FB5866C6CDE2E2FD /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AECEAF529CD386E39C75FA3790AB2E /* ConstraintOffsetTarget.swift */; };
+		64317603918517CB58BC50355BBD14F8 /* MDFInternationalization.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 753A58966247AB5DA4DF92EF22B4E9EA /* MDFInternationalization.h */; };
+		6771A29FD2E1DE5BDE97E242A3C5B60F /* MDCTextControlHorizontalPositioningReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 86329BEA9B76D388A8BFB3ABB756DEF1 /* MDCTextControlHorizontalPositioningReference.m */; };
+		68C81A493C4CD3F1D8425C3C12B6F1E3 /* MDFRTL.h in Headers */ = {isa = PBXBuildFile; fileRef = 9434DC6EC97FF5B16E57F474F53BA7A9 /* MDFRTL.h */; };
+		6B6CBD24D816600F27C613609E0E67AE /* UIView+MDCTimingFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = C73EA4C8B550B05EC25560C19DE77770 /* UIView+MDCTimingFunction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C0637B5DB7A7BDD270B9BFF7BCA444F /* MDCTextControlVerticalPositioningReferenceFilled.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5BBE024B18BA9924694533A2DDE95C /* MDCTextControlVerticalPositioningReferenceFilled.m */; };
+		733F0F22602903D3427FD3B00EAC1AA4 /* MDCOutlinedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F8D85CB4B6EE29C6CAC1035D145573 /* MDCOutlinedTextField.m */; };
+		7425895B1F8D01EDF7F6F72DFF87519F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		7580FAAB1BDA52F5A969E5571D1A5973 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF78E12D043CF474E32AF6247A15ABF /* ConstraintAttributes.swift */; };
+		7764AA5F6BBFC6ECE43959923DD007D3 /* ConstraintDirectionalInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0047D5C550AB6A8B2EB35853A9774014 /* ConstraintDirectionalInsetTarget.swift */; };
+		7DB6497C9CC06CA922AC1152CE38CDAC /* MDFRTL.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 9434DC6EC97FF5B16E57F474F53BA7A9 /* MDFRTL.h */; };
+		7E4E65080A19DB8FC6F110A0378517E7 /* MDCBaseTextFieldDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 766CE4D741B830DB935FD888B2D00C74 /* MDCBaseTextFieldDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80C16CE50BBC5219B2A412DFB6A04B9A /* MaterialTextControlsPrivate+BaseStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CC143511F131CB391437DBD7D008C8F /* MaterialTextControlsPrivate+BaseStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		825062025906CE93C5D124E1FD9A811E /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4973C0EAFC7BD446BE7E74EAEDE031 /* ConstraintMakerExtendable.swift */; };
+		82937FB337DCF47D2C9E35DFA7B5D24C /* MDCOutlinedTextArea.h in Headers */ = {isa = PBXBuildFile; fileRef = 61D7288C4ACC0D499E03E626B2FEDB63 /* MDCOutlinedTextArea.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		835B1901766965F29B8AFA32C512E72F /* MDCBaseTextArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BAFE945EB411692056CBE6BB1BE0C3 /* MDCBaseTextArea.m */; };
+		8449EB1DFD43E222D687D5A8D2088D2D /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73C1F6508E78C527C302D9F06CA2454 /* ConstraintLayoutGuideDSL.swift */; };
+		85838B6ED261E828CBEC9797EFCAB831 /* MDCBaseTextAreaLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F4B1374EBF5BC00ABBEE08E47CAD65 /* MDCBaseTextAreaLayout.m */; };
+		8857547CE9422C72C0F2CB70980FA5E3 /* MDCTextControlPlaceholderSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = DEA95B17FEF0D1D5914D917F605C0F99 /* MDCTextControlPlaceholderSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AD7A05E64DD589382EE6D43F6C203BB /* MaterialAnimationTiming.h in Headers */ = {isa = PBXBuildFile; fileRef = 913DDFF2B3E6D436692A7F9BE166D01B /* MaterialAnimationTiming.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BC28C0EA2C4B3BFC780F507C2669CB9 /* MDCTextControlVerticalPositioningReferenceBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 34506368F9BFEF534EF6BE5276951983 /* MDCTextControlVerticalPositioningReferenceBase.m */; };
+		8C050C985EF60CCC3B9E25050BE20F3E /* NSLocale+MaterialRTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CC17F5C0285C2F7D1A872F86D01A38 /* NSLocale+MaterialRTL.m */; };
+		8C6546C1EF4F153DF3795CC6FE189E5B /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8057A13C022199DB32D0B57177A9E45 /* ConstraintInsets.swift */; };
+		8EFABEE2E3BAE5BD9B93C1B58A69A178 /* UIView+MaterialRTL.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 1306834F4177A512509B5AADAC14AEF8 /* UIView+MaterialRTL.h */; };
+		8FD9CD608C4EAAFDE6AC7B8B9EF0FF5E /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCFA635691FF11E96346A553FFF0614 /* ConstraintDescription.swift */; };
+		908A2DD4AEACEC14288390D274B100B0 /* Pods-Humidor-HumidorUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 01D89DAE4F5EE04DEE88E33CB1F9C1E6 /* Pods-Humidor-HumidorUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90FD5AE525E138A473723FD79AF73273 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5E10E28525169FA230B81771801887 /* ConstraintDSL.swift */; };
+		9179BE72DBE801B47C6938115EC493CB /* MDCTextControlAssistiveLabelViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 992EEE4C86ED9C2BAEA61028B5658B27 /* MDCTextControlAssistiveLabelViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93D7BEDB5191A074BFD17A6C27D1D57E /* MDCTextControlVerticalPositioningReferenceFilled.h in Headers */ = {isa = PBXBuildFile; fileRef = 3879209209F01C3F4B9C7D70A73CF424 /* MDCTextControlVerticalPositioningReferenceFilled.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		968B4874A9F12D67C8B901136C9C8157 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFAEE89D5D315CFECC4A122193D3167 /* SnapKit-dummy.m */; };
+		984167BC563C943B94B43A01DECBEAB0 /* UIView+MaterialRTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 682A2D02CEEB409BA1E69B991705EF1B /* UIView+MaterialRTL.m */; };
+		9852446F7CF9154050DA51F75D401B7B /* MDCTextControlLabelSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC946B0B6975E9B14CA76975D48325D /* MDCTextControlLabelSupport.m */; };
+		985BAA560AF3619F5B8566946101AB82 /* MDCBaseTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC2B13605672C1BCFC96A2B6C79B24 /* MDCBaseTextField.m */; };
+		9CB2E884712123B426747103E4B61FA1 /* MDCBaseTextFieldLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3B794CCF66131569A0C2E5B923070D /* MDCBaseTextFieldLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EC7585B5DE3E41D4EAB7754AD889DC3 /* MDCBaseTextAreaLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 44A8D7BD3A984BE870E5DE60D5DCF362 /* MDCBaseTextAreaLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9F64E84B54A721D525FB5FEB6B04AD92 /* NSString+MaterialBidi.h in Headers */ = {isa = PBXBuildFile; fileRef = AFDC6B581A8D9F47C91CE9498CBBD1E0 /* NSString+MaterialBidi.h */; };
+		A01FAF5090124D9DC52B12745E5A528A /* CAMediaTimingFunction+MDCAnimationTiming.h in Headers */ = {isa = PBXBuildFile; fileRef = FDB4D71E3966BC01E999FD204D1DF6C8 /* CAMediaTimingFunction+MDCAnimationTiming.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0F754C88A64972A40A9008B0AD52109 /* ConstraintDirectionalInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E7FD858FD55FDE5B4556F2BA11EFB6 /* ConstraintDirectionalInsets.swift */; };
+		A3D66682878A5131BCFB72A8EB0E47CE /* MDCBaseTextAreaTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 14BA23357923C3D869974CA599373A30 /* MDCBaseTextAreaTextView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A4467357581E8345DD348683CC4111AF /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B88B4712F6BD1FD707F63EF476E9755E /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A53D3AF15CE8D348306EF11619C5D166 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDC1EF5EE98A2C9D5FEDF8552335D45 /* ConstraintMakerEditable.swift */; };
+		A849860C5F254160FC53D8E7188047E8 /* MaterialTextControls+BaseTextAreas.h in Headers */ = {isa = PBXBuildFile; fileRef = 28D7F1F263FC9833B77D5C3F3F42962C /* MaterialTextControls+BaseTextAreas.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A89AE527A000BD2164070082DFD0EDA1 /* MDCOutlinedTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = EEAC70B102AA7E9C063A00426DCFC4E8 /* MDCOutlinedTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8D39E9F609FAA982AD85580021DCC81 /* MDCBaseTextAreaTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F6FAEFDB7BA6A208E8ED1B52C513E6 /* MDCBaseTextAreaTextView.m */; };
+		A96B9F83B70BF091C994F186C27BCC23 /* MaterialTextControls+OutlinedTextAreas.h in Headers */ = {isa = PBXBuildFile; fileRef = CB6BC3AD460369A7157747D6052199B8 /* MaterialTextControls+OutlinedTextAreas.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD3AE92A97530191A5FECA3848318677 /* MaterialMathDummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 309E0C3FC5BE0EAF276CDF7EDEF29605 /* MaterialMathDummy.m */; };
+		AFBF733F0E307E39BC49337E3A2FF1E6 /* MaterialAvailability.h in Headers */ = {isa = PBXBuildFile; fileRef = B21172A6C32C5DA1C2A8DE8C650E41D6 /* MaterialAvailability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0916717A33BA552079C4D4CAD7DCEDD /* Pods-HumidorTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C6E57659C3E715B21B291ADAD66FA26 /* Pods-HumidorTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B543FD108C1C6AF6129CB4991553218B /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250E41DBB680A3A2ECDDD2210311B230 /* ConstraintConfig.swift */; };
-		BD333CDBCF5D2FD55920336FC271DF33 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474AFC560A8B414B467174737DBC891A /* ConstraintItem.swift */; };
-		BEBF920FEB959B46A76BAADF22E5CD15 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2EC377264B25FB0E67D150E37E87CD /* ConstraintInsetTarget.swift */; };
-		C61D3BC32A28A405C934C00039AD2583 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D990E0FED5B41C1F13AC6B08208A99B /* ConstraintConstantTarget.swift */; };
-		CB194156C900B767B0160AF72EDF354D /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141BC33167429B9926FB24A17F01568C /* ConstraintMaker.swift */; };
-		CB8E4BF0D710970BE2CB4C87ED1043E4 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724FB64349F5678CE1709979CF0DD952 /* ConstraintMakerRelatable.swift */; };
+		B18CA96E06AABA204676927F573F28C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		B543FD108C1C6AF6129CB4991553218B /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31C93A66800AC565323D64BEDEBFE14 /* ConstraintConfig.swift */; };
+		B5FBED62C4990231D8738CC0B03D17A0 /* MDCTextControlHorizontalPositioning.h in Headers */ = {isa = PBXBuildFile; fileRef = 04529D9DFDB2EF1F137F7EE8FB64AE00 /* MDCTextControlHorizontalPositioning.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B73138292FFD7EA8327D834B61026A54 /* MDCTextControlHorizontalPositioningReference.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F97756E866B4DD52CFD13A3E2E316E /* MDCTextControlHorizontalPositioningReference.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9514E53B0951E14E1453983DE0C03B2 /* Pods-Humidor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D8D6745548FD39F19E8855B312D77D7B /* Pods-Humidor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B98BF4775D559CA1B5E2A4A2606CC9B3 /* MDCMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 27BD9A6D13806C34650A46172911A50A /* MDCMath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B98FF58F1DBCF0EE72B15E44F6FB6B2A /* MDCTextControlSideViewSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C6BDC1F6932F4F5351A48459BCC798 /* MDCTextControlSideViewSupport.m */; };
+		BAB5744AC75E06CB319846484DD29A90 /* MDCFilledTextArea.h in Headers */ = {isa = PBXBuildFile; fileRef = A4FDEC5A8B35F732C39D4F2CE423690A /* MDCFilledTextArea.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBB57DC0BA0089EE6AB89F6DF06637AF /* MDCTextControlSideViewSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C313D890BE6A42E308D5593F7C49542 /* MDCTextControlSideViewSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD333CDBCF5D2FD55920336FC271DF33 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A5D1A860BB79AFC1FD735C98E50F9F /* ConstraintItem.swift */; };
+		BEBF920FEB959B46A76BAADF22E5CD15 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E79614F6F31A9CA8CB871CB1165382 /* ConstraintInsetTarget.swift */; };
+		BECCD91C3500DDC5274C08B7707F518A /* MDCBaseTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = B9474A31B9653BA9B66D4F48E8501767 /* MDCBaseTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF7F9976FA80C821BC13E58E30E94B5B /* MDFRTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E416F29562A942A5C3652980C6F14B /* MDFRTL.m */; };
+		C033F3E94355E90147C197D165E7DEE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C61D3BC32A28A405C934C00039AD2583 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB10062E4BC68968F21F70B3F68DBF4A /* ConstraintConstantTarget.swift */; };
+		C831D426128BDB02E4AD3D76666F69EC /* MaterialTextControls+Enums.h in Headers */ = {isa = PBXBuildFile; fileRef = 35CD689ED67D2230EAFE1C2791B1E6C5 /* MaterialTextControls+Enums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C872E018E08E0FD0B30B386614AB0E43 /* UIImage+MaterialRTL.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 837ADCB59DC972A26562EC37FC82C723 /* UIImage+MaterialRTL.h */; };
+		CB194156C900B767B0160AF72EDF354D /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB06EE7BE39FD6565BFD91F37783CDDB /* ConstraintMaker.swift */; };
+		CB2F277B87C7D6A71DD91D7659AC1B0B /* MDCTextControlStyleFilled.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCF439452E8C1378F4D8C7C7781AC7F /* MDCTextControlStyleFilled.m */; };
+		CB8E4BF0D710970BE2CB4C87ED1043E4 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45459C71D62DDA128AA78CC234289F29 /* ConstraintMakerRelatable.swift */; };
+		CB99BF1A0C8E3B2297CE9BE552698539 /* MaterialTextControls+OutlinedTextFields.h in Headers */ = {isa = PBXBuildFile; fileRef = DCE0B91A11AB454BA94987E06730DEC5 /* MaterialTextControls+OutlinedTextFields.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CCA22C9F421C9E8C13009947816D8C82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		CD1D8C038E01477EDF123F9C8A44F573 /* Pods-Humidor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D8D6745548FD39F19E8855B312D77D7B /* Pods-Humidor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D13D417B236E736EEAE7217B5CE3EC5C /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D02329E74D733C03BF6BAE1F564481 /* ConstraintMakerFinalizable.swift */; };
-		D59C2826AD288ECFF576B2AFA312716C /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25479F58B67AA43E092C7B156C1B5C1B /* ConstraintRelation.swift */; };
-		E36244E8BF4AC941E82DAF16DDF4BBC2 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9716AD15FADF38A93170E034F2BCE457 /* ConstraintPriorityTarget.swift */; };
-		E8EAADACF3BAE33BDECBC7214EAE9CD2 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2975CA5A0D26BC84F3EE9912FEBDA795 /* ConstraintRelatableTarget.swift */; };
-		EE6C364198A763EBBF49237035D86439 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C5188AE61F0E667CD9E7ED28CDD61C /* ConstraintLayoutGuide.swift */; };
-		F10586462FB54CEA169A1A7A469A926D /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = D038D2FAA2F6B073D1B64B8635F4E3E6 /* Debugging.swift */; };
-		F10BE89238B42CC05CB9BE3B8891AE1C /* Pods-Humidor-HumidorUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5A8EAD72FF711EA888A7A051ACE8B5 /* Pods-Humidor-HumidorUITests-dummy.m */; };
-		F24D06C23DAB2F52A30C886A7A8177C7 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51E99894F75F00A281BE6A32FBDE495 /* ConstraintView.swift */; };
-		F2C817C166B2DE613222C41015A586C9 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A53CAF547D71AEFABE49D91B4E6816 /* ConstraintMakerPriortizable.swift */; };
-		F343BA4E457FFDB0165492AECAEF0BCC /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BD95F32F2E57D6B9100B77B93F013C /* ConstraintPriority.swift */; };
+		CECCA4649316B6CC139383061401DCF5 /* MDCBaseTextArea.h in Headers */ = {isa = PBXBuildFile; fileRef = 9355D92D6FB737B994A00A950DFA6BE2 /* MDCBaseTextArea.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF5396A0FE1AA7DDBD5F92C9F10BE7E2 /* MDCTextControlColorViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F53A67ABA43F34951EAC92946FFD3AF3 /* MDCTextControlColorViewModel.m */; };
+		D13D417B236E736EEAE7217B5CE3EC5C /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AEC54F6B6B40EE87DBFE4402F94B20 /* ConstraintMakerFinalizable.swift */; };
+		D32A6120E0C87193CAC64B98418C0F25 /* MDCTextControlStyleFilled.h in Headers */ = {isa = PBXBuildFile; fileRef = A920166231F1C75ED449D4E3136FE85C /* MDCTextControlStyleFilled.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D59C2826AD288ECFF576B2AFA312716C /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEC36B02722974620D112FD620A047F /* ConstraintRelation.swift */; };
+		D71E02822A526707C95148E07A9826A0 /* CAMediaTimingFunction+MDCAnimationTiming.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4BBA144B480ECE99E952925EB915DF /* CAMediaTimingFunction+MDCAnimationTiming.m */; };
+		DBB0A707DC4E92A72EF01CFAB8F3459F /* MDCTextControlTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC67C66CE576032FA237A049CD399DB /* MDCTextControlTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBB9202542CFA7046C5CFD74C9900B7A /* MDCTextControlStyleOutlined.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5CE457A1E131A9D9C40C9639D4D8AB /* MDCTextControlStyleOutlined.m */; };
+		DF60CBDDCEDCF6C28A6FCA64BCAC6B6D /* UIBezierPath+MDCTextControlStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E6CDDF881942287846092306BA125DB /* UIBezierPath+MDCTextControlStyle.m */; };
+		E27BAE864D9D70C6D06CA4E28FD54010 /* MDCTextControlStyleUnderlined.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4C0F994466357130AA0BCB375C30A1 /* MDCTextControlStyleUnderlined.m */; };
+		E36244E8BF4AC941E82DAF16DDF4BBC2 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E872109920CE1C348CEB92563FE55C7 /* ConstraintPriorityTarget.swift */; };
+		E393F114C2F4A6FFE76DF407AAFCF72E /* MDCTextControlStyleOutlined.h in Headers */ = {isa = PBXBuildFile; fileRef = AE69A31E5CDFD254F25EC34CA9C5A4BB /* MDCTextControlStyleOutlined.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E56C430EEEEAF6E39FF0942CCD78A061 /* UIView+MaterialRTL.h in Headers */ = {isa = PBXBuildFile; fileRef = 1306834F4177A512509B5AADAC14AEF8 /* UIView+MaterialRTL.h */; };
+		E5C3E05C0EE6DA6883134A0E682B8EF1 /* MaterialTextControlsPrivate+UnderlinedStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 29794667D89837AC5E9904CCAD7197CF /* MaterialTextControlsPrivate+UnderlinedStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7D793D0F007B0667E527A19DBE6A76B /* MDCTextControlLabelSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 126E8AB35E775641C6834E00C349B5DF /* MDCTextControlLabelSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8EAADACF3BAE33BDECBC7214EAE9CD2 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF8A9D1624CC744FF3C15D57E1B8497 /* ConstraintRelatableTarget.swift */; };
+		E98C2367959D7509177CBE876C739965 /* MaterialMath.h in Headers */ = {isa = PBXBuildFile; fileRef = EE606A96E32AA71174CE69BF4B27C7F3 /* MaterialMath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA8000C7DEDD240441F1F1E335854BB2 /* MaterialTextControlsPrivate+OutlinedStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C4C44974CFE721977115F6783B8F313 /* MaterialTextControlsPrivate+OutlinedStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE6C364198A763EBBF49237035D86439 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CC56FEA0608126F93702502F1708ED /* ConstraintLayoutGuide.swift */; };
+		EF8C6345E9E04BCDB402126AF3873AFD /* MaterialComponents-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8FC1975648CEE3329F78C88E204451 /* MaterialComponents-dummy.m */; };
+		F05D2ECE8BC8B4903DF6EFB32782A358 /* MaterialTextControls+FilledTextFields.h in Headers */ = {isa = PBXBuildFile; fileRef = 348C1AB0F31D5AA7C05C3750F11855F1 /* MaterialTextControls+FilledTextFields.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F10586462FB54CEA169A1A7A469A926D /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91B4CA93BE452A4EA3DD0BF0634DA3 /* Debugging.swift */; };
+		F1A08957579207C69DEB188E6A3B465D /* Pods-Humidor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA642EDD0903A5888F02ECA3D6F29A1E /* Pods-Humidor-dummy.m */; };
+		F24D06C23DAB2F52A30C886A7A8177C7 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDFA9107DF97B269835063105960F3E /* ConstraintView.swift */; };
+		F2C817C166B2DE613222C41015A586C9 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE0CF08C0339F4C7ECD4B1EFC251C4D /* ConstraintMakerPriortizable.swift */; };
+		F343BA4E457FFDB0165492AECAEF0BCC /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8DD4750F5824B2DE8AAC4BD9A91FBA /* ConstraintPriority.swift */; };
+		F445E34F759A59D0454F7FAA4C39C0B8 /* MDCTextControl.h in Headers */ = {isa = PBXBuildFile; fileRef = D8635C91FF0B2C1446217CDF8D8227E2 /* MDCTextControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7C059BA8B1524F4F8B58B94EF14E9FD /* MDCTextControlVerticalPositioningReferenceOutlined.h in Headers */ = {isa = PBXBuildFile; fileRef = F6D5ED6EDE7CE97059AD1E90B2677AD6 /* MDCTextControlVerticalPositioningReferenceOutlined.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F95134B340BDE8537CEDC91162AE776B /* UIImage+MaterialRTL.h in Headers */ = {isa = PBXBuildFile; fileRef = 837ADCB59DC972A26562EC37FC82C723 /* UIImage+MaterialRTL.h */; };
+		FBB6150C6578BC4D0DB9324EBF4E82D6 /* MDCTextControlStyleBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 56330BC9D64AF680A01D27BA06A878C4 /* MDCTextControlStyleBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE30CB088C8D715E3C75B35EB065001C /* MaterialTextControlsPrivate+Shared.h in Headers */ = {isa = PBXBuildFile; fileRef = 92C9BBD0278145975CFAE7A13F3C1749 /* MaterialTextControlsPrivate+Shared.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE496327196BC7BB8B1798101116119A /* MDCTextControlVerticalPositioningReferenceUnderlined.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE296BE311BAC2907F39FBDD64B9263 /* MDCTextControlVerticalPositioningReferenceUnderlined.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		437C15D1712468F39CDB32F333AD9AD9 /* PBXContainerItemProxy */ = {
+		2447D56D6DB7BAE3F3C8A75E1C6F0D8F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
 			remoteInfo = SnapKit;
 		};
-		6F27F91D92932E5AECFF3CD613D3DF5C /* PBXContainerItemProxy */ = {
+		5E326D8F708722926147DE6703449AA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55A01F8E987A6E2F7F0ED141A1ECA406;
+			remoteInfo = MDFInternationalization;
+		};
+		75C14A199CFA6BAF7BCAF11454FBB80B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4723B5744013DF08BE3A5FEAA286944;
+			remoteInfo = MaterialComponents;
+		};
+		8E6BA8D28E9C3417D74CA8B2CB7455D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55A01F8E987A6E2F7F0ED141A1ECA406;
+			remoteInfo = MDFInternationalization;
+		};
+		BF1AF15A667836E81ECBA477744CF163 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4723B5744013DF08BE3A5FEAA286944;
+			remoteInfo = MaterialComponents;
+		};
+		D84A8367AFF62A603DA8D0A90854280F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
 			remoteInfo = SnapKit;
 		};
-		AF57EAA803C7F4DFF0B47A7C0DE56145 /* PBXContainerItemProxy */ = {
+		F4903DC0697DA51800F8174B1B52B091 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E2391600D737CD3C8794E3E4E11F5AAF;
 			remoteInfo = "Pods-Humidor";
 		};
+		F886D0E14504FC1968308EA595E0CC51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55A01F8E987A6E2F7F0ED141A1ECA406;
+			remoteInfo = MDFInternationalization;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		85B3B64C90CFC972449F93DC4A812BBD /* Copy . Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/.";
+			dstSubfolderSpec = 16;
+			files = (
+				64317603918517CB58BC50355BBD14F8 /* MDFInternationalization.h in Copy . Public Headers */,
+				7DB6497C9CC06CA922AC1152CE38CDAC /* MDFRTL.h in Copy . Public Headers */,
+				3DCCF761B72AB77C921C6347AD39D34E /* NSLocale+MaterialRTL.h in Copy . Public Headers */,
+				546594038A39C1C5480919C5C51FFF46 /* NSString+MaterialBidi.h in Copy . Public Headers */,
+				C872E018E08E0FD0B30B386614AB0E43 /* UIImage+MaterialRTL.h in Copy . Public Headers */,
+				8EFABEE2E3BAE5BD9B93C1B58A69A178 /* UIView+MaterialRTL.h in Copy . Public Headers */,
+			);
+			name = "Copy . Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		0116B84A6773B75FCBFCB479E740F0F3 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		0047D5C550AB6A8B2EB35853A9774014 /* ConstraintDirectionalInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsetTarget.swift; path = Source/ConstraintDirectionalInsetTarget.swift; sourceTree = "<group>"; };
 		01D89DAE4F5EE04DEE88E33CB1F9C1E6 /* Pods-Humidor-HumidorUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Humidor-HumidorUITests-umbrella.h"; sourceTree = "<group>"; };
-		09BF299D2EEB87E7DD02630E87B96224 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
-		11D02329E74D733C03BF6BAE1F564481 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
-		13F460233F2A555D41511B6CCA66A124 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
-		141BC33167429B9926FB24A17F01568C /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		04529D9DFDB2EF1F137F7EE8FB64AE00 /* MDCTextControlHorizontalPositioning.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlHorizontalPositioning.h; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlHorizontalPositioning.h; sourceTree = "<group>"; };
+		0754FAA6DDE5DF88A4628FF77E7AB0F9 /* MDCTextControlPlaceholderSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlPlaceholderSupport.m; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlPlaceholderSupport.m; sourceTree = "<group>"; };
+		097725B96D7924F9AC5242EB293D4092 /* MDCTextControlVerticalPositioningReference.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlVerticalPositioningReference.m; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlVerticalPositioningReference.m; sourceTree = "<group>"; };
+		0A6383E0F981B1E148F17D1ED5F74756 /* MDCTextControlStyleUnderlined.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlStyleUnderlined.h; path = components/private/TextControlsPrivate/src/UnderlinedStyle/MDCTextControlStyleUnderlined.h; sourceTree = "<group>"; };
+		0CC143511F131CB391437DBD7D008C8F /* MaterialTextControlsPrivate+BaseStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MaterialTextControlsPrivate+BaseStyle.h"; path = "components/private/TextControlsPrivate/src/BaseStyle/MaterialTextControlsPrivate+BaseStyle.h"; sourceTree = "<group>"; };
+		0D19B9881787176A1663F6F7A34B5E42 /* MDCTextControlLabelBehavior.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlLabelBehavior.h; path = components/TextControls/src/Enums/MDCTextControlLabelBehavior.h; sourceTree = "<group>"; };
+		0DD99183BFC6D86728F3C4959EB3D912 /* MDCTextControlAssistiveLabelView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlAssistiveLabelView.m; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlAssistiveLabelView.m; sourceTree = "<group>"; };
+		126E8AB35E775641C6834E00C349B5DF /* MDCTextControlLabelSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlLabelSupport.h; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlLabelSupport.h; sourceTree = "<group>"; };
+		12BA4AE77406C4A33107B6EF5B08BD1D /* UIBezierPath+MDCTextControlStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBezierPath+MDCTextControlStyle.h"; path = "components/private/TextControlsPrivate/src/Shared/UIBezierPath+MDCTextControlStyle.h"; sourceTree = "<group>"; };
+		1306834F4177A512509B5AADAC14AEF8 /* UIView+MaterialRTL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MaterialRTL.h"; path = "Sources/UIView+MaterialRTL.h"; sourceTree = "<group>"; };
+		14BA23357923C3D869974CA599373A30 /* MDCBaseTextAreaTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCBaseTextAreaTextView.h; path = components/TextControls/src/BaseTextAreas/private/MDCBaseTextAreaTextView.h; sourceTree = "<group>"; };
+		16A7F32CFEE28B0BD7D1CC1211AC00C4 /* MDCTextControlLabelAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlLabelAnimation.h; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlLabelAnimation.h; sourceTree = "<group>"; };
+		17AECEAF529CD386E39C75FA3790AB2E /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
 		182F6D060A626DBD5FC30ABF94DA4358 /* Pods-Humidor-HumidorUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Humidor-HumidorUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		250E41DBB680A3A2ECDDD2210311B230 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
-		25479F58B67AA43E092C7B156C1B5C1B /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		1C5E10E28525169FA230B81771801887 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
+		1C9A2DE9159509C615F0BEA7F3188B74 /* MaterialComponents.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MaterialComponents.modulemap; sourceTree = "<group>"; };
+		1DB43AE7ED0B9017907C35CA25537F35 /* NSString+MaterialBidi.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+MaterialBidi.m"; path = "Sources/NSString+MaterialBidi.m"; sourceTree = "<group>"; };
+		21335EA2EC6F949FA4508C194A713325 /* MaterialComponents-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialComponents-prefix.pch"; sourceTree = "<group>"; };
+		21F6FAEFDB7BA6A208E8ED1B52C513E6 /* MDCBaseTextAreaTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCBaseTextAreaTextView.m; path = components/TextControls/src/BaseTextAreas/private/MDCBaseTextAreaTextView.m; sourceTree = "<group>"; };
+		22BAFE945EB411692056CBE6BB1BE0C3 /* MDCBaseTextArea.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCBaseTextArea.m; path = components/TextControls/src/BaseTextAreas/MDCBaseTextArea.m; sourceTree = "<group>"; };
+		25CC17F5C0285C2F7D1A872F86D01A38 /* NSLocale+MaterialRTL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLocale+MaterialRTL.m"; path = "Sources/NSLocale+MaterialRTL.m"; sourceTree = "<group>"; };
 		25EF0EE3725F39A3942856EF953F6820 /* Pods-HumidorTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HumidorTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		26A5D1A860BB79AFC1FD735C98E50F9F /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		26D55D3144BCF0165BC8CEA9A2BBF0DC /* MDCTextControlVerticalPositioningReferenceUnderlined.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlVerticalPositioningReferenceUnderlined.h; path = components/private/TextControlsPrivate/src/UnderlinedStyle/MDCTextControlVerticalPositioningReferenceUnderlined.h; sourceTree = "<group>"; };
 		279BC5A59CAF90829BEFBD516FC5007B /* Pods-Humidor-HumidorUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Humidor-HumidorUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2975CA5A0D26BC84F3EE9912FEBDA795 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		27BD9A6D13806C34650A46172911A50A /* MDCMath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCMath.h; path = components/private/Math/src/MDCMath.h; sourceTree = "<group>"; };
+		28D7F1F263FC9833B77D5C3F3F42962C /* MaterialTextControls+BaseTextAreas.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MaterialTextControls+BaseTextAreas.h"; path = "components/TextControls/src/BaseTextAreas/MaterialTextControls+BaseTextAreas.h"; sourceTree = "<group>"; };
+		29794667D89837AC5E9904CCAD7197CF /* MaterialTextControlsPrivate+UnderlinedStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MaterialTextControlsPrivate+UnderlinedStyle.h"; path = "components/private/TextControlsPrivate/src/UnderlinedStyle/MaterialTextControlsPrivate+UnderlinedStyle.h"; sourceTree = "<group>"; };
+		2C5DFE5218673B5ECD24016BDA276DF9 /* MaterialTextControls+FilledTextAreas.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MaterialTextControls+FilledTextAreas.h"; path = "components/TextControls/src/FilledTextAreas/MaterialTextControls+FilledTextAreas.h"; sourceTree = "<group>"; };
+		2CC5A85B96D32EE7F359E9107BECEFE3 /* MDCAvailability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCAvailability.h; path = components/Availability/src/MDCAvailability.h; sourceTree = "<group>"; };
+		2DCF439452E8C1378F4D8C7C7781AC7F /* MDCTextControlStyleFilled.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlStyleFilled.m; path = components/private/TextControlsPrivate/src/FilledStyle/MDCTextControlStyleFilled.m; sourceTree = "<group>"; };
+		2F4973C0EAFC7BD446BE7E74EAEDE031 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		309E0C3FC5BE0EAF276CDF7EDEF29605 /* MaterialMathDummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MaterialMathDummy.m; path = components/private/Math/src/MaterialMathDummy.m; sourceTree = "<group>"; };
+		32DC88802D11FAFB408336476B768242 /* MDCTextControlState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlState.m; path = components/TextControls/src/Enums/MDCTextControlState.m; sourceTree = "<group>"; };
+		34506368F9BFEF534EF6BE5276951983 /* MDCTextControlVerticalPositioningReferenceBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlVerticalPositioningReferenceBase.m; path = components/private/TextControlsPrivate/src/BaseStyle/MDCTextControlVerticalPositioningReferenceBase.m; sourceTree = "<group>"; };
+		348C1AB0F31D5AA7C05C3750F11855F1 /* MaterialTextControls+FilledTextFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MaterialTextControls+FilledTextFields.h"; path = "components/TextControls/src/FilledTextFields/MaterialTextControls+FilledTextFields.h"; sourceTree = "<group>"; };
+		35CD689ED67D2230EAFE1C2791B1E6C5 /* MaterialTextControls+Enums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MaterialTextControls+Enums.h"; path = "components/TextControls/src/Enums/MaterialTextControls+Enums.h"; sourceTree = "<group>"; };
 		35DAF520077D52A08688F505D32AFC45 /* Pods-Humidor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Humidor.debug.xcconfig"; sourceTree = "<group>"; };
+		3879209209F01C3F4B9C7D70A73CF424 /* MDCTextControlVerticalPositioningReferenceFilled.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlVerticalPositioningReferenceFilled.h; path = components/private/TextControlsPrivate/src/FilledStyle/MDCTextControlVerticalPositioningReferenceFilled.h; sourceTree = "<group>"; };
+		38911BDCE8C50545E74A3EADA147B364 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
 		390307AA3F17E7CC244FD80EF452D7CD /* Pods-HumidorTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HumidorTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		391A6F8B42D2CD885F8F3C4CE6859439 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
-		3D705690D879064ED84970813189D8D4 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		39C6BDC1F6932F4F5351A48459BCC798 /* MDCTextControlSideViewSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlSideViewSupport.m; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlSideViewSupport.m; sourceTree = "<group>"; };
+		3A5BAD0391754C0AC2E514A91A446597 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		3AE001F97BF0CF7CF10B115F6D45D81A /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
+		4165EF4133DB4E3E96BF2BD4F35071CE /* MDCTextControlVerticalPositioningReference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlVerticalPositioningReference.h; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlVerticalPositioningReference.h; sourceTree = "<group>"; };
+		44A8D7BD3A984BE870E5DE60D5DCF362 /* MDCBaseTextAreaLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCBaseTextAreaLayout.h; path = components/TextControls/src/BaseTextAreas/private/MDCBaseTextAreaLayout.h; sourceTree = "<group>"; };
+		45459C71D62DDA128AA78CC234289F29 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
 		45B6F133DB3DB821E4CE3B862B4541C6 /* Pods-Humidor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Humidor.release.xcconfig"; sourceTree = "<group>"; };
-		464C01543F3BCEDEE51ABAA696513D0B /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
-		474AFC560A8B414B467174737DBC891A /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
-		47B200BD964F52F6693D4168248B8645 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		47CC56FEA0608126F93702502F1708ED /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		48DB6DF0827B9C63B350ED742FBDB87F /* MDCTextControlAssistiveLabelViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlAssistiveLabelViewLayout.m; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlAssistiveLabelViewLayout.m; sourceTree = "<group>"; };
 		4A7B6F59DD2151505C97C41FAD331311 /* Pods-Humidor-HumidorUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Humidor-HumidorUITests-frameworks.sh"; sourceTree = "<group>"; };
+		4AFE3F0C348AC36EF35D0C68C6280AD8 /* MDCTextControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControl.m; path = components/private/TextControlsPrivate/src/Shared/MDCTextControl.m; sourceTree = "<group>"; };
+		4CEE4365123CD7019C2BBAC2220A2827 /* MaterialTextControlsPrivate+TextFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MaterialTextControlsPrivate+TextFields.h"; path = "components/private/TextControlsPrivate/src/TextFields/MaterialTextControlsPrivate+TextFields.h"; sourceTree = "<group>"; };
 		4E5AD6BEA6673D7AB2BEB5F8AB7E20CC /* Pods-HumidorTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HumidorTests.modulemap"; sourceTree = "<group>"; };
-		50380F281EC3EE769C85035CCEA77226 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
-		549471CD1FE3A1E1865DD172864918D3 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
-		56006AA49A060CA2830F32CD6F394823 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
-		66C5188AE61F0E667CD9E7ED28CDD61C /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
-		6A9341666EAC154422A032092A7DC2D7 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
-		6D990E0FED5B41C1F13AC6B08208A99B /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
-		724FB64349F5678CE1709979CF0DD952 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		4E6CDDF881942287846092306BA125DB /* UIBezierPath+MDCTextControlStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIBezierPath+MDCTextControlStyle.m"; path = "components/private/TextControlsPrivate/src/Shared/UIBezierPath+MDCTextControlStyle.m"; sourceTree = "<group>"; };
+		4EDFA9107DF97B269835063105960F3E /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
+		56330BC9D64AF680A01D27BA06A878C4 /* MDCTextControlStyleBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlStyleBase.h; path = components/private/TextControlsPrivate/src/BaseStyle/MDCTextControlStyleBase.h; sourceTree = "<group>"; };
+		570EA209E4DA7E9BAAE8E81E0954F3A2 /* MDCTextControlStyleBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlStyleBase.m; path = components/private/TextControlsPrivate/src/BaseStyle/MDCTextControlStyleBase.m; sourceTree = "<group>"; };
+		579DC6C4E58D85C960FDBE001E68C41F /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		5C4C44974CFE721977115F6783B8F313 /* MaterialTextControlsPrivate+OutlinedStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MaterialTextControlsPrivate+OutlinedStyle.h"; path = "components/private/TextControlsPrivate/src/OutlinedStyle/MaterialTextControlsPrivate+OutlinedStyle.h"; sourceTree = "<group>"; };
+		5D3B794CCF66131569A0C2E5B923070D /* MDCBaseTextFieldLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCBaseTextFieldLayout.h; path = components/private/TextControlsPrivate/src/TextFields/MDCBaseTextFieldLayout.h; sourceTree = "<group>"; };
+		5F924871CE03442DE51BD51CBF9D56CE /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		614D2EB48F603F71309E0B964B4B0EE7 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		61D7288C4ACC0D499E03E626B2FEDB63 /* MDCOutlinedTextArea.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCOutlinedTextArea.h; path = components/TextControls/src/OutlinedTextAreas/MDCOutlinedTextArea.h; sourceTree = "<group>"; };
+		62073D652E8024AA009DD8DE24073D6D /* MDCTextControlState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlState.h; path = components/TextControls/src/Enums/MDCTextControlState.h; sourceTree = "<group>"; };
+		62A1DB0585745DBD263D82E8BC6BD4DE /* MaterialTextControlsPrivate+FilledStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MaterialTextControlsPrivate+FilledStyle.h"; path = "components/private/TextControlsPrivate/src/FilledStyle/MaterialTextControlsPrivate+FilledStyle.h"; sourceTree = "<group>"; };
+		67F97756E866B4DD52CFD13A3E2E316E /* MDCTextControlHorizontalPositioningReference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlHorizontalPositioningReference.h; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlHorizontalPositioningReference.h; sourceTree = "<group>"; };
+		682A2D02CEEB409BA1E69B991705EF1B /* UIView+MaterialRTL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MaterialRTL.m"; path = "Sources/UIView+MaterialRTL.m"; sourceTree = "<group>"; };
+		6BDC1EF5EE98A2C9D5FEDF8552335D45 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		6CCFA635691FF11E96346A553FFF0614 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		6DB954B6E9BB6734112ED7AEECB0326A /* SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.debug.xcconfig; sourceTree = "<group>"; };
+		6EEC36B02722974620D112FD620A047F /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		70492C2ADB59314CAFE662A0B1DE0D6E /* SnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.release.xcconfig; sourceTree = "<group>"; };
+		713BC7338C1453A6BDECC88625967477 /* MDCTextControlLabelAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlLabelAnimation.m; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlLabelAnimation.m; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7889131C1139F96BBDA94CEE2E694763 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
-		7AE00ECC24C5CC6DC938204FF42AD0E5 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
-		7C21E0C93A1141A1E2EB51575500E27D /* SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.debug.xcconfig; sourceTree = "<group>"; };
-		7C2EC377264B25FB0E67D150E37E87CD /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		7530177BE289503AA245F85352527FCE /* MDCOutlinedTextArea.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCOutlinedTextArea.m; path = components/TextControls/src/OutlinedTextAreas/MDCOutlinedTextArea.m; sourceTree = "<group>"; };
+		753A58966247AB5DA4DF92EF22B4E9EA /* MDFInternationalization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDFInternationalization.h; path = Sources/MDFInternationalization.h; sourceTree = "<group>"; };
+		766CE4D741B830DB935FD888B2D00C74 /* MDCBaseTextFieldDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCBaseTextFieldDelegate.h; path = components/TextControls/src/BaseTextFields/MDCBaseTextFieldDelegate.h; sourceTree = "<group>"; };
+		7A5786B91BE1DCF8DB8334D9D2378A2E /* MaterialComponents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MaterialComponents.release.xcconfig; sourceTree = "<group>"; };
+		7AFAEE89D5D315CFECC4A122193D3167 /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		7B5BBE024B18BA9924694533A2DDE95C /* MDCTextControlVerticalPositioningReferenceFilled.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlVerticalPositioningReferenceFilled.m; path = components/private/TextControlsPrivate/src/FilledStyle/MDCTextControlVerticalPositioningReferenceFilled.m; sourceTree = "<group>"; };
+		7C313D890BE6A42E308D5593F7C49542 /* MDCTextControlSideViewSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlSideViewSupport.h; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlSideViewSupport.h; sourceTree = "<group>"; };
+		7EA27E637F5B0E1544A28D09BE9C5B59 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		7FEE8E1128979AA1A15743518A97BC30 /* MaterialComponents-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialComponents-umbrella.h"; sourceTree = "<group>"; };
+		7FF8A9D1624CC744FF3C15D57E1B8497 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		837ADCB59DC972A26562EC37FC82C723 /* UIImage+MaterialRTL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MaterialRTL.h"; path = "Sources/UIImage+MaterialRTL.h"; sourceTree = "<group>"; };
+		83ACDEBB4F1FE916BA0C44EADEA66002 /* MDCBaseTextFieldLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCBaseTextFieldLayout.m; path = components/private/TextControlsPrivate/src/TextFields/MDCBaseTextFieldLayout.m; sourceTree = "<group>"; };
+		85E416F29562A942A5C3652980C6F14B /* MDFRTL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDFRTL.m; path = Sources/MDFRTL.m; sourceTree = "<group>"; };
+		86329BEA9B76D388A8BFB3ABB756DEF1 /* MDCTextControlHorizontalPositioningReference.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlHorizontalPositioningReference.m; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlHorizontalPositioningReference.m; sourceTree = "<group>"; };
+		877B23349ED57E9981B8502DAB5DFD18 /* MDCFilledTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCFilledTextField.h; path = components/TextControls/src/FilledTextFields/MDCFilledTextField.h; sourceTree = "<group>"; };
+		89AEC54F6B6B40EE87DBFE4402F94B20 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		8BC67C66CE576032FA237A049CD399DB /* MDCTextControlTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlTextField.h; path = components/private/TextControlsPrivate/src/TextFields/MDCTextControlTextField.h; sourceTree = "<group>"; };
 		8C6E57659C3E715B21B291ADAD66FA26 /* Pods-HumidorTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HumidorTests-umbrella.h"; sourceTree = "<group>"; };
-		91164BE769DA144776663FBF46785561 /* ConstraintDirectionalInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsets.swift; path = Source/ConstraintDirectionalInsets.swift; sourceTree = "<group>"; };
-		91A53CAF547D71AEFABE49D91B4E6816 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
-		9716AD15FADF38A93170E034F2BCE457 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		8CE2F241473C7F483AED2022DA066A52 /* MDCTextControlVerticalPositioningReferenceBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlVerticalPositioningReferenceBase.h; path = components/private/TextControlsPrivate/src/BaseStyle/MDCTextControlVerticalPositioningReferenceBase.h; sourceTree = "<group>"; };
+		8D4BBA144B480ECE99E952925EB915DF /* CAMediaTimingFunction+MDCAnimationTiming.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CAMediaTimingFunction+MDCAnimationTiming.m"; path = "components/AnimationTiming/src/CAMediaTimingFunction+MDCAnimationTiming.m"; sourceTree = "<group>"; };
+		8DE51BB61D6699118A5352C8F17AB085 /* MDFInternationalization-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MDFInternationalization-Info.plist"; sourceTree = "<group>"; };
+		8E872109920CE1C348CEB92563FE55C7 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		8FC611263A1B55954101F5D8593ADE68 /* MDFInternationalization.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MDFInternationalization.modulemap; sourceTree = "<group>"; };
+		913DDFF2B3E6D436692A7F9BE166D01B /* MaterialAnimationTiming.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialAnimationTiming.h; path = components/AnimationTiming/src/MaterialAnimationTiming.h; sourceTree = "<group>"; };
+		920D9F2FA534672ECCDCA19B104911AE /* MDFInternationalization.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MDFInternationalization.release.xcconfig; sourceTree = "<group>"; };
+		92C9BBD0278145975CFAE7A13F3C1749 /* MaterialTextControlsPrivate+Shared.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MaterialTextControlsPrivate+Shared.h"; path = "components/private/TextControlsPrivate/src/Shared/MaterialTextControlsPrivate+Shared.h"; sourceTree = "<group>"; };
+		9355D92D6FB737B994A00A950DFA6BE2 /* MDCBaseTextArea.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCBaseTextArea.h; path = components/TextControls/src/BaseTextAreas/MDCBaseTextArea.h; sourceTree = "<group>"; };
+		9434DC6EC97FF5B16E57F474F53BA7A9 /* MDFRTL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDFRTL.h; path = Sources/MDFRTL.h; sourceTree = "<group>"; };
+		94D00B38FC0AFFCA095DC0B1AD5D1890 /* MDCTextControlAssistiveLabelDrawPriority.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlAssistiveLabelDrawPriority.h; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlAssistiveLabelDrawPriority.h; sourceTree = "<group>"; };
+		951F2841E3E3EA5574C20F73D7A97CB4 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
+		9752B40D9FE525EC11C374A5802B6B02 /* MaterialTextControls+BaseTextFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MaterialTextControls+BaseTextFields.h"; path = "components/TextControls/src/BaseTextFields/MaterialTextControls+BaseTextFields.h"; sourceTree = "<group>"; };
 		979486118B3E90C08386079D57962701 /* SnapKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		992EEE4C86ED9C2BAEA61028B5658B27 /* MDCTextControlAssistiveLabelViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlAssistiveLabelViewLayout.h; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlAssistiveLabelViewLayout.h; sourceTree = "<group>"; };
+		99D9BD685FAE1C99501A01F4C4C79A50 /* MDFInternationalization.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MDFInternationalization.debug.xcconfig; sourceTree = "<group>"; };
+		9A2AC0B8BAC6EF061EBC28825653DF99 /* MDFInternationalization */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MDFInternationalization; path = MDFInternationalization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ADC2B13605672C1BCFC96A2B6C79B24 /* MDCBaseTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCBaseTextField.m; path = components/TextControls/src/BaseTextFields/MDCBaseTextField.m; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A04A86B30158B55E5A784E1C81810C39 /* Pods-Humidor */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Humidor"; path = Pods_Humidor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1CD432F32277BB93DEAADA626ECEC5B /* SnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.release.xcconfig; sourceTree = "<group>"; };
-		A51E99894F75F00A281BE6A32FBDE495 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
+		A0BA121FEA0523B89350335C9EA903AF /* MDCFilledTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCFilledTextField.m; path = components/TextControls/src/FilledTextFields/MDCFilledTextField.m; sourceTree = "<group>"; };
+		A1F4B1374EBF5BC00ABBEE08E47CAD65 /* MDCBaseTextAreaLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCBaseTextAreaLayout.m; path = components/TextControls/src/BaseTextAreas/private/MDCBaseTextAreaLayout.m; sourceTree = "<group>"; };
+		A31C93A66800AC565323D64BEDEBFE14 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MaterialComponents; path = MaterialComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4FDEC5A8B35F732C39D4F2CE423690A /* MDCFilledTextArea.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCFilledTextArea.h; path = components/TextControls/src/FilledTextAreas/MDCFilledTextArea.h; sourceTree = "<group>"; };
 		A53520642B28A61CFD93A9A7275138BF /* Pods-Humidor-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Humidor-Info.plist"; sourceTree = "<group>"; };
-		A7D358AA1606C7B2CDC8555485807E9E /* ConstraintDirectionalInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsetTarget.swift; path = Source/ConstraintDirectionalInsetTarget.swift; sourceTree = "<group>"; };
+		A8CB72945D9A885E3A734E9F25BE9ED8 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		A8F3582492186DB1C9ACE477887FE79E /* MDFInternationalization-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MDFInternationalization-prefix.pch"; sourceTree = "<group>"; };
+		A920166231F1C75ED449D4E3136FE85C /* MDCTextControlStyleFilled.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlStyleFilled.h; path = components/private/TextControlsPrivate/src/FilledStyle/MDCTextControlStyleFilled.h; sourceTree = "<group>"; };
+		AA5CE457A1E131A9D9C40C9639D4D8AB /* MDCTextControlStyleOutlined.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlStyleOutlined.m; path = components/private/TextControlsPrivate/src/OutlinedStyle/MDCTextControlStyleOutlined.m; sourceTree = "<group>"; };
+		AE69A31E5CDFD254F25EC34CA9C5A4BB /* MDCTextControlStyleOutlined.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlStyleOutlined.h; path = components/private/TextControlsPrivate/src/OutlinedStyle/MDCTextControlStyleOutlined.h; sourceTree = "<group>"; };
+		AE8DD4750F5824B2DE8AAC4BD9A91FBA /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
+		AFDC6B581A8D9F47C91CE9498CBBD1E0 /* NSString+MaterialBidi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MaterialBidi.h"; path = "Sources/NSString+MaterialBidi.h"; sourceTree = "<group>"; };
 		B1C5F5B9B6903F87B27209957911AA43 /* Pods-HumidorTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HumidorTests-Info.plist"; sourceTree = "<group>"; };
+		B21172A6C32C5DA1C2A8DE8C650E41D6 /* MaterialAvailability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialAvailability.h; path = components/Availability/src/MaterialAvailability.h; sourceTree = "<group>"; };
 		B2CF14D173DD49057AA0507C1D041119 /* Pods-Humidor-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Humidor-frameworks.sh"; sourceTree = "<group>"; };
+		B8057A13C022199DB32D0B57177A9E45 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		B88B4712F6BD1FD707F63EF476E9755E /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		B8F8D85CB4B6EE29C6CAC1035D145573 /* MDCOutlinedTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCOutlinedTextField.m; path = components/TextControls/src/OutlinedTextFields/MDCOutlinedTextField.m; sourceTree = "<group>"; };
 		B945C25FED3E6C1286DF9F2C3B23A3A0 /* Pods-Humidor-HumidorUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Humidor-HumidorUITests.modulemap"; sourceTree = "<group>"; };
-		BE0BE9F3D55FDB29EF516F6D6B1B6BCA /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
-		C4A46A8054577838D49C60142EB88B13 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		B9474A31B9653BA9B66D4F48E8501767 /* MDCBaseTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCBaseTextField.h; path = components/TextControls/src/BaseTextFields/MDCBaseTextField.h; sourceTree = "<group>"; };
+		BA53758FE5159D05857C58391B313D1D /* MDCBaseTextAreaDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCBaseTextAreaDelegate.h; path = components/TextControls/src/BaseTextAreas/MDCBaseTextAreaDelegate.h; sourceTree = "<group>"; };
+		BB51292B47BCD8436BB36212998D87F4 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		BB6566795890ACE2178505A391BCCE37 /* MDFInternationalization-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MDFInternationalization-dummy.m"; sourceTree = "<group>"; };
+		BB78817F6B1530B56168188C02972392 /* MaterialComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MaterialComponents.debug.xcconfig; sourceTree = "<group>"; };
+		C0B25827DA5FF5F33A3E390F598C7BD6 /* NSLocale+MaterialRTL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLocale+MaterialRTL.h"; path = "Sources/NSLocale+MaterialRTL.h"; sourceTree = "<group>"; };
+		C6E7FD858FD55FDE5B4556F2BA11EFB6 /* ConstraintDirectionalInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsets.swift; path = Source/ConstraintDirectionalInsets.swift; sourceTree = "<group>"; };
+		C73EA4C8B550B05EC25560C19DE77770 /* UIView+MDCTimingFunction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MDCTimingFunction.h"; path = "components/AnimationTiming/src/UIView+MDCTimingFunction.h"; sourceTree = "<group>"; };
 		C9343C55A28ECC6F4E7A037BF1CF5929 /* Pods-Humidor-HumidorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Humidor-HumidorUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		CB1D9F6F4E2364DFAF158E04AF5D5EAA /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		CB06EE7BE39FD6565BFD91F37783CDDB /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		CB6BC3AD460369A7157747D6052199B8 /* MaterialTextControls+OutlinedTextAreas.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MaterialTextControls+OutlinedTextAreas.h"; path = "components/TextControls/src/OutlinedTextAreas/MaterialTextControls+OutlinedTextAreas.h"; sourceTree = "<group>"; };
+		CBA74F90A53BA440ADB6A55B8B0A29B2 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		CCC946B0B6975E9B14CA76975D48325D /* MDCTextControlLabelSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlLabelSupport.m; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlLabelSupport.m; sourceTree = "<group>"; };
+		CCE2C5986FF5E27BBE64FF8F94A0FBF9 /* MDCTextControlVerticalPositioningReferenceOutlined.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlVerticalPositioningReferenceOutlined.m; path = components/private/TextControlsPrivate/src/OutlinedStyle/MDCTextControlVerticalPositioningReferenceOutlined.m; sourceTree = "<group>"; };
 		CCFEE555B84ECF6C34187B1912EA5E1A /* Pods-Humidor-HumidorUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Humidor-HumidorUITests-Info.plist"; sourceTree = "<group>"; };
-		D038D2FAA2F6B073D1B64B8635F4E3E6 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		CF6D8B32FDE062AB63DE85CD04BB4E2C /* MDCTextControlAssistiveLabelView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlAssistiveLabelView.h; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlAssistiveLabelView.h; sourceTree = "<group>"; };
+		CF8FC1975648CEE3329F78C88E204451 /* MaterialComponents-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MaterialComponents-dummy.m"; sourceTree = "<group>"; };
 		D31EB85DFDF12352D1C4FC4BBB2C9DA6 /* Pods-Humidor-HumidorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Humidor-HumidorUITests.release.xcconfig"; sourceTree = "<group>"; };
-		D4E066869A95E00B949CBA4D2284C35F /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
+		D4149E52E880640EF573F70B09B95028 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		D73C1F6508E78C527C302D9F06CA2454 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		D7EB9C73EC1C8F5C3B3AA7DDB4843D23 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
 		D83A21EA65A5108234B4BE50EDC84D33 /* Pods-Humidor-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Humidor-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D8635C91FF0B2C1446217CDF8D8227E2 /* MDCTextControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControl.h; path = components/private/TextControlsPrivate/src/Shared/MDCTextControl.h; sourceTree = "<group>"; };
 		D8D6745548FD39F19E8855B312D77D7B /* Pods-Humidor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Humidor-umbrella.h"; sourceTree = "<group>"; };
 		D97CD8747311542C5EF450411715499A /* Pods-HumidorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HumidorTests.release.xcconfig"; sourceTree = "<group>"; };
 		DA5A8EAD72FF711EA888A7A051ACE8B5 /* Pods-Humidor-HumidorUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Humidor-HumidorUITests-dummy.m"; sourceTree = "<group>"; };
+		DA7B54BC2DFF21F205BD35DB2D22800A /* MaterialComponents-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MaterialComponents-Info.plist"; sourceTree = "<group>"; };
+		DB10062E4BC68968F21F70B3F68DBF4A /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		DC0617316AA9152991DA103D3AAF6CA7 /* MDCTextControlGradientManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlGradientManager.h; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlGradientManager.h; sourceTree = "<group>"; };
 		DCC608D75EF8ECE14009DDAD28668501 /* Pods-Humidor-HumidorUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Humidor-HumidorUITests"; path = Pods_Humidor_HumidorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCE0B91A11AB454BA94987E06730DEC5 /* MaterialTextControls+OutlinedTextFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MaterialTextControls+OutlinedTextFields.h"; path = "components/TextControls/src/OutlinedTextFields/MaterialTextControls+OutlinedTextFields.h"; sourceTree = "<group>"; };
+		DEA95B17FEF0D1D5914D917F605C0F99 /* MDCTextControlPlaceholderSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlPlaceholderSupport.h; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlPlaceholderSupport.h; sourceTree = "<group>"; };
+		DEE0CF08C0339F4C7ECD4B1EFC251C4D /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
 		DF307154F96D7377112A302AACD8D6A3 /* Pods-HumidorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HumidorTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E13B89FFD81AACB7530769CA05EEA26B /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
-		E14A09DC3AD8CA84464FEC37F0FC99D1 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
-		E2C3B0B200350EAC8F42EF635FF31BD1 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
-		E43F10DE451FED17810D9B5C237324A5 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		DFF78E12D043CF474E32AF6247A15ABF /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		E4E91A2EED341CAE1C4BF9346C2BEC06 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		E7058074A7314C403CE09C4020199B82 /* UIImage+MaterialRTL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MaterialRTL.m"; path = "Sources/UIImage+MaterialRTL.m"; sourceTree = "<group>"; };
+		EA080838EB1822501DF447FD4AF00890 /* MDCTextControlTextFieldSideViewAlignment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlTextFieldSideViewAlignment.h; path = components/private/TextControlsPrivate/src/TextFields/MDCTextControlTextFieldSideViewAlignment.h; sourceTree = "<group>"; };
 		EA642EDD0903A5888F02ECA3D6F29A1E /* Pods-Humidor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Humidor-dummy.m"; sourceTree = "<group>"; };
 		EB98E6F88DA4D40307DED3F4CB7C2D28 /* Pods-Humidor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Humidor.modulemap"; sourceTree = "<group>"; };
+		EC2CC15E0BBAED6D835A884ABD5C3A81 /* MDCTextControlColorViewModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlColorViewModel.h; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlColorViewModel.h; sourceTree = "<group>"; };
 		EE259A54288FCE2036EA500A3A835E25 /* Pods-HumidorTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-HumidorTests"; path = Pods_HumidorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE9055CEA7890517265589BD23D73A49 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		EE606A96E32AA71174CE69BF4B27C7F3 /* MaterialMath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialMath.h; path = components/private/Math/src/MaterialMath.h; sourceTree = "<group>"; };
+		EEAC70B102AA7E9C063A00426DCFC4E8 /* MDCOutlinedTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCOutlinedTextField.h; path = components/TextControls/src/OutlinedTextFields/MDCOutlinedTextField.h; sourceTree = "<group>"; };
+		EEE296BE311BAC2907F39FBDD64B9263 /* MDCTextControlVerticalPositioningReferenceUnderlined.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlVerticalPositioningReferenceUnderlined.m; path = components/private/TextControlsPrivate/src/UnderlinedStyle/MDCTextControlVerticalPositioningReferenceUnderlined.m; sourceTree = "<group>"; };
 		EF9C45E0B2596D7562127BB62EA10B6A /* Pods-Humidor-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Humidor-acknowledgements.plist"; sourceTree = "<group>"; };
-		F0BD95F32F2E57D6B9100B77B93F013C /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
-		F44C5B72775F6AF0891BF331F32FE10D /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
-		F7AB9BB47A2175181386A432C07253AE /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		F2179B901D9FAB63EDBB214B0FFE4F51 /* MDCFilledTextArea.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCFilledTextArea.m; path = components/TextControls/src/FilledTextAreas/MDCFilledTextArea.m; sourceTree = "<group>"; };
+		F244F990893241C8FC71F48FF5A8213F /* UIView+MDCTimingFunction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MDCTimingFunction.m"; path = "components/AnimationTiming/src/UIView+MDCTimingFunction.m"; sourceTree = "<group>"; };
+		F53A67ABA43F34951EAC92946FFD3AF3 /* MDCTextControlColorViewModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlColorViewModel.m; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlColorViewModel.m; sourceTree = "<group>"; };
+		F5B4252DC9C15920AA7E99E13F69969A /* MDCTextControlGradientManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlGradientManager.m; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlGradientManager.m; sourceTree = "<group>"; };
+		F6D5ED6EDE7CE97059AD1E90B2677AD6 /* MDCTextControlVerticalPositioningReferenceOutlined.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlVerticalPositioningReferenceOutlined.h; path = components/private/TextControlsPrivate/src/OutlinedStyle/MDCTextControlVerticalPositioningReferenceOutlined.h; sourceTree = "<group>"; };
+		F6E79614F6F31A9CA8CB871CB1165382 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
 		F9754A0BF5B11083D23C89EF03A1AC67 /* Pods-HumidorTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HumidorTests-dummy.m"; sourceTree = "<group>"; };
+		FD91B4CA93BE452A4EA3DD0BF0634DA3 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		FDB4D71E3966BC01E999FD204D1DF6C8 /* CAMediaTimingFunction+MDCAnimationTiming.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CAMediaTimingFunction+MDCAnimationTiming.h"; path = "components/AnimationTiming/src/CAMediaTimingFunction+MDCAnimationTiming.h"; sourceTree = "<group>"; };
+		FE4C0F994466357130AA0BCB375C30A1 /* MDCTextControlStyleUnderlined.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlStyleUnderlined.m; path = components/private/TextControlsPrivate/src/UnderlinedStyle/MDCTextControlStyleUnderlined.m; sourceTree = "<group>"; };
+		FFA47CDD9113763B3C105F2EACF9FC9D /* MDFInternationalization-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MDFInternationalization-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		910194EAFA70BEB350DD08A3D6290194 /* Frameworks */ = {
+		11551701590D64A97F801BD35F314A19 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70BC18252A6163289193962AF2D10A28 /* Foundation.framework in Frameworks */,
+				7425895B1F8D01EDF7F6F72DFF87519F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F0BB6C7F6EE8BAED0ED6F1217D2BF2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B18CA96E06AABA204676927F573F28C5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,17 +476,76 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF7CFFCD17804BA9301BE3E1B45F01DE /* Frameworks */ = {
+		A563BE445A159E73000F25A2BC3B940E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EAB7456415D3F81CCBFCF2A04D192E8 /* Foundation.framework in Frameworks */,
+				C033F3E94355E90147C197D165E7DEE0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB2B6261744EEE6F9E45D71F26659178 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EC38533DD24E59FAD14E193F9338334 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02B483898445A446C364221DD7CA00CB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8FC611263A1B55954101F5D8593ADE68 /* MDFInternationalization.modulemap */,
+				BB6566795890ACE2178505A391BCCE37 /* MDFInternationalization-dummy.m */,
+				8DE51BB61D6699118A5352C8F17AB085 /* MDFInternationalization-Info.plist */,
+				A8F3582492186DB1C9ACE477887FE79E /* MDFInternationalization-prefix.pch */,
+				FFA47CDD9113763B3C105F2EACF9FC9D /* MDFInternationalization-umbrella.h */,
+				99D9BD685FAE1C99501A01F4C4C79A50 /* MDFInternationalization.debug.xcconfig */,
+				920D9F2FA534672ECCDCA19B104911AE /* MDFInternationalization.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MDFInternationalization";
+			sourceTree = "<group>";
+		};
+		0524AF1649669685FCCE8CD629990DD5 /* TextControlsPrivate+UnderlinedStyle */ = {
+			isa = PBXGroup;
+			children = (
+				29794667D89837AC5E9904CCAD7197CF /* MaterialTextControlsPrivate+UnderlinedStyle.h */,
+				0A6383E0F981B1E148F17D1ED5F74756 /* MDCTextControlStyleUnderlined.h */,
+				FE4C0F994466357130AA0BCB375C30A1 /* MDCTextControlStyleUnderlined.m */,
+				26D55D3144BCF0165BC8CEA9A2BBF0DC /* MDCTextControlVerticalPositioningReferenceUnderlined.h */,
+				EEE296BE311BAC2907F39FBDD64B9263 /* MDCTextControlVerticalPositioningReferenceUnderlined.m */,
+			);
+			name = "TextControlsPrivate+UnderlinedStyle";
+			sourceTree = "<group>";
+		};
+		0CC05480D5442934A1D9C22E9D5EC54D /* TextControlsPrivate+FilledStyle */ = {
+			isa = PBXGroup;
+			children = (
+				62A1DB0585745DBD263D82E8BC6BD4DE /* MaterialTextControlsPrivate+FilledStyle.h */,
+				A920166231F1C75ED449D4E3136FE85C /* MDCTextControlStyleFilled.h */,
+				2DCF439452E8C1378F4D8C7C7781AC7F /* MDCTextControlStyleFilled.m */,
+				3879209209F01C3F4B9C7D70A73CF424 /* MDCTextControlVerticalPositioningReferenceFilled.h */,
+				7B5BBE024B18BA9924694533A2DDE95C /* MDCTextControlVerticalPositioningReferenceFilled.m */,
+			);
+			name = "TextControlsPrivate+FilledStyle";
+			sourceTree = "<group>";
+		};
+		2F08EBFBB19F9C5053AD2690CD5F8803 /* TextControlsPrivate+TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				4CEE4365123CD7019C2BBAC2220A2827 /* MaterialTextControlsPrivate+TextFields.h */,
+				5D3B794CCF66131569A0C2E5B923070D /* MDCBaseTextFieldLayout.h */,
+				83ACDEBB4F1FE916BA0C44EADEA66002 /* MDCBaseTextFieldLayout.m */,
+				8BC67C66CE576032FA237A049CD399DB /* MDCTextControlTextField.h */,
+				EA080838EB1822501DF447FD4AF00890 /* MDCTextControlTextFieldSideViewAlignment.h */,
+			);
+			name = "TextControlsPrivate+TextFields";
+			sourceTree = "<group>";
+		};
 		3A738C3F3A992007E0B5526F68B9702F /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +554,37 @@
 				96AF808A986D0497AEFDF87B0BB382DC /* Pods-HumidorTests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		403E0875444F04CB4AFC0F4E8E6772EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD7EBCE0B782B3091CCB56555652F68E /* MaterialComponents */,
+				6F05D99FC638990904A6DD4B1264BA4C /* MDFInternationalization */,
+				F7881F19FA772E7E55960FAEE39C37B0 /* SnapKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		48C3F7EE0D72A5464CC0802E6048C407 /* Availability */ = {
+			isa = PBXGroup;
+			children = (
+				B21172A6C32C5DA1C2A8DE8C650E41D6 /* MaterialAvailability.h */,
+				2CC5A85B96D32EE7F359E9107BECEFE3 /* MDCAvailability.h */,
+			);
+			name = Availability;
+			sourceTree = "<group>";
+		};
+		4E95EEB4475352794439845BAF171984 /* TextControlsPrivate+BaseStyle */ = {
+			isa = PBXGroup;
+			children = (
+				0CC143511F131CB391437DBD7D008C8F /* MaterialTextControlsPrivate+BaseStyle.h */,
+				56330BC9D64AF680A01D27BA06A878C4 /* MDCTextControlStyleBase.h */,
+				570EA209E4DA7E9BAAE8E81E0954F3A2 /* MDCTextControlStyleBase.m */,
+				8CE2F241473C7F483AED2022DA066A52 /* MDCTextControlVerticalPositioningReferenceBase.h */,
+				34506368F9BFEF534EF6BE5276951983 /* MDCTextControlVerticalPositioningReferenceBase.m */,
+			);
+			name = "TextControlsPrivate+BaseStyle";
 			sourceTree = "<group>";
 		};
 		551F8AFD2B673A42CDEC3FBAF76E882F /* Pods-Humidor */ = {
@@ -230,61 +612,70 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7F02E3862C6E84203E8324D9D0088797 /* SnapKit */ = {
+		5B18A565D9ED0EC4E46296BA595F22A9 /* TextControls+FilledTextAreas */ = {
 			isa = PBXGroup;
 			children = (
-				50380F281EC3EE769C85035CCEA77226 /* Constraint.swift */,
-				13F460233F2A555D41511B6CCA66A124 /* ConstraintAttributes.swift */,
-				250E41DBB680A3A2ECDDD2210311B230 /* ConstraintConfig.swift */,
-				6D990E0FED5B41C1F13AC6B08208A99B /* ConstraintConstantTarget.swift */,
-				CB1D9F6F4E2364DFAF158E04AF5D5EAA /* ConstraintDescription.swift */,
-				91164BE769DA144776663FBF46785561 /* ConstraintDirectionalInsets.swift */,
-				A7D358AA1606C7B2CDC8555485807E9E /* ConstraintDirectionalInsetTarget.swift */,
-				7AE00ECC24C5CC6DC938204FF42AD0E5 /* ConstraintDSL.swift */,
-				549471CD1FE3A1E1865DD172864918D3 /* ConstraintInsets.swift */,
-				7C2EC377264B25FB0E67D150E37E87CD /* ConstraintInsetTarget.swift */,
-				474AFC560A8B414B467174737DBC891A /* ConstraintItem.swift */,
-				66C5188AE61F0E667CD9E7ED28CDD61C /* ConstraintLayoutGuide.swift */,
-				09BF299D2EEB87E7DD02630E87B96224 /* ConstraintLayoutGuide+Extensions.swift */,
-				BE0BE9F3D55FDB29EF516F6D6B1B6BCA /* ConstraintLayoutGuideDSL.swift */,
-				3D705690D879064ED84970813189D8D4 /* ConstraintLayoutSupport.swift */,
-				C4A46A8054577838D49C60142EB88B13 /* ConstraintLayoutSupportDSL.swift */,
-				141BC33167429B9926FB24A17F01568C /* ConstraintMaker.swift */,
-				E2C3B0B200350EAC8F42EF635FF31BD1 /* ConstraintMakerEditable.swift */,
-				E43F10DE451FED17810D9B5C237324A5 /* ConstraintMakerExtendable.swift */,
-				11D02329E74D733C03BF6BAE1F564481 /* ConstraintMakerFinalizable.swift */,
-				91A53CAF547D71AEFABE49D91B4E6816 /* ConstraintMakerPriortizable.swift */,
-				724FB64349F5678CE1709979CF0DD952 /* ConstraintMakerRelatable.swift */,
-				F7AB9BB47A2175181386A432C07253AE /* ConstraintMultiplierTarget.swift */,
-				47B200BD964F52F6693D4168248B8645 /* ConstraintOffsetTarget.swift */,
-				F0BD95F32F2E57D6B9100B77B93F013C /* ConstraintPriority.swift */,
-				9716AD15FADF38A93170E034F2BCE457 /* ConstraintPriorityTarget.swift */,
-				2975CA5A0D26BC84F3EE9912FEBDA795 /* ConstraintRelatableTarget.swift */,
-				25479F58B67AA43E092C7B156C1B5C1B /* ConstraintRelation.swift */,
-				A51E99894F75F00A281BE6A32FBDE495 /* ConstraintView.swift */,
-				EE9055CEA7890517265589BD23D73A49 /* ConstraintView+Extensions.swift */,
-				56006AA49A060CA2830F32CD6F394823 /* ConstraintViewDSL.swift */,
-				D038D2FAA2F6B073D1B64B8635F4E3E6 /* Debugging.swift */,
-				F44C5B72775F6AF0891BF331F32FE10D /* LayoutConstraint.swift */,
-				464C01543F3BCEDEE51ABAA696513D0B /* LayoutConstraintItem.swift */,
-				D4E066869A95E00B949CBA4D2284C35F /* Typealiases.swift */,
-				6A9341666EAC154422A032092A7DC2D7 /* UILayoutSupport+Extensions.swift */,
-				843EFF0C650682C304D518A9092EE9FD /* Support Files */,
+				2C5DFE5218673B5ECD24016BDA276DF9 /* MaterialTextControls+FilledTextAreas.h */,
+				A4FDEC5A8B35F732C39D4F2CE423690A /* MDCFilledTextArea.h */,
+				F2179B901D9FAB63EDBB214B0FFE4F51 /* MDCFilledTextArea.m */,
 			);
-			name = SnapKit;
-			path = SnapKit;
+			name = "TextControls+FilledTextAreas";
 			sourceTree = "<group>";
 		};
-		843EFF0C650682C304D518A9092EE9FD /* Support Files */ = {
+		6F05D99FC638990904A6DD4B1264BA4C /* MDFInternationalization */ = {
 			isa = PBXGroup;
 			children = (
-				7889131C1139F96BBDA94CEE2E694763 /* SnapKit.modulemap */,
-				E13B89FFD81AACB7530769CA05EEA26B /* SnapKit-dummy.m */,
-				391A6F8B42D2CD885F8F3C4CE6859439 /* SnapKit-Info.plist */,
-				E14A09DC3AD8CA84464FEC37F0FC99D1 /* SnapKit-prefix.pch */,
-				0116B84A6773B75FCBFCB479E740F0F3 /* SnapKit-umbrella.h */,
-				7C21E0C93A1141A1E2EB51575500E27D /* SnapKit.debug.xcconfig */,
-				A1CD432F32277BB93DEAADA626ECEC5B /* SnapKit.release.xcconfig */,
+				753A58966247AB5DA4DF92EF22B4E9EA /* MDFInternationalization.h */,
+				9434DC6EC97FF5B16E57F474F53BA7A9 /* MDFRTL.h */,
+				85E416F29562A942A5C3652980C6F14B /* MDFRTL.m */,
+				C0B25827DA5FF5F33A3E390F598C7BD6 /* NSLocale+MaterialRTL.h */,
+				25CC17F5C0285C2F7D1A872F86D01A38 /* NSLocale+MaterialRTL.m */,
+				AFDC6B581A8D9F47C91CE9498CBBD1E0 /* NSString+MaterialBidi.h */,
+				1DB43AE7ED0B9017907C35CA25537F35 /* NSString+MaterialBidi.m */,
+				837ADCB59DC972A26562EC37FC82C723 /* UIImage+MaterialRTL.h */,
+				E7058074A7314C403CE09C4020199B82 /* UIImage+MaterialRTL.m */,
+				1306834F4177A512509B5AADAC14AEF8 /* UIView+MaterialRTL.h */,
+				682A2D02CEEB409BA1E69B991705EF1B /* UIView+MaterialRTL.m */,
+				02B483898445A446C364221DD7CA00CB /* Support Files */,
+			);
+			name = MDFInternationalization;
+			path = MDFInternationalization;
+			sourceTree = "<group>";
+		};
+		856B59F4C2D0E87D2EA8CEA4D2E5CB29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents */,
+				9A2AC0B8BAC6EF061EBC28825653DF99 /* MDFInternationalization */,
+				A04A86B30158B55E5A784E1C81810C39 /* Pods-Humidor */,
+				DCC608D75EF8ECE14009DDAD28668501 /* Pods-Humidor-HumidorUITests */,
+				EE259A54288FCE2036EA500A3A835E25 /* Pods-HumidorTests */,
+				979486118B3E90C08386079D57962701 /* SnapKit */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9565E25CF307B91AEACDB45BA862F225 /* TextControls+Enums */ = {
+			isa = PBXGroup;
+			children = (
+				35CD689ED67D2230EAFE1C2791B1E6C5 /* MaterialTextControls+Enums.h */,
+				0D19B9881787176A1663F6F7A34B5E42 /* MDCTextControlLabelBehavior.h */,
+				62073D652E8024AA009DD8DE24073D6D /* MDCTextControlState.h */,
+				32DC88802D11FAFB408336476B768242 /* MDCTextControlState.m */,
+			);
+			name = "TextControls+Enums";
+			sourceTree = "<group>";
+		};
+		95F9B6ADE08C13DEA0E031F4EF575EA9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBA74F90A53BA440ADB6A55B8B0A29B2 /* SnapKit.modulemap */,
+				7AFAEE89D5D315CFECC4A122193D3167 /* SnapKit-dummy.m */,
+				951F2841E3E3EA5574C20F73D7A97CB4 /* SnapKit-Info.plist */,
+				579DC6C4E58D85C960FDBE001E68C41F /* SnapKit-prefix.pch */,
+				B88B4712F6BD1FD707F63EF476E9755E /* SnapKit-umbrella.h */,
+				6DB954B6E9BB6734112ED7AEECB0326A /* SnapKit.debug.xcconfig */,
+				70492C2ADB59314CAFE662A0B1DE0D6E /* SnapKit.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SnapKit";
@@ -306,12 +697,100 @@
 			path = "Target Support Files/Pods-HumidorTests";
 			sourceTree = "<group>";
 		};
-		BA22F08D059965C9A09F78196176CEDB /* Pods */ = {
+		982ABA3A4035EF45330B9970E4474761 /* TextControlsPrivate+Shared */ = {
 			isa = PBXGroup;
 			children = (
-				7F02E3862C6E84203E8324D9D0088797 /* SnapKit */,
+				92C9BBD0278145975CFAE7A13F3C1749 /* MaterialTextControlsPrivate+Shared.h */,
+				D8635C91FF0B2C1446217CDF8D8227E2 /* MDCTextControl.h */,
+				4AFE3F0C348AC36EF35D0C68C6280AD8 /* MDCTextControl.m */,
+				94D00B38FC0AFFCA095DC0B1AD5D1890 /* MDCTextControlAssistiveLabelDrawPriority.h */,
+				CF6D8B32FDE062AB63DE85CD04BB4E2C /* MDCTextControlAssistiveLabelView.h */,
+				0DD99183BFC6D86728F3C4959EB3D912 /* MDCTextControlAssistiveLabelView.m */,
+				992EEE4C86ED9C2BAEA61028B5658B27 /* MDCTextControlAssistiveLabelViewLayout.h */,
+				48DB6DF0827B9C63B350ED742FBDB87F /* MDCTextControlAssistiveLabelViewLayout.m */,
+				EC2CC15E0BBAED6D835A884ABD5C3A81 /* MDCTextControlColorViewModel.h */,
+				F53A67ABA43F34951EAC92946FFD3AF3 /* MDCTextControlColorViewModel.m */,
+				DC0617316AA9152991DA103D3AAF6CA7 /* MDCTextControlGradientManager.h */,
+				F5B4252DC9C15920AA7E99E13F69969A /* MDCTextControlGradientManager.m */,
+				04529D9DFDB2EF1F137F7EE8FB64AE00 /* MDCTextControlHorizontalPositioning.h */,
+				67F97756E866B4DD52CFD13A3E2E316E /* MDCTextControlHorizontalPositioningReference.h */,
+				86329BEA9B76D388A8BFB3ABB756DEF1 /* MDCTextControlHorizontalPositioningReference.m */,
+				16A7F32CFEE28B0BD7D1CC1211AC00C4 /* MDCTextControlLabelAnimation.h */,
+				713BC7338C1453A6BDECC88625967477 /* MDCTextControlLabelAnimation.m */,
+				126E8AB35E775641C6834E00C349B5DF /* MDCTextControlLabelSupport.h */,
+				CCC946B0B6975E9B14CA76975D48325D /* MDCTextControlLabelSupport.m */,
+				DEA95B17FEF0D1D5914D917F605C0F99 /* MDCTextControlPlaceholderSupport.h */,
+				0754FAA6DDE5DF88A4628FF77E7AB0F9 /* MDCTextControlPlaceholderSupport.m */,
+				7C313D890BE6A42E308D5593F7C49542 /* MDCTextControlSideViewSupport.h */,
+				39C6BDC1F6932F4F5351A48459BCC798 /* MDCTextControlSideViewSupport.m */,
+				4165EF4133DB4E3E96BF2BD4F35071CE /* MDCTextControlVerticalPositioningReference.h */,
+				097725B96D7924F9AC5242EB293D4092 /* MDCTextControlVerticalPositioningReference.m */,
+				12BA4AE77406C4A33107B6EF5B08BD1D /* UIBezierPath+MDCTextControlStyle.h */,
+				4E6CDDF881942287846092306BA125DB /* UIBezierPath+MDCTextControlStyle.m */,
 			);
-			name = Pods;
+			name = "TextControlsPrivate+Shared";
+			sourceTree = "<group>";
+		};
+		9A61E5B4863C13E97998456756EA6E89 /* TextControlsPrivate+OutlinedStyle */ = {
+			isa = PBXGroup;
+			children = (
+				5C4C44974CFE721977115F6783B8F313 /* MaterialTextControlsPrivate+OutlinedStyle.h */,
+				AE69A31E5CDFD254F25EC34CA9C5A4BB /* MDCTextControlStyleOutlined.h */,
+				AA5CE457A1E131A9D9C40C9639D4D8AB /* MDCTextControlStyleOutlined.m */,
+				F6D5ED6EDE7CE97059AD1E90B2677AD6 /* MDCTextControlVerticalPositioningReferenceOutlined.h */,
+				CCE2C5986FF5E27BBE64FF8F94A0FBF9 /* MDCTextControlVerticalPositioningReferenceOutlined.m */,
+			);
+			name = "TextControlsPrivate+OutlinedStyle";
+			sourceTree = "<group>";
+		};
+		9D94E4BC8FC9582BA7498212DEF51EB5 /* TextControls+FilledTextFields */ = {
+			isa = PBXGroup;
+			children = (
+				348C1AB0F31D5AA7C05C3750F11855F1 /* MaterialTextControls+FilledTextFields.h */,
+				877B23349ED57E9981B8502DAB5DFD18 /* MDCFilledTextField.h */,
+				A0BA121FEA0523B89350335C9EA903AF /* MDCFilledTextField.m */,
+			);
+			name = "TextControls+FilledTextFields";
+			sourceTree = "<group>";
+		};
+		A37CAE99B22B5CF6556B4FEB604E0CF8 /* TextControls+BaseTextAreas */ = {
+			isa = PBXGroup;
+			children = (
+				28D7F1F263FC9833B77D5C3F3F42962C /* MaterialTextControls+BaseTextAreas.h */,
+				9355D92D6FB737B994A00A950DFA6BE2 /* MDCBaseTextArea.h */,
+				22BAFE945EB411692056CBE6BB1BE0C3 /* MDCBaseTextArea.m */,
+				BA53758FE5159D05857C58391B313D1D /* MDCBaseTextAreaDelegate.h */,
+				44A8D7BD3A984BE870E5DE60D5DCF362 /* MDCBaseTextAreaLayout.h */,
+				A1F4B1374EBF5BC00ABBEE08E47CAD65 /* MDCBaseTextAreaLayout.m */,
+				14BA23357923C3D869974CA599373A30 /* MDCBaseTextAreaTextView.h */,
+				21F6FAEFDB7BA6A208E8ED1B52C513E6 /* MDCBaseTextAreaTextView.m */,
+			);
+			name = "TextControls+BaseTextAreas";
+			sourceTree = "<group>";
+		};
+		B18052A92DABA7C3A8D8B46393A83E5F /* private */ = {
+			isa = PBXGroup;
+			children = (
+				DBFEA579AAEF057EBAEEBB5CDE727E1D /* Math */,
+				4E95EEB4475352794439845BAF171984 /* TextControlsPrivate+BaseStyle */,
+				0CC05480D5442934A1D9C22E9D5EC54D /* TextControlsPrivate+FilledStyle */,
+				9A61E5B4863C13E97998456756EA6E89 /* TextControlsPrivate+OutlinedStyle */,
+				982ABA3A4035EF45330B9970E4474761 /* TextControlsPrivate+Shared */,
+				2F08EBFBB19F9C5053AD2690CD5F8803 /* TextControlsPrivate+TextFields */,
+				0524AF1649669685FCCE8CD629990DD5 /* TextControlsPrivate+UnderlinedStyle */,
+			);
+			name = private;
+			sourceTree = "<group>";
+		};
+		B6918DD391C5A02FF8DAC1B3858010A7 /* TextControls+BaseTextFields */ = {
+			isa = PBXGroup;
+			children = (
+				9752B40D9FE525EC11C374A5802B6B02 /* MaterialTextControls+BaseTextFields.h */,
+				B9474A31B9653BA9B66D4F48E8501767 /* MDCBaseTextField.h */,
+				9ADC2B13605672C1BCFC96A2B6C79B24 /* MDCBaseTextField.m */,
+				766CE4D741B830DB935FD888B2D00C74 /* MDCBaseTextFieldDelegate.h */,
+			);
+			name = "TextControls+BaseTextFields";
 			sourceTree = "<group>";
 		};
 		C3345861BBDED4E7DE1851BEE7307169 /* Pods-Humidor-HumidorUITests */ = {
@@ -331,15 +810,14 @@
 			path = "Target Support Files/Pods-Humidor-HumidorUITests";
 			sourceTree = "<group>";
 		};
-		CF11800D052F4C29832843167552A755 /* Products */ = {
+		C76A3BF8A3BA97B8592B397514C2D103 /* TextControls+OutlinedTextFields */ = {
 			isa = PBXGroup;
 			children = (
-				A04A86B30158B55E5A784E1C81810C39 /* Pods-Humidor */,
-				DCC608D75EF8ECE14009DDAD28668501 /* Pods-Humidor-HumidorUITests */,
-				EE259A54288FCE2036EA500A3A835E25 /* Pods-HumidorTests */,
-				979486118B3E90C08386079D57962701 /* SnapKit */,
+				DCE0B91A11AB454BA94987E06730DEC5 /* MaterialTextControls+OutlinedTextFields.h */,
+				EEAC70B102AA7E9C063A00426DCFC4E8 /* MDCOutlinedTextField.h */,
+				B8F8D85CB4B6EE29C6CAC1035D145573 /* MDCOutlinedTextField.m */,
 			);
-			name = Products;
+			name = "TextControls+OutlinedTextFields";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -347,8 +825,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				BA22F08D059965C9A09F78196176CEDB /* Pods */,
-				CF11800D052F4C29832843167552A755 /* Products */,
+				403E0875444F04CB4AFC0F4E8E6772EA /* Pods */,
+				856B59F4C2D0E87D2EA8CEA4D2E5CB29 /* Products */,
 				3A738C3F3A992007E0B5526F68B9702F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -361,9 +839,185 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D4D1EDAF11F705150D9A6DA90173C43B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1C9A2DE9159509C615F0BEA7F3188B74 /* MaterialComponents.modulemap */,
+				CF8FC1975648CEE3329F78C88E204451 /* MaterialComponents-dummy.m */,
+				DA7B54BC2DFF21F205BD35DB2D22800A /* MaterialComponents-Info.plist */,
+				21335EA2EC6F949FA4508C194A713325 /* MaterialComponents-prefix.pch */,
+				7FEE8E1128979AA1A15743518A97BC30 /* MaterialComponents-umbrella.h */,
+				BB78817F6B1530B56168188C02972392 /* MaterialComponents.debug.xcconfig */,
+				7A5786B91BE1DCF8DB8334D9D2378A2E /* MaterialComponents.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MaterialComponents";
+			sourceTree = "<group>";
+		};
+		DBFEA579AAEF057EBAEEBB5CDE727E1D /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				EE606A96E32AA71174CE69BF4B27C7F3 /* MaterialMath.h */,
+				309E0C3FC5BE0EAF276CDF7EDEF29605 /* MaterialMathDummy.m */,
+				27BD9A6D13806C34650A46172911A50A /* MDCMath.h */,
+			);
+			name = Math;
+			sourceTree = "<group>";
+		};
+		DD7EBCE0B782B3091CCB56555652F68E /* MaterialComponents */ = {
+			isa = PBXGroup;
+			children = (
+				FD04C597586A3928711955C8E0FD0F8F /* AnimationTiming */,
+				48C3F7EE0D72A5464CC0802E6048C407 /* Availability */,
+				B18052A92DABA7C3A8D8B46393A83E5F /* private */,
+				D4D1EDAF11F705150D9A6DA90173C43B /* Support Files */,
+				A37CAE99B22B5CF6556B4FEB604E0CF8 /* TextControls+BaseTextAreas */,
+				B6918DD391C5A02FF8DAC1B3858010A7 /* TextControls+BaseTextFields */,
+				9565E25CF307B91AEACDB45BA862F225 /* TextControls+Enums */,
+				5B18A565D9ED0EC4E46296BA595F22A9 /* TextControls+FilledTextAreas */,
+				9D94E4BC8FC9582BA7498212DEF51EB5 /* TextControls+FilledTextFields */,
+				E4D881B35B5831817C96B87C68ACB132 /* TextControls+OutlinedTextAreas */,
+				C76A3BF8A3BA97B8592B397514C2D103 /* TextControls+OutlinedTextFields */,
+			);
+			name = MaterialComponents;
+			path = MaterialComponents;
+			sourceTree = "<group>";
+		};
+		E4D881B35B5831817C96B87C68ACB132 /* TextControls+OutlinedTextAreas */ = {
+			isa = PBXGroup;
+			children = (
+				CB6BC3AD460369A7157747D6052199B8 /* MaterialTextControls+OutlinedTextAreas.h */,
+				61D7288C4ACC0D499E03E626B2FEDB63 /* MDCOutlinedTextArea.h */,
+				7530177BE289503AA245F85352527FCE /* MDCOutlinedTextArea.m */,
+			);
+			name = "TextControls+OutlinedTextAreas";
+			sourceTree = "<group>";
+		};
+		F7881F19FA772E7E55960FAEE39C37B0 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				D7EB9C73EC1C8F5C3B3AA7DDB4843D23 /* Constraint.swift */,
+				DFF78E12D043CF474E32AF6247A15ABF /* ConstraintAttributes.swift */,
+				A31C93A66800AC565323D64BEDEBFE14 /* ConstraintConfig.swift */,
+				DB10062E4BC68968F21F70B3F68DBF4A /* ConstraintConstantTarget.swift */,
+				6CCFA635691FF11E96346A553FFF0614 /* ConstraintDescription.swift */,
+				C6E7FD858FD55FDE5B4556F2BA11EFB6 /* ConstraintDirectionalInsets.swift */,
+				0047D5C550AB6A8B2EB35853A9774014 /* ConstraintDirectionalInsetTarget.swift */,
+				1C5E10E28525169FA230B81771801887 /* ConstraintDSL.swift */,
+				B8057A13C022199DB32D0B57177A9E45 /* ConstraintInsets.swift */,
+				F6E79614F6F31A9CA8CB871CB1165382 /* ConstraintInsetTarget.swift */,
+				26A5D1A860BB79AFC1FD735C98E50F9F /* ConstraintItem.swift */,
+				47CC56FEA0608126F93702502F1708ED /* ConstraintLayoutGuide.swift */,
+				614D2EB48F603F71309E0B964B4B0EE7 /* ConstraintLayoutGuide+Extensions.swift */,
+				D73C1F6508E78C527C302D9F06CA2454 /* ConstraintLayoutGuideDSL.swift */,
+				38911BDCE8C50545E74A3EADA147B364 /* ConstraintLayoutSupport.swift */,
+				A8CB72945D9A885E3A734E9F25BE9ED8 /* ConstraintLayoutSupportDSL.swift */,
+				CB06EE7BE39FD6565BFD91F37783CDDB /* ConstraintMaker.swift */,
+				6BDC1EF5EE98A2C9D5FEDF8552335D45 /* ConstraintMakerEditable.swift */,
+				2F4973C0EAFC7BD446BE7E74EAEDE031 /* ConstraintMakerExtendable.swift */,
+				89AEC54F6B6B40EE87DBFE4402F94B20 /* ConstraintMakerFinalizable.swift */,
+				DEE0CF08C0339F4C7ECD4B1EFC251C4D /* ConstraintMakerPriortizable.swift */,
+				45459C71D62DDA128AA78CC234289F29 /* ConstraintMakerRelatable.swift */,
+				7EA27E637F5B0E1544A28D09BE9C5B59 /* ConstraintMultiplierTarget.swift */,
+				17AECEAF529CD386E39C75FA3790AB2E /* ConstraintOffsetTarget.swift */,
+				AE8DD4750F5824B2DE8AAC4BD9A91FBA /* ConstraintPriority.swift */,
+				8E872109920CE1C348CEB92563FE55C7 /* ConstraintPriorityTarget.swift */,
+				7FF8A9D1624CC744FF3C15D57E1B8497 /* ConstraintRelatableTarget.swift */,
+				6EEC36B02722974620D112FD620A047F /* ConstraintRelation.swift */,
+				4EDFA9107DF97B269835063105960F3E /* ConstraintView.swift */,
+				D4149E52E880640EF573F70B09B95028 /* ConstraintView+Extensions.swift */,
+				3A5BAD0391754C0AC2E514A91A446597 /* ConstraintViewDSL.swift */,
+				FD91B4CA93BE452A4EA3DD0BF0634DA3 /* Debugging.swift */,
+				E4E91A2EED341CAE1C4BF9346C2BEC06 /* LayoutConstraint.swift */,
+				BB51292B47BCD8436BB36212998D87F4 /* LayoutConstraintItem.swift */,
+				3AE001F97BF0CF7CF10B115F6D45D81A /* Typealiases.swift */,
+				5F924871CE03442DE51BD51CBF9D56CE /* UILayoutSupport+Extensions.swift */,
+				95F9B6ADE08C13DEA0E031F4EF575EA9 /* Support Files */,
+			);
+			name = SnapKit;
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		FD04C597586A3928711955C8E0FD0F8F /* AnimationTiming */ = {
+			isa = PBXGroup;
+			children = (
+				FDB4D71E3966BC01E999FD204D1DF6C8 /* CAMediaTimingFunction+MDCAnimationTiming.h */,
+				8D4BBA144B480ECE99E952925EB915DF /* CAMediaTimingFunction+MDCAnimationTiming.m */,
+				913DDFF2B3E6D436692A7F9BE166D01B /* MaterialAnimationTiming.h */,
+				C73EA4C8B550B05EC25560C19DE77770 /* UIView+MDCTimingFunction.h */,
+				F244F990893241C8FC71F48FF5A8213F /* UIView+MDCTimingFunction.m */,
+			);
+			name = AnimationTiming;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		31428DF5750375AAD719F5B86C72F2BE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01FAF5090124D9DC52B12745E5A528A /* CAMediaTimingFunction+MDCAnimationTiming.h in Headers */,
+				8AD7A05E64DD589382EE6D43F6C203BB /* MaterialAnimationTiming.h in Headers */,
+				AFBF733F0E307E39BC49337E3A2FF1E6 /* MaterialAvailability.h in Headers */,
+				12B032A37293C0520B963FC0A1A2B32C /* MaterialComponents-umbrella.h in Headers */,
+				E98C2367959D7509177CBE876C739965 /* MaterialMath.h in Headers */,
+				A849860C5F254160FC53D8E7188047E8 /* MaterialTextControls+BaseTextAreas.h in Headers */,
+				4F25441140C67D1CDA646B1DB0772CF3 /* MaterialTextControls+BaseTextFields.h in Headers */,
+				C831D426128BDB02E4AD3D76666F69EC /* MaterialTextControls+Enums.h in Headers */,
+				4AEF106BFB28503CA7C014D8E4FB8898 /* MaterialTextControls+FilledTextAreas.h in Headers */,
+				F05D2ECE8BC8B4903DF6EFB32782A358 /* MaterialTextControls+FilledTextFields.h in Headers */,
+				A96B9F83B70BF091C994F186C27BCC23 /* MaterialTextControls+OutlinedTextAreas.h in Headers */,
+				CB99BF1A0C8E3B2297CE9BE552698539 /* MaterialTextControls+OutlinedTextFields.h in Headers */,
+				80C16CE50BBC5219B2A412DFB6A04B9A /* MaterialTextControlsPrivate+BaseStyle.h in Headers */,
+				62EF3C9F2794CDB16FB26B816210AF9F /* MaterialTextControlsPrivate+FilledStyle.h in Headers */,
+				EA8000C7DEDD240441F1F1E335854BB2 /* MaterialTextControlsPrivate+OutlinedStyle.h in Headers */,
+				FE30CB088C8D715E3C75B35EB065001C /* MaterialTextControlsPrivate+Shared.h in Headers */,
+				405E0314BBA01011B9A49D5CFE9F67D9 /* MaterialTextControlsPrivate+TextFields.h in Headers */,
+				E5C3E05C0EE6DA6883134A0E682B8EF1 /* MaterialTextControlsPrivate+UnderlinedStyle.h in Headers */,
+				551209FDC6B570118F89380CFC81CC53 /* MDCAvailability.h in Headers */,
+				CECCA4649316B6CC139383061401DCF5 /* MDCBaseTextArea.h in Headers */,
+				560CF187B29A0ABBA54FD59E13F131AA /* MDCBaseTextAreaDelegate.h in Headers */,
+				9EC7585B5DE3E41D4EAB7754AD889DC3 /* MDCBaseTextAreaLayout.h in Headers */,
+				A3D66682878A5131BCFB72A8EB0E47CE /* MDCBaseTextAreaTextView.h in Headers */,
+				BECCD91C3500DDC5274C08B7707F518A /* MDCBaseTextField.h in Headers */,
+				7E4E65080A19DB8FC6F110A0378517E7 /* MDCBaseTextFieldDelegate.h in Headers */,
+				9CB2E884712123B426747103E4B61FA1 /* MDCBaseTextFieldLayout.h in Headers */,
+				BAB5744AC75E06CB319846484DD29A90 /* MDCFilledTextArea.h in Headers */,
+				56CE1F81921448A64249E6FEE166B248 /* MDCFilledTextField.h in Headers */,
+				B98BF4775D559CA1B5E2A4A2606CC9B3 /* MDCMath.h in Headers */,
+				82937FB337DCF47D2C9E35DFA7B5D24C /* MDCOutlinedTextArea.h in Headers */,
+				A89AE527A000BD2164070082DFD0EDA1 /* MDCOutlinedTextField.h in Headers */,
+				F445E34F759A59D0454F7FAA4C39C0B8 /* MDCTextControl.h in Headers */,
+				2C8DEBF5DF71615E42933C9B9B3D7143 /* MDCTextControlAssistiveLabelDrawPriority.h in Headers */,
+				32E0DDD45AFC662B79B819CCE50FB0F0 /* MDCTextControlAssistiveLabelView.h in Headers */,
+				9179BE72DBE801B47C6938115EC493CB /* MDCTextControlAssistiveLabelViewLayout.h in Headers */,
+				0CABC2638472D3DE53BC7F92612122E5 /* MDCTextControlColorViewModel.h in Headers */,
+				15B1A1C32C8028DFD17710A44C15F2E8 /* MDCTextControlGradientManager.h in Headers */,
+				B5FBED62C4990231D8738CC0B03D17A0 /* MDCTextControlHorizontalPositioning.h in Headers */,
+				B73138292FFD7EA8327D834B61026A54 /* MDCTextControlHorizontalPositioningReference.h in Headers */,
+				23AC06556CD25C4B62BF41BB2F54AD2E /* MDCTextControlLabelAnimation.h in Headers */,
+				53626279701D93866AA6E1953AC9A443 /* MDCTextControlLabelBehavior.h in Headers */,
+				E7D793D0F007B0667E527A19DBE6A76B /* MDCTextControlLabelSupport.h in Headers */,
+				8857547CE9422C72C0F2CB70980FA5E3 /* MDCTextControlPlaceholderSupport.h in Headers */,
+				BBB57DC0BA0089EE6AB89F6DF06637AF /* MDCTextControlSideViewSupport.h in Headers */,
+				072DEF48E55F91F4B4A3EA62FAB80D2D /* MDCTextControlState.h in Headers */,
+				FBB6150C6578BC4D0DB9324EBF4E82D6 /* MDCTextControlStyleBase.h in Headers */,
+				D32A6120E0C87193CAC64B98418C0F25 /* MDCTextControlStyleFilled.h in Headers */,
+				E393F114C2F4A6FFE76DF407AAFCF72E /* MDCTextControlStyleOutlined.h in Headers */,
+				42325916E3EEFE4773DFB7BCC533944D /* MDCTextControlStyleUnderlined.h in Headers */,
+				DBB0A707DC4E92A72EF01CFAB8F3459F /* MDCTextControlTextField.h in Headers */,
+				2548B16B2B0F69922C2B87EC1FF22CC5 /* MDCTextControlTextFieldSideViewAlignment.h in Headers */,
+				341C48BB7DF44AE0395A0AA48C805536 /* MDCTextControlVerticalPositioningReference.h in Headers */,
+				2F03407BC545C9A7DBFF712BC43D079D /* MDCTextControlVerticalPositioningReferenceBase.h in Headers */,
+				93D7BEDB5191A074BFD17A6C27D1D57E /* MDCTextControlVerticalPositioningReferenceFilled.h in Headers */,
+				F7C059BA8B1524F4F8B58B94EF14E9FD /* MDCTextControlVerticalPositioningReferenceOutlined.h in Headers */,
+				40C1FC4AAE66027394D96C17488A3315 /* MDCTextControlVerticalPositioningReferenceUnderlined.h in Headers */,
+				3E80840DE673EA7ED8065D4AEAFA85C6 /* UIBezierPath+MDCTextControlStyle.h in Headers */,
+				6B6CBD24D816600F27C613609E0E67AE /* UIView+MDCTimingFunction.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3B921547E999920F44EBD58F955423CC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -372,19 +1026,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6F0F7B1B9F131A6A98B255B31B549A1E /* Headers */ = {
+		82946A5BB19511200C787055222CC155 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD1D8C038E01477EDF123F9C8A44F573 /* Pods-Humidor-umbrella.h in Headers */,
+				1062EDD2C5C3B8D7A91592F639600D74 /* MDFInternationalization.h in Headers */,
+				1DCF9A800AE274F89C29078A6E212B7D /* MDFInternationalization-umbrella.h in Headers */,
+				68C81A493C4CD3F1D8425C3C12B6F1E3 /* MDFRTL.h in Headers */,
+				3CE30BDD410305F4D3C8C13D12507A4A /* NSLocale+MaterialRTL.h in Headers */,
+				9F64E84B54A721D525FB5FEB6B04AD92 /* NSString+MaterialBidi.h in Headers */,
+				F95134B340BDE8537CEDC91162AE776B /* UIImage+MaterialRTL.h in Headers */,
+				E56C430EEEEAF6E39FF0942CCD78A061 /* UIView+MaterialRTL.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B727AC66785A10A09A336D93E9865E66 /* Headers */ = {
+		8394F125C705EE80B8440051C093F09D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7187F0A4E5C5E95037704B662ADA388D /* Pods-Humidor-HumidorUITests-umbrella.h in Headers */,
+				908A2DD4AEACEC14288390D274B100B0 /* Pods-Humidor-HumidorUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42172E667E2756F82EEE2D2880338CD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9514E53B0951E14E1453983DE0C03B2 /* Pods-Humidor-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,19 +1085,60 @@
 			productReference = 979486118B3E90C08386079D57962701 /* SnapKit */;
 			productType = "com.apple.product-type.framework";
 		};
-		B531FF160C02AF2888C1D4F312F420A0 /* Pods-Humidor-HumidorUITests */ = {
+		55A01F8E987A6E2F7F0ED141A1ECA406 /* MDFInternationalization */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B27DA782D29A4D4E3496B627D6446765 /* Build configuration list for PBXNativeTarget "Pods-Humidor-HumidorUITests" */;
+			buildConfigurationList = 29235CC975477CF0AE111D8533A857C9 /* Build configuration list for PBXNativeTarget "MDFInternationalization" */;
 			buildPhases = (
-				B727AC66785A10A09A336D93E9865E66 /* Headers */,
-				7B24D570546B4E551A0CB47C1459BCB9 /* Sources */,
-				AF7CFFCD17804BA9301BE3E1B45F01DE /* Frameworks */,
-				0EE7F6957E36C0A103DFEA83E7E4BEAB /* Resources */,
+				82946A5BB19511200C787055222CC155 /* Headers */,
+				85B3B64C90CFC972449F93DC4A812BBD /* Copy . Public Headers */,
+				75C42EE808FFAC35041568CFE92847AD /* Sources */,
+				A563BE445A159E73000F25A2BC3B940E /* Frameworks */,
+				AED6EDF087DBE63D55C51AEE20F3373F /* Resources */,
+				498506168756522E454E1B48EC2886A7 /* Create Symlinks to Header Folders */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CE804FE553C4CC840E3DC0A7CD06A33F /* PBXTargetDependency */,
+			);
+			name = MDFInternationalization;
+			productName = MDFInternationalization;
+			productReference = 9A2AC0B8BAC6EF061EBC28825653DF99 /* MDFInternationalization */;
+			productType = "com.apple.product-type.framework";
+		};
+		B4723B5744013DF08BE3A5FEAA286944 /* MaterialComponents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 726D5927959030BE8EFACAECD8601B02 /* Build configuration list for PBXNativeTarget "MaterialComponents" */;
+			buildPhases = (
+				31428DF5750375AAD719F5B86C72F2BE /* Headers */,
+				9F9D26050D5451A2658DBF7234AC32A8 /* Sources */,
+				11551701590D64A97F801BD35F314A19 /* Frameworks */,
+				8F5D2ECF9390FA75D73A1680215C0A16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2FF8F7CA889C714D07C8687A5421B98 /* PBXTargetDependency */,
+			);
+			name = MaterialComponents;
+			productName = MaterialComponents;
+			productReference = A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents */;
+			productType = "com.apple.product-type.framework";
+		};
+		B531FF160C02AF2888C1D4F312F420A0 /* Pods-Humidor-HumidorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10E53E899EC765ACB911B9E80808A05C /* Build configuration list for PBXNativeTarget "Pods-Humidor-HumidorUITests" */;
+			buildPhases = (
+				8394F125C705EE80B8440051C093F09D /* Headers */,
+				95FB05F66C2942C8B890451C327B2646 /* Sources */,
+				EB2B6261744EEE6F9E45D71F26659178 /* Frameworks */,
+				6114B9A785454A1B430F110BBE8316D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1377D4473346CD26B3428D3A245945C3 /* PBXTargetDependency */,
+				AC7DEA5B4F32D60913EAAB078273E591 /* PBXTargetDependency */,
+				3CCE03882E10D4CEEAD448D021888FBF /* PBXTargetDependency */,
 			);
 			name = "Pods-Humidor-HumidorUITests";
 			productName = Pods_Humidor_HumidorUITests;
@@ -448,7 +1157,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				06801D079A9FA1A847C595938A357953 /* PBXTargetDependency */,
+				0C818B9B70A349F79608D4FABF7E4E52 /* PBXTargetDependency */,
 			);
 			name = "Pods-HumidorTests";
 			productName = Pods_HumidorTests;
@@ -457,17 +1166,19 @@
 		};
 		E2391600D737CD3C8794E3E4E11F5AAF /* Pods-Humidor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5B2E72749415E48DAF167EB3B1C6D9C4 /* Build configuration list for PBXNativeTarget "Pods-Humidor" */;
+			buildConfigurationList = CE78CB30D52657AA4DFAC06515177CFC /* Build configuration list for PBXNativeTarget "Pods-Humidor" */;
 			buildPhases = (
-				6F0F7B1B9F131A6A98B255B31B549A1E /* Headers */,
-				E1BB9B17491D9A0570530FBF47A656C9 /* Sources */,
-				910194EAFA70BEB350DD08A3D6290194 /* Frameworks */,
-				477D6F7120E1A565B51DAD3BD7AA7B4F /* Resources */,
+				A42172E667E2756F82EEE2D2880338CD /* Headers */,
+				F48B3059331B2D1B7DC9967822479A6F /* Sources */,
+				2F0BB6C7F6EE8BAED0ED6F1217D2BF2D /* Frameworks */,
+				C5DFECA41FEDC6CCD30B379FA0EFDBB5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DCB1A8C2DC5999C1880E3B285531B17F /* PBXTargetDependency */,
+				18343FB9989B126EECF43A3850F9753B /* PBXTargetDependency */,
+				1F9B2E16FC52E644FCFA0FEAA5B4ADB0 /* PBXTargetDependency */,
+				9AFF13F9E7F127A4792DE2B8E9BCF4CC /* PBXTargetDependency */,
 			);
 			name = "Pods-Humidor";
 			productName = Pods_Humidor;
@@ -492,10 +1203,12 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = CF11800D052F4C29832843167552A755 /* Products */;
+			productRefGroup = 856B59F4C2D0E87D2EA8CEA4D2E5CB29 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				B4723B5744013DF08BE3A5FEAA286944 /* MaterialComponents */,
+				55A01F8E987A6E2F7F0ED141A1ECA406 /* MDFInternationalization */,
 				E2391600D737CD3C8794E3E4E11F5AAF /* Pods-Humidor */,
 				B531FF160C02AF2888C1D4F312F420A0 /* Pods-Humidor-HumidorUITests */,
 				BDB0B7117ADA7DAB23A72224E3D3CFA7 /* Pods-HumidorTests */,
@@ -505,14 +1218,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0EE7F6957E36C0A103DFEA83E7E4BEAB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		477D6F7120E1A565B51DAD3BD7AA7B4F /* Resources */ = {
+		6114B9A785454A1B430F110BBE8316D8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -520,6 +1226,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7FC21D7244788862A90F211443A52BC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F5D2ECF9390FA75D73A1680215C0A16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AED6EDF087DBE63D55C51AEE20F3373F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5DFECA41FEDC6CCD30B379FA0EFDBB5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -534,6 +1261,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		498506168756522E454E1B48EC2886A7 /* Create Symlinks to Header Folders */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Create Symlinks to Header Folders";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"$CONFIGURATION_BUILD_DIR/$WRAPPER_NAME\" || exit 1\nif [ ! -d Versions ]; then\n  # Not a versioned framework, so no need to do anything\n  exit 0\nfi\n\npublic_path=\"${PUBLIC_HEADERS_FOLDER_PATH#$CONTENTS_FOLDER_PATH/}\"\nif [ ! -f \"$public_path\" ]; then\n  ln -fs \"${PUBLIC_HEADERS_FOLDER_PATH#$WRAPPER_NAME/}\" \"$public_path\"\nfi\n\nprivate_path=\"${PRIVATE_HEADERS_FOLDER_PATH#$CONTENTS_FOLDER_PATH/}\"\nif [ ! -f \"$private_path\" ]; then\n  ln -fs \"${PRIVATE_HEADERS_FOLDER_PATH#$WRAPPER_NAME/}\" \"$private_path\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		06A02EF810C9B8F84BA558BBDB9E5D6E /* Sources */ = {
@@ -580,19 +1328,65 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B24D570546B4E551A0CB47C1459BCB9 /* Sources */ = {
+		75C42EE808FFAC35041568CFE92847AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F10BE89238B42CC05CB9BE3B8891AE1C /* Pods-Humidor-HumidorUITests-dummy.m in Sources */,
+				25ABCCB506CD51393434BE44F446AD5F /* MDFInternationalization-dummy.m in Sources */,
+				BF7F9976FA80C821BC13E58E30E94B5B /* MDFRTL.m in Sources */,
+				8C050C985EF60CCC3B9E25050BE20F3E /* NSLocale+MaterialRTL.m in Sources */,
+				124EEAE22B8077371D55FDB1AC4F4D30 /* NSString+MaterialBidi.m in Sources */,
+				03219B99BEEC9AB447188784DFDF4E19 /* UIImage+MaterialRTL.m in Sources */,
+				984167BC563C943B94B43A01DECBEAB0 /* UIView+MaterialRTL.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E1BB9B17491D9A0570530FBF47A656C9 /* Sources */ = {
+		95FB05F66C2942C8B890451C327B2646 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8ABA888894BDF352BABE02AF04AF0EC3 /* Pods-Humidor-dummy.m in Sources */,
+				4A966063828AC0CD5A1C3CCBD880F0DC /* Pods-Humidor-HumidorUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F9D26050D5451A2658DBF7234AC32A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D71E02822A526707C95148E07A9826A0 /* CAMediaTimingFunction+MDCAnimationTiming.m in Sources */,
+				EF8C6345E9E04BCDB402126AF3873AFD /* MaterialComponents-dummy.m in Sources */,
+				AD3AE92A97530191A5FECA3848318677 /* MaterialMathDummy.m in Sources */,
+				835B1901766965F29B8AFA32C512E72F /* MDCBaseTextArea.m in Sources */,
+				85838B6ED261E828CBEC9797EFCAB831 /* MDCBaseTextAreaLayout.m in Sources */,
+				A8D39E9F609FAA982AD85580021DCC81 /* MDCBaseTextAreaTextView.m in Sources */,
+				985BAA560AF3619F5B8566946101AB82 /* MDCBaseTextField.m in Sources */,
+				57B87EDFFA3D8E03625F611BC22914FC /* MDCBaseTextFieldLayout.m in Sources */,
+				0228109C37B0228AED9F5DCF3F45C063 /* MDCFilledTextArea.m in Sources */,
+				4DEE99EC8F255916DABF6363F56DFEB6 /* MDCFilledTextField.m in Sources */,
+				48518D2E3050A7C8973AA35FB75D276F /* MDCOutlinedTextArea.m in Sources */,
+				733F0F22602903D3427FD3B00EAC1AA4 /* MDCOutlinedTextField.m in Sources */,
+				04B50B00F32791E7A9F96715F7AAFB13 /* MDCTextControl.m in Sources */,
+				253084827ED3434F9212A11BD87760DE /* MDCTextControlAssistiveLabelView.m in Sources */,
+				05FD4EFFD2FD95AEF332F8A2A2468304 /* MDCTextControlAssistiveLabelViewLayout.m in Sources */,
+				CF5396A0FE1AA7DDBD5F92C9F10BE7E2 /* MDCTextControlColorViewModel.m in Sources */,
+				007C5C97DBDC5993474CE56C2F579E14 /* MDCTextControlGradientManager.m in Sources */,
+				6771A29FD2E1DE5BDE97E242A3C5B60F /* MDCTextControlHorizontalPositioningReference.m in Sources */,
+				2C2ADE31160D3E8DB654FC76B87BE180 /* MDCTextControlLabelAnimation.m in Sources */,
+				9852446F7CF9154050DA51F75D401B7B /* MDCTextControlLabelSupport.m in Sources */,
+				11296E523965D9EC9F3C3F761A1F0EBE /* MDCTextControlPlaceholderSupport.m in Sources */,
+				B98FF58F1DBCF0EE72B15E44F6FB6B2A /* MDCTextControlSideViewSupport.m in Sources */,
+				61E7985A1B3CA128703657A0FAF48C33 /* MDCTextControlState.m in Sources */,
+				5AC4580D8A232C0CEE1D6553C00B3D83 /* MDCTextControlStyleBase.m in Sources */,
+				CB2F277B87C7D6A71DD91D7659AC1B0B /* MDCTextControlStyleFilled.m in Sources */,
+				DBB9202542CFA7046C5CFD74C9900B7A /* MDCTextControlStyleOutlined.m in Sources */,
+				E27BAE864D9D70C6D06CA4E28FD54010 /* MDCTextControlStyleUnderlined.m in Sources */,
+				34923FB60759B3E9955FA72D21870179 /* MDCTextControlVerticalPositioningReference.m in Sources */,
+				8BC28C0EA2C4B3BFC780F507C2669CB9 /* MDCTextControlVerticalPositioningReferenceBase.m in Sources */,
+				6C0637B5DB7A7BDD270B9BFF7BCA444F /* MDCTextControlVerticalPositioningReferenceFilled.m in Sources */,
+				0B217BD4EF873E6392E3E05A79A5A35F /* MDCTextControlVerticalPositioningReferenceOutlined.m in Sources */,
+				FE496327196BC7BB8B1798101116119A /* MDCTextControlVerticalPositioningReferenceUnderlined.m in Sources */,
+				DF60CBDDCEDCF6C28A6FCA64BCAC6B6D /* UIBezierPath+MDCTextControlStyle.m in Sources */,
+				3F2E51186E01B77851DDE955FD336CF8 /* UIView+MDCTimingFunction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,30 +1398,104 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F48B3059331B2D1B7DC9967822479A6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A08957579207C69DEB188E6A3B465D /* Pods-Humidor-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		06801D079A9FA1A847C595938A357953 /* PBXTargetDependency */ = {
+		0C818B9B70A349F79608D4FABF7E4E52 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Humidor";
 			target = E2391600D737CD3C8794E3E4E11F5AAF /* Pods-Humidor */;
-			targetProxy = AF57EAA803C7F4DFF0B47A7C0DE56145 /* PBXContainerItemProxy */;
+			targetProxy = F4903DC0697DA51800F8174B1B52B091 /* PBXContainerItemProxy */;
 		};
-		CE804FE553C4CC840E3DC0A7CD06A33F /* PBXTargetDependency */ = {
+		1377D4473346CD26B3428D3A245945C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MDFInternationalization;
+			target = 55A01F8E987A6E2F7F0ED141A1ECA406 /* MDFInternationalization */;
+			targetProxy = 8E6BA8D28E9C3417D74CA8B2CB7455D3 /* PBXContainerItemProxy */;
+		};
+		18343FB9989B126EECF43A3850F9753B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MDFInternationalization;
+			target = 55A01F8E987A6E2F7F0ED141A1ECA406 /* MDFInternationalization */;
+			targetProxy = F886D0E14504FC1968308EA595E0CC51 /* PBXContainerItemProxy */;
+		};
+		1F9B2E16FC52E644FCFA0FEAA5B4ADB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MaterialComponents;
+			target = B4723B5744013DF08BE3A5FEAA286944 /* MaterialComponents */;
+			targetProxy = 75C14A199CFA6BAF7BCAF11454FBB80B /* PBXContainerItemProxy */;
+		};
+		3CCE03882E10D4CEEAD448D021888FBF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SnapKit;
 			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
-			targetProxy = 437C15D1712468F39CDB32F333AD9AD9 /* PBXContainerItemProxy */;
+			targetProxy = D84A8367AFF62A603DA8D0A90854280F /* PBXContainerItemProxy */;
 		};
-		DCB1A8C2DC5999C1880E3B285531B17F /* PBXTargetDependency */ = {
+		9AFF13F9E7F127A4792DE2B8E9BCF4CC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SnapKit;
 			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
-			targetProxy = 6F27F91D92932E5AECFF3CD613D3DF5C /* PBXContainerItemProxy */;
+			targetProxy = 2447D56D6DB7BAE3F3C8A75E1C6F0D8F /* PBXContainerItemProxy */;
+		};
+		AC7DEA5B4F32D60913EAAB078273E591 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MaterialComponents;
+			target = B4723B5744013DF08BE3A5FEAA286944 /* MaterialComponents */;
+			targetProxy = BF1AF15A667836E81ECBA477744CF163 /* PBXContainerItemProxy */;
+		};
+		E2FF8F7CA889C714D07C8687A5421B98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MDFInternationalization;
+			target = 55A01F8E987A6E2F7F0ED141A1ECA406 /* MDFInternationalization */;
+			targetProxy = 5E326D8F708722926147DE6703449AA9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		082649ABF65D30C0B8732BDDADE9DC4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 920D9F2FA534672ECCDCA19B104911AE /* MDFInternationalization.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MDFInternationalization/MDFInternationalization-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MDFInternationalization/MDFInternationalization-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MDFInternationalization/MDFInternationalization.modulemap";
+				PRODUCT_MODULE_NAME = MDFInternationalization;
+				PRODUCT_NAME = MDFInternationalization;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		0F0A46A0AEAEA9D4B94D68BE53F82526 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DF307154F96D7377112A302AACD8D6A3 /* Pods-HumidorTests.debug.xcconfig */;
@@ -665,7 +1533,7 @@
 			};
 			name = Debug;
 		};
-		5C59FA60B0CFEB31091993111720EB67 /* Release */ = {
+		1704AADE9AA5D11FB11FCBA13377A7BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D31EB85DFDF12352D1C4FC4BBB2C9DA6 /* Pods-Humidor-HumidorUITests.release.xcconfig */;
 			buildSettings = {
@@ -703,7 +1571,7 @@
 			};
 			name = Release;
 		};
-		6B78F09C8DA22EEAB235302B7D9414B8 /* Release */ = {
+		27F59BB1B5040661EAE13FF43D5FB2E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 45B6F133DB3DB821E4CE3B862B4541C6 /* Pods-Humidor.release.xcconfig */;
 			buildSettings = {
@@ -741,7 +1609,44 @@
 			};
 			name = Release;
 		};
-		822E6FDE9975A3F4CE7F1574A3469632 /* Debug */ = {
+		2B4CFAF22FB470E843ECFD687B6901F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35DAF520077D52A08688F505D32AFC45 /* Pods-Humidor.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Humidor/Pods-Humidor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Humidor/Pods-Humidor.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		38BEC6FC65A1A3E61E1459EDCA6F3953 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C9343C55A28ECC6F4E7A037BF1CF5929 /* Pods-Humidor-HumidorUITests.debug.xcconfig */;
 			buildSettings = {
@@ -777,6 +1682,112 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		4EA1C47EA1053331DBCA33FF4B9D3A0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99D9BD685FAE1C99501A01F4C4C79A50 /* MDFInternationalization.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MDFInternationalization/MDFInternationalization-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MDFInternationalization/MDFInternationalization-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MDFInternationalization/MDFInternationalization.modulemap";
+				PRODUCT_MODULE_NAME = MDFInternationalization;
+				PRODUCT_NAME = MDFInternationalization;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		760ED325CEFD3831AA9BA0BE9196EE2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB78817F6B1530B56168188C02972392 /* MaterialComponents.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MaterialComponents/MaterialComponents-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MaterialComponents/MaterialComponents-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MaterialComponents/MaterialComponents.modulemap";
+				PRODUCT_MODULE_NAME = MaterialComponents;
+				PRODUCT_NAME = MaterialComponents;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		78D47196ABC89DCE592E29AAF67CE54B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A5786B91BE1DCF8DB8334D9D2378A2E /* MaterialComponents.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MaterialComponents/MaterialComponents-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MaterialComponents/MaterialComponents-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MaterialComponents/MaterialComponents.modulemap";
+				PRODUCT_MODULE_NAME = MaterialComponents;
+				PRODUCT_NAME = MaterialComponents;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -946,7 +1957,7 @@
 		};
 		CB8A79F7382B0A1227C38D59E7968EEA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C21E0C93A1141A1E2EB51575500E27D /* SnapKit.debug.xcconfig */;
+			baseConfigurationReference = 6DB954B6E9BB6734112ED7AEECB0326A /* SnapKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -979,46 +1990,9 @@
 			};
 			name = Debug;
 		};
-		CE21799BA85050ED965A57A12ADA8D32 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35DAF520077D52A08688F505D32AFC45 /* Pods-Humidor.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Humidor/Pods-Humidor-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Humidor/Pods-Humidor.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		DFFD31690F9CC8449FD1F803388E1D46 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1CD432F32277BB93DEAADA626ECEC5B /* SnapKit.release.xcconfig */;
+			baseConfigurationReference = 70492C2ADB59314CAFE662A0B1DE0D6E /* SnapKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1055,6 +2029,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		10E53E899EC765ACB911B9E80808A05C /* Build configuration list for PBXNativeTarget "Pods-Humidor-HumidorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38BEC6FC65A1A3E61E1459EDCA6F3953 /* Debug */,
+				1704AADE9AA5D11FB11FCBA13377A7BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29235CC975477CF0AE111D8533A857C9 /* Build configuration list for PBXNativeTarget "MDFInternationalization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EA1C47EA1053331DBCA33FF4B9D3A0D /* Debug */,
+				082649ABF65D30C0B8732BDDADE9DC4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1073,20 +2065,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5B2E72749415E48DAF167EB3B1C6D9C4 /* Build configuration list for PBXNativeTarget "Pods-Humidor" */ = {
+		726D5927959030BE8EFACAECD8601B02 /* Build configuration list for PBXNativeTarget "MaterialComponents" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CE21799BA85050ED965A57A12ADA8D32 /* Debug */,
-				6B78F09C8DA22EEAB235302B7D9414B8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B27DA782D29A4D4E3496B627D6446765 /* Build configuration list for PBXNativeTarget "Pods-Humidor-HumidorUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				822E6FDE9975A3F4CE7F1574A3469632 /* Debug */,
-				5C59FA60B0CFEB31091993111720EB67 /* Release */,
+				760ED325CEFD3831AA9BA0BE9196EE2E /* Debug */,
+				78D47196ABC89DCE592E29AAF67CE54B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1096,6 +2079,15 @@
 			buildConfigurations = (
 				0F0A46A0AEAEA9D4B94D68BE53F82526 /* Debug */,
 				CA0F29607077CA0BD9EC5DB1569E4AF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE78CB30D52657AA4DFAC06515177CFC /* Build configuration list for PBXNativeTarget "Pods-Humidor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B4CFAF22FB470E843ECFD687B6901F9 /* Debug */,
+				27F59BB1B5040661EAE13FF43D5FB2E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
