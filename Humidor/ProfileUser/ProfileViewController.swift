@@ -9,9 +9,9 @@ import UIKit
 
 class ProfileViewController: UIViewController
 {
-    override func viewDidLoad()
+  override func viewDidLoad()
   {
-        super.viewDidLoad()
-      view.backgroundColor = .gray
-    }
+    super.viewDidLoad()
+    view.backgroundColor = .gray
+  }
 }
