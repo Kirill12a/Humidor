@@ -35,7 +35,7 @@ class CreateUiViewController: UIViewController
   lazy var shoppingPlaceTF: tfFirstStyle = {
     let place = tfFirstStyle()
     place.label.text = "Место покупки"
-    place.placeholder = "555-555-5555"
+    place.placeholder = "сигары.рф"
     place.leadingAssistiveLabel.text = "Ссылка или магазин"
     place.font = UIFont(name: "Domine", size: 20)
 
@@ -46,9 +46,9 @@ class CreateUiViewController: UIViewController
 
   lazy var yearOfPurchaseTF: tfFirstStyle = {
     let year = tfFirstStyle()
-    year.label.text = "Phone number"
-    year.placeholder = "555-555-5555"
-    year.leadingAssistiveLabel.text = "This is helper text"
+    year.label.text = "Дата покупки"
+    year.placeholder = "30 jan 2020"
+    year.leadingAssistiveLabel.text = "Когда вы купили сигару"
     year.font = UIFont(name: "Domine", size: 20)
     year.sizeToFit()
     return year
@@ -83,6 +83,10 @@ class CreateUiViewController: UIViewController
 
 
 
+
+// удалить эту парашу
+
+
   override func viewDidLoad() {
     super.viewDidLoad()
     view.backgroundColor = .green
@@ -90,7 +94,10 @@ class CreateUiViewController: UIViewController
     hideKeyboard()
 
     yearOfPurchaseTF.setInputViewDatePicker(target: self, selector: #selector(tapDone))
-    
+//    view.backgroundColor = UIColor(red: 135/255, green: 100/255, blue: 68/255, alpha: 100) //такое себе
+    view.backgroundColor = UIColor(red: 202/255, green: 150/255, blue: 92/255, alpha: 100)
+//    sigarImage.isHidden = true
+
   }
 
   @objc func tapDone() {
@@ -106,9 +113,19 @@ class CreateUiViewController: UIViewController
   private func configuration ()
   {
 
+
+    view.addSubview(saveSigarButton)
+    saveSigarButton.snp.makeConstraints { make in
+      make.topMargin.equalToSuperview().offset(30)
+      make.rightMargin.leftMargin.equalTo(view.bounds.width / 2)
+      make.centerX.equalToSuperview()
+      make.height.equalTo(100)
+      make.width.equalTo(200)
+    }
+
     view.addSubview(nameSigarTF)
     nameSigarTF.snp.makeConstraints { make in
-      make.topMargin.equalToSuperview().offset(100)
+      make.topMargin.equalTo(saveSigarButton.snp_topMargin).offset(100)
       make.rightMargin.leftMargin.equalTo(view.bounds.width / 2)
       make.centerX.equalToSuperview()
       make.width.height.equalTo(200)
@@ -130,23 +147,17 @@ class CreateUiViewController: UIViewController
       make.width.height.equalTo(200)
     }
 
-    view.addSubview(saveSigarButton)
-    saveSigarButton.snp.makeConstraints { make in
-      make.topMargin.equalTo(yearOfPurchaseTF.snp_topMargin).offset(100)
-      make.rightMargin.leftMargin.equalTo(view.bounds.width / 2)
-      make.centerX.equalToSuperview()
-      make.height.equalTo(100)
-      make.width.equalTo(200)
-    }
+
 
 
     view.addSubview(sigarImage)
     sigarImage.snp.makeConstraints { make in
-      make.topMargin.equalTo(saveSigarButton.snp_topMargin).offset(100)
+      make.topMargin.equalTo(yearOfPurchaseTF.snp_topMargin).offset(100)
       make.rightMargin.leftMargin.equalTo(view.bounds.width / 2)
       make.centerX.equalToSuperview()
       make.width.height.equalTo(300)
     }
+
 
   }
 
@@ -156,19 +167,18 @@ class CreateUiViewController: UIViewController
 extension CreateUiViewController // Нажатие
 {
   @objc func btnChooseImageOnClick(tapGestureRecognizer: UITapGestureRecognizer){
-    let tappedImage = tapGestureRecognizer.view as! UIImageView    // Your action
-print("HI BABY")
+    _ = tapGestureRecognizer.view as! UIImageView    // Your action
 
-    let alert = UIAlertController(title: "Choose Image", message: nil, preferredStyle: .actionSheet)
-    alert.addAction(UIAlertAction(title: "Camera", style: .default, handler: { [self] _ in
+    let alert = UIAlertController(title: "Выбрать сигару", message: nil, preferredStyle: .actionSheet)
+    alert.addAction(UIAlertAction(title: "Сфоткать сигару", style: .default, handler: { [self] _ in
                openCamera()
            }))
 
-           alert.addAction(UIAlertAction(title: "Gallery", style: .default, handler: { [self] _ in
+           alert.addAction(UIAlertAction(title: "Выбрать сигару", style: .default, handler: { [self] _ in
                self.openGallery()
            }))
 
-           alert.addAction(UIAlertAction.init(title: "Cancel", style: .cancel, handler: nil))
+           alert.addAction(UIAlertAction.init(title: "Отмена", style: .cancel, handler: nil))
 
            self.present(alert, animated: true, completion: nil)
   }
