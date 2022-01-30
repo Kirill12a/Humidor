@@ -19,7 +19,6 @@ class CreateUiViewController: UIViewController
 
   var imagePicker = UIImagePickerController()
 
-
   lazy var nameSigarTF: tfFirstStyle =
   {
     let name = tfFirstStyle()
@@ -38,7 +37,6 @@ class CreateUiViewController: UIViewController
     place.placeholder = "сигары.рф"
     place.leadingAssistiveLabel.text = "Ссылка или магазин"
     place.font = UIFont(name: "Domine", size: 20)
-
     place.sizeToFit()
     return place
   }()
@@ -76,16 +74,8 @@ class CreateUiViewController: UIViewController
     let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(btnChooseImageOnClick(tapGestureRecognizer:)))
     image.isUserInteractionEnabled = true
     image.addGestureRecognizer(tapGestureRecognizer)
-
     return image
   }()
-
-
-
-
-
-// удалить эту парашу
-
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -94,20 +84,18 @@ class CreateUiViewController: UIViewController
     hideKeyboard()
 
     yearOfPurchaseTF.setInputViewDatePicker(target: self, selector: #selector(tapDone))
-//    view.backgroundColor = UIColor(red: 135/255, green: 100/255, blue: 68/255, alpha: 100) //такое себе
     view.backgroundColor = UIColor(red: 202/255, green: 150/255, blue: 92/255, alpha: 100)
-//    sigarImage.isHidden = true
 
   }
 
   @objc func tapDone() {
-          if let datePicker = self.yearOfPurchaseTF.inputView as? UIDatePicker { // 2-1
-              let dateformatter = DateFormatter() // 2-2
-              dateformatter.dateStyle = .medium // 2-3
-              self.yearOfPurchaseTF.text = dateformatter.string(from: datePicker.date) //2-4
-          }
-          self.yearOfPurchaseTF.resignFirstResponder() // 2-5
-      }
+    if let datePicker = self.yearOfPurchaseTF.inputView as? UIDatePicker { // 2-1
+      let dateformatter = DateFormatter() // 2-2
+      dateformatter.dateStyle = .medium // 2-3
+      self.yearOfPurchaseTF.text = dateformatter.string(from: datePicker.date) //2-4
+    }
+    self.yearOfPurchaseTF.resignFirstResponder() // 2-5
+  }
 
 
   private func configuration ()
@@ -147,9 +135,6 @@ class CreateUiViewController: UIViewController
       make.width.height.equalTo(200)
     }
 
-
-
-
     view.addSubview(sigarImage)
     sigarImage.snp.makeConstraints { make in
       make.topMargin.equalTo(yearOfPurchaseTF.snp_topMargin).offset(100)
@@ -157,8 +142,6 @@ class CreateUiViewController: UIViewController
       make.centerX.equalToSuperview()
       make.width.height.equalTo(300)
     }
-
-
   }
 
 }
