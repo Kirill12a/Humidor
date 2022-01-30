@@ -9,7 +9,7 @@ import UIKit
 
 class TabBar: UITabBarController
 {
-
+  
   override func viewDidLoad()
   {
     super.viewDidLoad()
@@ -18,7 +18,7 @@ class TabBar: UITabBarController
     tabBar.tintColor = .label
     setupVCs()
   }
-
+  
   fileprivate func createNavController(for rootViewController: UIViewController,
                                        title: String,
                                        image: UIImage) -> UIViewController {
@@ -29,15 +29,15 @@ class TabBar: UITabBarController
     //        rootViewController.navigationItem.title = title
     return navController
   }
-
+  
   func setupVCs() {
     viewControllers = [
       createNavController(for: MySigarsAddSigarsViewController(), title: NSLocalizedString("Хьюмидор", comment: ""), image: UIImage(systemName: "shippingbox")!),
       createNavController(for: HistoryViewController(), title: NSLocalizedString("Банты", comment: ""), image: UIImage(named:"sigar")!),
       createNavController(for: ProfileViewController(), title: NSLocalizedString("Профиль", comment: ""), image: UIImage(systemName: "person")!)
     ]
-
+    
   }
-
+  
 }
 

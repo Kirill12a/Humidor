@@ -16,9 +16,9 @@ import MaterialComponents.MaterialTextControls_OutlinedTextFields
 typealias tfFirstStyle = MDCOutlinedTextField
 class CreateUiViewController: UIViewController
 {
-
+  
   var imagePicker = UIImagePickerController()
-
+  
   lazy var nameSigarTF: tfFirstStyle =
   {
     let name = tfFirstStyle()
@@ -29,8 +29,8 @@ class CreateUiViewController: UIViewController
     name.sizeToFit()
     return name
   }()
-
-
+  
+  
   lazy var shoppingPlaceTF: tfFirstStyle = {
     let place = tfFirstStyle()
     place.label.text = "Место покупки"
@@ -40,8 +40,8 @@ class CreateUiViewController: UIViewController
     place.sizeToFit()
     return place
   }()
-
-
+  
+  
   lazy var yearOfPurchaseTF: tfFirstStyle = {
     let year = tfFirstStyle()
     year.label.text = "Дата покупки"
@@ -51,8 +51,8 @@ class CreateUiViewController: UIViewController
     year.sizeToFit()
     return year
   }()
-
-
+  
+  
   lazy var saveSigarButton: UIButton =
   {
     let button = UIButton(type: .system)
@@ -61,8 +61,8 @@ class CreateUiViewController: UIViewController
     button.titleLabel?.font = UIFont(name: "Domine", size: 20)
     return button
   }()
-
-
+  
+  
   lazy var sigarImage: UIImageView =
   {
     var image = UIImageView()
@@ -76,18 +76,18 @@ class CreateUiViewController: UIViewController
     image.addGestureRecognizer(tapGestureRecognizer)
     return image
   }()
-
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     view.backgroundColor = .green
     configuration()
     hideKeyboard()
-
+    
     yearOfPurchaseTF.setInputViewDatePicker(target: self, selector: #selector(tapDone))
     view.backgroundColor = UIColor(red: 202/255, green: 150/255, blue: 92/255, alpha: 100)
-
+    
   }
-
+  
   @objc func tapDone() {
     if let datePicker = self.yearOfPurchaseTF.inputView as? UIDatePicker { // 2-1
       let dateformatter = DateFormatter() // 2-2
@@ -96,12 +96,12 @@ class CreateUiViewController: UIViewController
     }
     self.yearOfPurchaseTF.resignFirstResponder() // 2-5
   }
-
-
+  
+  
   private func configuration ()
   {
-
-
+    
+    
     view.addSubview(saveSigarButton)
     saveSigarButton.snp.makeConstraints { make in
       make.topMargin.equalToSuperview().offset(30)
@@ -110,7 +110,7 @@ class CreateUiViewController: UIViewController
       make.height.equalTo(100)
       make.width.equalTo(200)
     }
-
+    
     view.addSubview(nameSigarTF)
     nameSigarTF.snp.makeConstraints { make in
       make.topMargin.equalTo(saveSigarButton.snp_topMargin).offset(100)
@@ -118,7 +118,7 @@ class CreateUiViewController: UIViewController
       make.centerX.equalToSuperview()
       make.width.height.equalTo(200)
     }
-
+    
     view.addSubview(shoppingPlaceTF)
     shoppingPlaceTF.snp.makeConstraints { make in
       make.topMargin.equalTo(nameSigarTF.snp_topMargin).offset(100)
@@ -126,7 +126,7 @@ class CreateUiViewController: UIViewController
       make.centerX.equalToSuperview()
       make.width.height.equalTo(200)
     }
-
+    
     view.addSubview(yearOfPurchaseTF)
     yearOfPurchaseTF.snp.makeConstraints { make in
       make.topMargin.equalTo(shoppingPlaceTF.snp_topMargin).offset(100)
@@ -134,7 +134,7 @@ class CreateUiViewController: UIViewController
       make.centerX.equalToSuperview()
       make.width.height.equalTo(200)
     }
-
+    
     view.addSubview(sigarImage)
     sigarImage.snp.makeConstraints { make in
       make.topMargin.equalTo(yearOfPurchaseTF.snp_topMargin).offset(100)
@@ -143,7 +143,7 @@ class CreateUiViewController: UIViewController
       make.width.height.equalTo(300)
     }
   }
-
+  
 }
 
 

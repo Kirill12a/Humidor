@@ -22,8 +22,8 @@ extension MDCOutlinedTextField //
       datePicker.sizeToFit()
     }
     self.inputView = datePicker //3
-
-     // Создайте панель инструментов и назначьте ее inputAccessoryView
+    
+    // Создайте панель инструментов и назначьте ее inputAccessoryView
     let toolBar = UIToolbar(frame: CGRect(x: 0.0, y: 0.0, width: screenWidth, height: 44.0)) //4
     let flexible = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil) //5
     let cancel = UIBarButtonItem(title: "Cancel", style: .plain, target: nil, action: #selector(tapCancel)) // 6
@@ -31,7 +31,7 @@ extension MDCOutlinedTextField //
     toolBar.setItems([cancel, flexible, barButton], animated: false) //8
     self.inputAccessoryView = toolBar //9
   }
-
+  
   @objc func tapCancel ()
   {
     self.resignFirstResponder()
@@ -47,11 +47,11 @@ extension CreateUiViewController
     let tap: UITapGestureRecognizer = UITapGestureRecognizer(
       target: self,
       action: #selector(dismissKeyboard))
-
+    
     tap.cancelsTouchesInView = false
     view.addGestureRecognizer(tap)
   }
-
+  
   @objc func dismissKeyboard ()
   {
     view.endEditing(true)
@@ -62,7 +62,7 @@ extension CreateUiViewController
 //MARK: - Доступ к камере и альбому
 extension CreateUiViewController: UIImagePickerControllerDelegate , UINavigationControllerDelegate
 {
-
+  
   func openCamera ()
   {
     if UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType.camera) {
@@ -79,7 +79,7 @@ extension CreateUiViewController: UIImagePickerControllerDelegate , UINavigation
       self.present(alert, animated: true, completion: nil)
     }
   }
-
+  
   func openGallery ()
   {
     if UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType.photoLibrary){
@@ -96,8 +96,8 @@ extension CreateUiViewController: UIImagePickerControllerDelegate , UINavigation
       self.present(alert, animated: true, completion: nil)
     }
   }
-
-
+  
+  
   //MARK: - Выбор из галереи
   func imagePickerController (_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any])
   {
@@ -115,21 +115,21 @@ extension CreateUiViewController
 {
   @objc func btnChooseImageOnClick (tapGestureRecognizer: UITapGestureRecognizer){
     _ = tapGestureRecognizer.view as! UIImageView    // Your action
-
+    
     let alert = UIAlertController(title: "Выбрать сигару", message: nil, preferredStyle: .actionSheet)
     alert.addAction(UIAlertAction(title: "Сфоткать сигару", style: .default, handler: { [self] _ in
       openCamera()
     }))
-
+    
     alert.addAction(UIAlertAction(title: "Выбрать сигару", style: .default, handler: { [self] _ in
       self.openGallery()
     }))
-
+    
     alert.addAction(UIAlertAction.init(title: "Отмена", style: .cancel, handler: nil))
-
+    
     self.present(alert, animated: true, completion: nil)
   }
-
+  
   @objc func btnSaveSigar ()
   {
     print("save")
