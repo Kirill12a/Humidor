@@ -4,6 +4,8 @@
 <dict>
 	<key>NSCameraUsageDescription</key>
 	<string>Дай пж доступ </string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Дай пж доступ </string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Domine.ttf</string>

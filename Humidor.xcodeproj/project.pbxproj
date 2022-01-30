@@ -263,7 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				D2254D42279B4C1200219DAE /* MySigarsAddSigarsViewController.swift */,
-				D2254DD0279DDE8A00219DAE /* SigarsCollectionViewCell.swift */,
+				D277444327A6A598003EA3AE /* MainViewCollectionViewCell */,
 			);
 			path = mainScreen;
 			sourceTree = "<group>";
@@ -274,6 +274,14 @@
 				D2254E0027A0BE9F00219DAE /* CreateUiViewController.swift */,
 			);
 			path = createScreen;
+			sourceTree = "<group>";
+		};
+		D277444327A6A598003EA3AE /* MainViewCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D2254DD0279DDE8A00219DAE /* SigarsCollectionViewCell.swift */,
+			);
+			path = MainViewCollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
