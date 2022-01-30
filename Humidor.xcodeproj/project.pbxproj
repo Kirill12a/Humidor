@@ -25,6 +25,7 @@
 		D2254DD1279DDE8A00219DAE /* SigarsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2254DD0279DDE8A00219DAE /* SigarsCollectionViewCell.swift */; };
 		D2254DDB279F697400219DAE /* Domine.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2254DDA279F697400219DAE /* Domine.ttf */; };
 		D2254E0127A0BE9F00219DAE /* CreateUiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2254E0027A0BE9F00219DAE /* CreateUiViewController.swift */; };
+		D277444827A7238C003EA3AE /* ExtensionVC_CreateUiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D277444727A7238C003EA3AE /* ExtensionVC_CreateUiViewController.swift */; };
 		F64AA6B4EA0EC820269FDAF8 /* Pods_Humidor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 646C05B686A163B1514990C8 /* Pods_Humidor.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		D2254DD0279DDE8A00219DAE /* SigarsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigarsCollectionViewCell.swift; sourceTree = "<group>"; };
 		D2254DDA279F697400219DAE /* Domine.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Domine.ttf; sourceTree = "<group>"; };
 		D2254E0027A0BE9F00219DAE /* CreateUiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUiViewController.swift; sourceTree = "<group>"; };
+		D277444727A7238C003EA3AE /* ExtensionVC_CreateUiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionVC_CreateUiViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				D2254E0027A0BE9F00219DAE /* CreateUiViewController.swift */,
+				D277444627A72355003EA3AE /* extension */,
 			);
 			path = createScreen;
 			sourceTree = "<group>";
@@ -282,6 +285,14 @@
 				D2254DD0279DDE8A00219DAE /* SigarsCollectionViewCell.swift */,
 			);
 			path = MainViewCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		D277444627A72355003EA3AE /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				D277444727A7238C003EA3AE /* ExtensionVC_CreateUiViewController.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -525,6 +536,7 @@
 			files = (
 				D2254E0127A0BE9F00219DAE /* CreateUiViewController.swift in Sources */,
 				D2254DA3279C959900219DAE /* ViewControllerSplashScreen.swift in Sources */,
+				D277444827A7238C003EA3AE /* ExtensionVC_CreateUiViewController.swift in Sources */,
 				D2254D49279B4C1200219DAE /* Humidor.xcdatamodeld in Sources */,
 				D2254D43279B4C1200219DAE /* MySigarsAddSigarsViewController.swift in Sources */,
 				D2254D3F279B4C1200219DAE /* AppDelegate.swift in Sources */,
