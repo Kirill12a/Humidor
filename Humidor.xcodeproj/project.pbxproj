@@ -39,6 +39,7 @@
 		D277446127A7372C003EA3AE /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D277445427A7372C003EA3AE /* UIImage+CVPixelBuffer.swift */; };
 		D277446227A7372C003EA3AE /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D277445527A7372C003EA3AE /* UIImage+Extensions.swift */; };
 		D277446327A7372C003EA3AE /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = D277445627A7372C003EA3AE /* Math.swift */; };
+		D277446527A7386F003EA3AE /* DeepLabV3.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = D277446427A7386F003EA3AE /* DeepLabV3.mlpackage */; };
 		F64AA6B4EA0EC820269FDAF8 /* Pods_Humidor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 646C05B686A163B1514990C8 /* Pods_Humidor.framework */; };
 /* End PBXBuildFile section */
 
@@ -103,6 +104,7 @@
 		D277445427A7372C003EA3AE /* UIImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
 		D277445527A7372C003EA3AE /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		D277445627A7372C003EA3AE /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		D277446427A7386F003EA3AE /* DeepLabV3.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = DeepLabV3.mlpackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,6 +327,7 @@
 		D277444927A736D8003EA3AE /* CoreMLHelpers */ = {
 			isa = PBXGroup;
 			children = (
+				D277446427A7386F003EA3AE /* DeepLabV3.mlpackage */,
 				D277445027A7372C003EA3AE /* Array+Extensions.swift */,
 				D277444F27A7372C003EA3AE /* CGImage+CVPixelBuffer.swift */,
 				D277445227A7372C003EA3AE /* CGImage+RawBytes.swift */,
@@ -594,6 +597,7 @@
 				D2254DD1279DDE8A00219DAE /* SigarsCollectionViewCell.swift in Sources */,
 				D277445F27A7372C003EA3AE /* CGImage+RawBytes.swift in Sources */,
 				D277445927A7372C003EA3AE /* NonMaxSuppression.swift in Sources */,
+				D277446527A7386F003EA3AE /* DeepLabV3.mlpackage in Sources */,
 				D277445727A7372C003EA3AE /* MLMultiArray+Image.swift in Sources */,
 				D277445E27A7372C003EA3AE /* Predictions.swift in Sources */,
 				D277446127A7372C003EA3AE /* UIImage+CVPixelBuffer.swift in Sources */,

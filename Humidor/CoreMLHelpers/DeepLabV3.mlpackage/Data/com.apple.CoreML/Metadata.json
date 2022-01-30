@@ -1,0 +1,6 @@
+{
+  "MLModelVersionStringKey" : "--",
+  "MLModelDescriptionKey" : "DeepLab is a state-of-art deep learning model for semantic image segmentation, where the goal is to assign semantic labels (e.g., person, dog, cat and so on) to every pixel in the input image.",
+  "MLModelAuthorKey" : "Original Paper: Mark Sandler, Andrew Howard, Menglong Zhu, Andrey Zhmoginov, Liang-Chieh Chen. DeepLabV3+: Liang-Chieh Chen and Yukun Zhu and George Papandreou and Florian Schroff and Hartwig Adam.",
+  "MLModelLicenseKey" : "Please see https:\/\/github.com\/tensorflow\/tensorflow for license information, and https:\/\/github.com\/tensorflow\/models\/tree\/master\/research\/deeplab for the original source of the model."
+}
