@@ -23,7 +23,7 @@ class MySigarsAddSigarsViewController: UIViewController
   {
     super.viewDidLoad()
     create()
-//    view.backgroundColor = UIColor(red: 243/255, green: 223/255, blue: 186/255, alpha: 100) // норм
+    //    view.backgroundColor = UIColor(red: 243/255, green: 223/255, blue: 186/255, alpha: 100) // норм
 
     view.backgroundColor = UIColor(red: 135/255, green: 100/255, blue: 68/255, alpha: 100) //норм
 
@@ -46,8 +46,8 @@ class MySigarsAddSigarsViewController: UIViewController
 
 
   override func viewWillAppear(_ animated: Bool) {
-      (UIApplication.shared.delegate as! AppDelegate).restrictRotation = .portrait
-//    myCollectionView?.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.0)
+    (UIApplication.shared.delegate as! AppDelegate).restrictRotation = .portrait
+    //    myCollectionView?.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.0)
 
   }
 
@@ -111,7 +111,7 @@ extension MySigarsAddSigarsViewController: UICollectionViewDataSource {
     myCell.layer.cornerRadius = myCell.bounds.height / 2
     myCell.characterImageView.image =  UIImage(named: im[indexPath.row])
     myCell.nameLabel.text = tx[indexPath.row]
-//    myCell.backgroundColor = UIColor(red: 243/255, green: 223/255, blue: 186/255, alpha: 100) цвет ячейки
+    //    myCell.backgroundColor = UIColor(red: 243/255, green: 223/255, blue: 186/255, alpha: 100) цвет ячейки
 
     return myCell
   }
