@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 
 class SigarsCollectionViewCell: UICollectionViewCell {
-  
+
   // Character Image
   lazy var characterImageView: UIImageView = {
     let imageView = UIImageView()
@@ -18,13 +18,13 @@ class SigarsCollectionViewCell: UICollectionViewCell {
     //      imageView.backgroundColor = .purple
     imageView.layer.borderWidth = 2
     imageView.layer.borderColor = UIColor(red: 74/255, green: 27/255, blue: 0/255, alpha: 100).cgColor
-    
+
     imageView.layer.masksToBounds = true
     imageView.contentMode = .scaleAspectFit
     imageView.translatesAutoresizingMaskIntoConstraints = false
     return imageView
   }()
-  
+
   // Character Name Label
   lazy var nameLabel: UILabel = {
     let label = UILabel()
@@ -37,24 +37,22 @@ class SigarsCollectionViewCell: UICollectionViewCell {
     label.translatesAutoresizingMaskIntoConstraints = false
     return label
   }()
-  
+
   override init(frame: CGRect) {
     super.init(frame: frame)
     setupUI()
-    
+
   }
-  
+
   required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
-  
-  
-  
-  
+
+
   func setupUI() {
     addSubview(characterImageView)
     addSubview(nameLabel)
-    
+
     nameLabel.snp.makeConstraints { make in
       //            make.bottom.equalToSuperview().inset(-16)
       //          make.left.right.equalTo(contentView.bounds.width / 2 - 40)
@@ -62,13 +60,13 @@ class SigarsCollectionViewCell: UICollectionViewCell {
       make.centerX.equalToSuperview()
       make.centerY.equalTo(contentView.bounds.height + 48)
     }
-    
+
     characterImageView.snp.makeConstraints { make in
       //            make.left.top.right.equalToSuperview().inset(20)
       //          make.bottom.equalToSuperview().inset(30)
       make.width.height.equalTo(300)
       make.center.equalToSuperview()
-      
+
     }
   }
 }
