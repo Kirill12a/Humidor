@@ -103,7 +103,7 @@ extension CreateUiViewController: UIImagePickerControllerDelegate , UINavigation
   {
     if let pickedImage = info[.originalImage] as? UIImage {
       // sigarImage.contentMode = .scaleToFill
-      sigarImage.image = removeBackground(image: pickedImage)
+      sigarImage.image = removeBackground(image: pickedImage) // кладем фотку в так скажем в наше фото сигары
     }
     picker.dismiss(animated: true, completion: nil)
   }
@@ -132,6 +132,27 @@ extension CreateUiViewController
   
   @objc func btnSaveSigar ()
   {
+    if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
+    {
+      let newTodo = Sigars(context: context)
+
+      if let name = nameSigarTF.text
+      {
+        newTodo.name = name
+      }
+
+      if let place = shoppingPlaceTF.text
+      {
+        newTodo.place = place
+      }
+
+      if let date = yearOfPurchaseTF.text
+      {
+        newTodo.date = date
+      }
+      newTodo.image = sigarImage.image?.jpegData(compressionQuality: 1.0)
+      (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+    }
     print("save")
   }
 

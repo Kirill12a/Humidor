@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Sigars+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Sigars+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
       location = "group:Humidor.xcodeproj">
    </FileRef>
    <FileRef

@@ -16,9 +16,9 @@ class MySigarsAddSigarsViewController: UIViewController
   // пока не будет бд
   var  im = ["sif", "sif", "sif"]  // это фотки
   var tx =  ["Montecristo 1935 Anniversary Nicaragua No. 2", "Padrón 1964 Anniversary Series Torpedo (Natural)", "Montecristo 1935 Anniversary Nicaragua No. 2"] // это текст
-  
-  
-  
+
+  private var todoCDs: [Sigars] = []
+
   override func viewDidLoad()
   {
     super.viewDidLoad()
@@ -47,11 +47,14 @@ class MySigarsAddSigarsViewController: UIViewController
   
   override func viewWillAppear(_ animated: Bool) {
     (UIApplication.shared.delegate as! AppDelegate).restrictRotation = .portrait
-    //    myCollectionView?.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.0)
-    
+    getToDos()
   }
-  
-  
+
+
+
+
+
+
   func create()
   {
     
@@ -103,22 +106,56 @@ class MySigarsAddSigarsViewController: UIViewController
 
 extension MySigarsAddSigarsViewController: UICollectionViewDataSource {
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return im.count
+    return todoCDs.count
   }
-  
+
+
+
+
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath) as! SigarsCollectionViewCell
     myCell.layer.cornerRadius = myCell.bounds.height / 2
-    myCell.characterImageView.image =  UIImage(named: im[indexPath.row])
-    myCell.nameLabel.text = tx[indexPath.row]
-    //    myCell.backgroundColor = UIColor(red: 243/255, green: 223/255, blue: 186/255, alpha: 100) цвет ячейки
-    
+    let selectedToDo = todoCDs[indexPath.row]
+
+
+    if let name = selectedToDo.name
+    {
+      myCell.nameLabel.text = name
+    }
+
+    if let data = selectedToDo.image
+    {
+      myCell.characterImageView.image = UIImage(data: data)
+    }
+
     return myCell
   }
+
 }
+
+//MARK:  -  Нажатие на ячейку
 extension MySigarsAddSigarsViewController: UICollectionViewDelegate {
   
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    print("User tapped on item \(indexPath.row)")
+    print("User tapped on item \(todoCDs[indexPath.row].place ?? String())")
+  }
+}
+
+
+//MARK: - Read the Core Data
+extension MySigarsAddSigarsViewController
+{
+
+
+  func getToDos()
+  {
+    if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+      if let toDosFromCoreData = try? context.fetch(Sigars.fetchRequest()) {
+        if let toDos = toDosFromCoreData as? [Sigars] {
+          todoCDs = toDos
+          myCollectionView!.reloadData()
+        }
+      }
+    }
   }
 }
