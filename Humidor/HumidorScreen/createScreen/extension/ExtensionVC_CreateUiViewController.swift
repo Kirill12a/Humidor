@@ -103,7 +103,7 @@ extension CreateUiViewController: UIImagePickerControllerDelegate , UINavigation
   {
     if let pickedImage = info[.originalImage] as? UIImage {
       // sigarImage.contentMode = .scaleToFill
-      sigarImage.image = pickedImage
+      sigarImage.image = removeBackground(image: pickedImage)
     }
     picker.dismiss(animated: true, completion: nil)
   }
@@ -134,6 +134,11 @@ extension CreateUiViewController
   {
     print("save")
   }
+
+
+
+
 }
+
 
 
