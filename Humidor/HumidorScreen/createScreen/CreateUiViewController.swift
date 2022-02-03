@@ -17,8 +17,7 @@ typealias tfFirstStyle = MDCOutlinedTextField
 class CreateUiViewController: UIViewController
 {
 
-  let model = DeepLabV3()
-  let context = CIContext(options: nil)
+
 
 
 
@@ -89,6 +88,7 @@ class CreateUiViewController: UIViewController
     hideKeyboard()
     yearOfPurchaseTF.setInputViewDatePicker(target: self, selector: #selector(tapDone))
     view.backgroundColor = UIColor(red: 202/255, green: 150/255, blue: 92/255, alpha: 100)
+    self.tabBarController?.tabBar.isHidden = true
     
   }
   
@@ -104,11 +104,11 @@ class CreateUiViewController: UIViewController
   
   private func configuration ()
   {
-    
-    
+    let barHeight = self.navigationController?.navigationBar.frame.height
+
     view.addSubview(saveSigarButton)
     saveSigarButton.snp.makeConstraints { make in
-      make.topMargin.equalToSuperview().offset(30)
+      make.top.equalToSuperview().inset(50)
       make.rightMargin.leftMargin.equalTo(view.bounds.width / 2)
       make.centerX.equalToSuperview()
       make.height.equalTo(100)
@@ -117,7 +117,7 @@ class CreateUiViewController: UIViewController
     
     view.addSubview(nameSigarTF)
     nameSigarTF.snp.makeConstraints { make in
-      make.topMargin.equalTo(saveSigarButton.snp_topMargin).offset(100)
+      make.topMargin.equalTo(saveSigarButton.snp_topMargin).offset(40)
       make.rightMargin.leftMargin.equalTo(view.bounds.width / 2)
       make.centerX.equalToSuperview()
       make.width.height.equalTo(200)
@@ -147,69 +147,6 @@ class CreateUiViewController: UIViewController
       make.width.height.equalTo(300)
     }
   }
-
-
-
-   func removeBackground(image:UIImage) -> UIImage?{
-      let resizedImage = image.resized(to: CGSize(width: 513, height: 513))
-      if let pixelBuffer = resizedImage.pixelBuffer(width: Int(resizedImage.size.width), height: Int(resizedImage.size.height)){
-          if let outputImage = (try? model.prediction(image: pixelBuffer))?.semanticPredictions.image(min: 0, max: 1, axes: (0,0,1)), let outputCIImage = CIImage(image:outputImage){
-              if let maskImage = removeWhitePixels(image:outputCIImage), let resizedCIImage = CIImage(image: resizedImage), let compositedImage = composite(image: resizedCIImage, mask: maskImage){
-                  return UIImage(ciImage: compositedImage).resized(to: CGSize(width: image.size.width, height: image.size.height))
-              }
-          }
-      }
-      return nil
-  }
-
-
-  private func removeWhitePixels(image:CIImage) -> CIImage?{
-      let chromaCIFilter = chromaKeyFilter()
-      chromaCIFilter?.setValue(image, forKey: kCIInputImageKey)
-      return chromaCIFilter?.outputImage
-  }
-
-  private func composite(image:CIImage,mask:CIImage) -> CIImage?{
-      return CIFilter(name:"CISourceOutCompositing",parameters:
-          [kCIInputImageKey: image,kCIInputBackgroundImageKey: mask])?.outputImage
-  }
-
-
-  private func chromaKeyFilter() -> CIFilter? {
-      let size = 64
-      var cubeRGB = [Float]()
-
-      for z in 0 ..< size {
-          let blue = CGFloat(z) / CGFloat(size-1)
-          for y in 0 ..< size {
-              let green = CGFloat(y) / CGFloat(size-1)
-              for x in 0 ..< size {
-                  let red = CGFloat(x) / CGFloat(size-1)
-                  let brightness = getBrightness(red: red, green: green, blue: blue)
-                  let alpha: CGFloat = brightness == 1 ? 0 : 1
-                  cubeRGB.append(Float(red * alpha))
-                  cubeRGB.append(Float(green * alpha))
-                  cubeRGB.append(Float(blue * alpha))
-                  cubeRGB.append(Float(alpha))
-              }
-          }
-      }
-
-      let data = Data(buffer: UnsafeBufferPointer(start: &cubeRGB, count: cubeRGB.count))
-
-      let colorCubeFilter = CIFilter(name: "CIColorCube", parameters: ["inputCubeDimension": size, "inputCubeData": data])
-      return colorCubeFilter
-  }
-
-
-  private func getBrightness(red: CGFloat, green: CGFloat, blue: CGFloat) -> CGFloat {
-      let color = UIColor(red: red, green: green, blue: blue, alpha: 1)
-      var brightness: CGFloat = 0
-      color.getHue(nil, saturation: nil, brightness: &brightness, alpha: nil)
-      return brightness
-  }
-
-  
 }
 
 

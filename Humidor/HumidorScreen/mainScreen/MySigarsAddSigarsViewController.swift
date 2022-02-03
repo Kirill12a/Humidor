@@ -11,7 +11,7 @@ import SnapKit
 
 class MySigarsAddSigarsViewController: UIViewController
 {
-  private var myCollectionView: UICollectionView?
+  var myCollectionView: UICollectionView?
   
   // пока не будет бд
   var  im = ["sif", "sif", "sif"]  // это фотки
@@ -96,27 +96,25 @@ class MySigarsAddSigarsViewController: UIViewController
         button.transform = CGAffineTransform.identity
         
         let createVC = CreateUiViewController()
-        self.present(createVC, animated:true, completion:nil)
+        self.navigationController?.pushViewController(createVC, animated: true)
       }
-      
     })
-    
   }
 }
 
-extension MySigarsAddSigarsViewController: UICollectionViewDataSource {
+extension MySigarsAddSigarsViewController: UICollectionViewDataSource
+{
+
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     return todoCDs.count
   }
 
+  func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+  {
 
-
-
-  func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath) as! SigarsCollectionViewCell
     myCell.layer.cornerRadius = myCell.bounds.height / 2
     let selectedToDo = todoCDs[indexPath.row]
-
 
     if let name = selectedToDo.name
     {
@@ -134,10 +132,19 @@ extension MySigarsAddSigarsViewController: UICollectionViewDataSource {
 }
 
 //MARK:  -  Нажатие на ячейку
-extension MySigarsAddSigarsViewController: UICollectionViewDelegate {
+extension MySigarsAddSigarsViewController: UICollectionViewDelegate
+{
   
-  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
+  {
+
     print("User tapped on item \(todoCDs[indexPath.row].place ?? String())")
+    if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+      let selectedToDo = todoCDs[indexPath.row]
+      context.delete(selectedToDo)
+      (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+      getToDos()
+    }
   }
 }
 
@@ -146,12 +153,15 @@ extension MySigarsAddSigarsViewController: UICollectionViewDelegate {
 extension MySigarsAddSigarsViewController
 {
 
-
   func getToDos()
   {
-    if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
-      if let toDosFromCoreData = try? context.fetch(Sigars.fetchRequest()) {
-        if let toDos = toDosFromCoreData as? [Sigars] {
+
+    if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
+    {
+      if let toDosFromCoreData = try? context.fetch(Sigars.fetchRequest())
+      {
+        if let toDos = toDosFromCoreData as? [Sigars]
+        {
           todoCDs = toDos
           myCollectionView!.reloadData()
         }

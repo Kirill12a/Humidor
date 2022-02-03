@@ -30,14 +30,14 @@ class TabBar: UITabBarController
     return navController
   }
   
-  func setupVCs() {
+  func setupVCs()
+  {
+
     viewControllers = [
       createNavController(for: MySigarsAddSigarsViewController(), title: NSLocalizedString("Хьюмидор", comment: ""), image: UIImage(systemName: "shippingbox")!),
       createNavController(for: HistoryViewController(), title: NSLocalizedString("Банты", comment: ""), image: UIImage(named:"sigar")!),
       createNavController(for: ProfileViewController(), title: NSLocalizedString("Профиль", comment: ""), image: UIImage(systemName: "person")!)
     ]
-    
   }
-  
 }
 

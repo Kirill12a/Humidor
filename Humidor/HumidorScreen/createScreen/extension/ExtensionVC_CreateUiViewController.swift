@@ -103,7 +103,7 @@ extension CreateUiViewController: UIImagePickerControllerDelegate , UINavigation
   {
     if let pickedImage = info[.originalImage] as? UIImage {
       // sigarImage.contentMode = .scaleToFill
-      sigarImage.image = removeBackground(image: pickedImage) // кладем фотку в так скажем в наше фото сигары
+      sigarImage.image = RemoveBackground.removeBAC.removeBackground(image: pickedImage) // кладем фотку в так скажем в наше фото сигары
     }
     picker.dismiss(animated: true, completion: nil)
   }
@@ -153,7 +153,7 @@ extension CreateUiViewController
       newTodo.image = sigarImage.image?.jpegData(compressionQuality: 1.0)
       (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
-    print("save")
+    navigationController?.popViewController(animated: true)
   }
 
 

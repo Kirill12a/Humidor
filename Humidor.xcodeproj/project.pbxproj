@@ -40,6 +40,7 @@
 		D277446227A7372C003EA3AE /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D277445527A7372C003EA3AE /* UIImage+Extensions.swift */; };
 		D277446327A7372C003EA3AE /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = D277445627A7372C003EA3AE /* Math.swift */; };
 		D277446527A7386F003EA3AE /* DeepLabV3.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = D277446427A7386F003EA3AE /* DeepLabV3.mlpackage */; };
+		D2E0D98327AB1FC500BEB7A1 /* ActionCoreML.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0D98227AB1FC500BEB7A1 /* ActionCoreML.swift */; };
 		F64AA6B4EA0EC820269FDAF8 /* Pods_Humidor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 646C05B686A163B1514990C8 /* Pods_Humidor.framework */; };
 /* End PBXBuildFile section */
 
@@ -105,6 +106,7 @@
 		D277445527A7372C003EA3AE /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		D277445627A7372C003EA3AE /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		D277446427A7386F003EA3AE /* DeepLabV3.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = DeepLabV3.mlpackage; sourceTree = "<group>"; };
+		D2E0D98227AB1FC500BEB7A1 /* ActionCoreML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCoreML.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -341,8 +343,17 @@
 				D277445427A7372C003EA3AE /* UIImage+CVPixelBuffer.swift */,
 				D277445527A7372C003EA3AE /* UIImage+Extensions.swift */,
 				D277444E27A7372C003EA3AE /* UIImage+RawBytes.swift */,
+				D2E0D98427AB212700BEB7A1 /* MainJob */,
 			);
 			path = CoreMLHelpers;
+			sourceTree = "<group>";
+		};
+		D2E0D98427AB212700BEB7A1 /* MainJob */ = {
+			isa = PBXGroup;
+			children = (
+				D2E0D98227AB1FC500BEB7A1 /* ActionCoreML.swift */,
+			);
+			path = MainJob;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -593,6 +604,7 @@
 				D2254D3F279B4C1200219DAE /* AppDelegate.swift in Sources */,
 				D277446027A7372C003EA3AE /* MLMultiArray+Helpers.swift in Sources */,
 				D277445A27A7372C003EA3AE /* CVPixelBuffer+Helpers.swift in Sources */,
+				D2E0D98327AB1FC500BEB7A1 /* ActionCoreML.swift in Sources */,
 				D2254DA5279C95C900219DAE /* ProfileViewController.swift in Sources */,
 				D2254DD1279DDE8A00219DAE /* SigarsCollectionViewCell.swift in Sources */,
 				D277445F27A7372C003EA3AE /* CGImage+RawBytes.swift in Sources */,

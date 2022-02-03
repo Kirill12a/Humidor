@@ -36,7 +36,9 @@ class ViewControllerSpash: UIViewController
     disptch()
   }
   
-  private func animate(){
+  private func animate()
+  {
+
     UIView.animate(withDuration: 1)
     {
       let size = self.view.frame.width * 3
@@ -57,6 +59,7 @@ class ViewControllerSpash: UIViewController
           viewController.modalTransitionStyle = .crossDissolve
           viewController.modalPresentationStyle = .fullScreen
           self.present(viewController, animated: true)
+
         }
       }
     }
