@@ -88,7 +88,6 @@ class CreateUiViewController: UIViewController
     hideKeyboard()
     yearOfPurchaseTF.setInputViewDatePicker(target: self, selector: #selector(tapDone))
     view.backgroundColor = UIColor(red: 202/255, green: 150/255, blue: 92/255, alpha: 100)
-    self.tabBarController?.tabBar.isHidden = true
     
   }
   
@@ -104,20 +103,20 @@ class CreateUiViewController: UIViewController
   
   private func configuration ()
   {
-    let barHeight = self.navigationController?.navigationBar.frame.height
-
+    
+    
     view.addSubview(saveSigarButton)
     saveSigarButton.snp.makeConstraints { make in
-      make.top.equalToSuperview().inset(50)
+      make.topMargin.equalToSuperview().offset(10)
       make.rightMargin.leftMargin.equalTo(view.bounds.width / 2)
       make.centerX.equalToSuperview()
-      make.height.equalTo(100)
+      make.height.equalTo(50)
       make.width.equalTo(200)
     }
     
     view.addSubview(nameSigarTF)
     nameSigarTF.snp.makeConstraints { make in
-      make.topMargin.equalTo(saveSigarButton.snp_topMargin).offset(40)
+      make.topMargin.equalTo(saveSigarButton.snp_topMargin).offset(60)
       make.rightMargin.leftMargin.equalTo(view.bounds.width / 2)
       make.centerX.equalToSuperview()
       make.width.height.equalTo(200)
@@ -125,7 +124,7 @@ class CreateUiViewController: UIViewController
     
     view.addSubview(shoppingPlaceTF)
     shoppingPlaceTF.snp.makeConstraints { make in
-      make.topMargin.equalTo(nameSigarTF.snp_topMargin).offset(100)
+      make.topMargin.equalTo(nameSigarTF.snp_topMargin).offset(90)
       make.rightMargin.leftMargin.equalTo(view.bounds.width / 2)
       make.centerX.equalToSuperview()
       make.width.height.equalTo(200)
@@ -133,7 +132,7 @@ class CreateUiViewController: UIViewController
     
     view.addSubview(yearOfPurchaseTF)
     yearOfPurchaseTF.snp.makeConstraints { make in
-      make.topMargin.equalTo(shoppingPlaceTF.snp_topMargin).offset(100)
+      make.topMargin.equalTo(shoppingPlaceTF.snp_topMargin).offset(90)
       make.rightMargin.leftMargin.equalTo(view.bounds.width / 2)
       make.centerX.equalToSuperview()
       make.width.height.equalTo(200)
@@ -141,12 +140,13 @@ class CreateUiViewController: UIViewController
     
     view.addSubview(sigarImage)
     sigarImage.snp.makeConstraints { make in
-      make.topMargin.equalTo(yearOfPurchaseTF.snp_topMargin).offset(100)
+      make.topMargin.equalTo(yearOfPurchaseTF.snp_topMargin).offset(90)
       make.rightMargin.leftMargin.equalTo(view.bounds.width / 2)
       make.centerX.equalToSuperview()
       make.width.height.equalTo(300)
     }
   }
+
 }
 
 
