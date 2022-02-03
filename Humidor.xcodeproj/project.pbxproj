@@ -41,6 +41,8 @@
 		D277446327A7372C003EA3AE /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = D277445627A7372C003EA3AE /* Math.swift */; };
 		D277446527A7386F003EA3AE /* DeepLabV3.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = D277446427A7386F003EA3AE /* DeepLabV3.mlpackage */; };
 		D2E0D98327AB1FC500BEB7A1 /* ActionCoreML.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0D98227AB1FC500BEB7A1 /* ActionCoreML.swift */; };
+		D2E0D98627AC1AED00BEB7A1 /* ExtensionHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0D98527AC1AED00BEB7A1 /* ExtensionHistoryViewController.swift */; };
+		D2E0D98C27AC219600BEB7A1 /* SmokeOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0D98B27AC219600BEB7A1 /* SmokeOutViewController.swift */; };
 		F64AA6B4EA0EC820269FDAF8 /* Pods_Humidor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 646C05B686A163B1514990C8 /* Pods_Humidor.framework */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +109,8 @@
 		D277445627A7372C003EA3AE /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		D277446427A7386F003EA3AE /* DeepLabV3.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = DeepLabV3.mlpackage; sourceTree = "<group>"; };
 		D2E0D98227AB1FC500BEB7A1 /* ActionCoreML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCoreML.swift; sourceTree = "<group>"; };
+		D2E0D98527AC1AED00BEB7A1 /* ExtensionHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHistoryViewController.swift; sourceTree = "<group>"; };
+		D2E0D98B27AC219600BEB7A1 /* SmokeOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeOutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,7 +258,8 @@
 		D2254DD3279DF04500219DAE /* HistorySigar */ = {
 			isa = PBXGroup;
 			children = (
-				D2254DA6279C95F000219DAE /* HistoryViewController.swift */,
+				D2E0D98D27AC21CF00BEB7A1 /* HistoryView */,
+				D2E0D98E27AC21DE00BEB7A1 /* SmokeOutViewController */,
 			);
 			path = HistorySigar;
 			sourceTree = "<group>";
@@ -354,6 +359,31 @@
 				D2E0D98227AB1FC500BEB7A1 /* ActionCoreML.swift */,
 			);
 			path = MainJob;
+			sourceTree = "<group>";
+		};
+		D2E0D98727AC1AF100BEB7A1 /* ExtensionTableView */ = {
+			isa = PBXGroup;
+			children = (
+				D2E0D98527AC1AED00BEB7A1 /* ExtensionHistoryViewController.swift */,
+			);
+			path = ExtensionTableView;
+			sourceTree = "<group>";
+		};
+		D2E0D98D27AC21CF00BEB7A1 /* HistoryView */ = {
+			isa = PBXGroup;
+			children = (
+				D2254DA6279C95F000219DAE /* HistoryViewController.swift */,
+				D2E0D98727AC1AF100BEB7A1 /* ExtensionTableView */,
+			);
+			path = HistoryView;
+			sourceTree = "<group>";
+		};
+		D2E0D98E27AC21DE00BEB7A1 /* SmokeOutViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D2E0D98B27AC219600BEB7A1 /* SmokeOutViewController.swift */,
+			);
+			path = SmokeOutViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -601,6 +631,7 @@
 				D277444827A7238C003EA3AE /* ExtensionVC_CreateUiViewController.swift in Sources */,
 				D2254D49279B4C1200219DAE /* Humidor.xcdatamodeld in Sources */,
 				D2254D43279B4C1200219DAE /* MySigarsAddSigarsViewController.swift in Sources */,
+				D2E0D98627AC1AED00BEB7A1 /* ExtensionHistoryViewController.swift in Sources */,
 				D2254D3F279B4C1200219DAE /* AppDelegate.swift in Sources */,
 				D277446027A7372C003EA3AE /* MLMultiArray+Helpers.swift in Sources */,
 				D277445A27A7372C003EA3AE /* CVPixelBuffer+Helpers.swift in Sources */,
@@ -611,6 +642,7 @@
 				D277445927A7372C003EA3AE /* NonMaxSuppression.swift in Sources */,
 				D277446527A7386F003EA3AE /* DeepLabV3.mlpackage in Sources */,
 				D277445727A7372C003EA3AE /* MLMultiArray+Image.swift in Sources */,
+				D2E0D98C27AC219600BEB7A1 /* SmokeOutViewController.swift in Sources */,
 				D277445E27A7372C003EA3AE /* Predictions.swift in Sources */,
 				D277446127A7372C003EA3AE /* UIImage+CVPixelBuffer.swift in Sources */,
 				D277446227A7372C003EA3AE /* UIImage+Extensions.swift in Sources */,

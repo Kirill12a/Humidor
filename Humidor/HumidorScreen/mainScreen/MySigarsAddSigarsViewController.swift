@@ -13,10 +13,6 @@ class MySigarsAddSigarsViewController: UIViewController
 {
   var myCollectionView: UICollectionView?
   
-  // пока не будет бд
-  var  im = ["sif", "sif", "sif"]  // это фотки
-  var tx =  ["Montecristo 1935 Anniversary Nicaragua No. 2", "Padrón 1964 Anniversary Series Torpedo (Natural)", "Montecristo 1935 Anniversary Nicaragua No. 2"] // это текст
-
   private var todoCDs: [Sigars] = []
 
   override func viewDidLoad()
