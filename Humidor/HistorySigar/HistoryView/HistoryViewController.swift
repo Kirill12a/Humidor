@@ -11,7 +11,7 @@ import CoreData
 
 protocol TransferText: AnyObject
 {
-  func transfertext(textForms: String)
+  func transfertext(textForms: String, shop: String, date: String, image: Data)
 }
 class HistoryViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
 {

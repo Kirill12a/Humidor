@@ -11,10 +11,17 @@ import UIKit
 
 
 class SmokeOutViewController: UIViewController, TransferText, UITextViewDelegate {
-  func transfertext(textForms: String) {
+  func transfertext(textForms: String, shop: String, date: String, image: Data) {
     sigarName.text = textForms
-
+    placeBuy.text = shop
+    dataLabel.text = date
+    sigarImage.image = UIImage(data: image)
   }
+
+//  func transfertext(textForms: String) {
+//    sigarName.text = textForms
+//
+//  }
 
 
   //MARK: Delegate
@@ -45,7 +52,7 @@ class SmokeOutViewController: UIViewController, TransferText, UITextViewDelegate
   }
 
 
-  lazy var image: UIImageView = {
+  lazy var sigarImage: UIImageView = {
     let image = UIImageView()
     image.image = UIImage(named: "sif")
     image.backgroundColor = .red // удалить потом
@@ -132,8 +139,8 @@ class SmokeOutViewController: UIViewController, TransferText, UITextViewDelegate
       view.backgroundColor = .white
 
 
-      view.addSubview(image)
-      image.snp.makeConstraints { make in
+      view.addSubview(sigarImage)
+      sigarImage.snp.makeConstraints { make in
         make.topMargin.equalToSuperview().inset(8) // это если шо
 //        make.top.equalToSuperview().offset(45)
         make.centerX.equalToSuperview()
@@ -145,7 +152,7 @@ class SmokeOutViewController: UIViewController, TransferText, UITextViewDelegate
         sigarName.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
 //          make.centerY.equalToSuperview().offset(image.snp_topMargin + 30) // --- так тоже вроде норм, НО ХЗ
-          make.centerY.equalTo(image.snp_bottomMargin).offset(30)
+          make.centerY.equalTo(sigarImage.snp_bottomMargin).offset(30)
           make.width.equalTo(view.bounds.width - 25)
           make.height.equalTo(40)
         }

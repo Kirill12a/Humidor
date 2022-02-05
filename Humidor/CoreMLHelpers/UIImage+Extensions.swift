@@ -9,10 +9,10 @@ extension UIImage {
     let format = UIGraphicsImageRendererFormat.default()
     format.scale = scale
     let renderer = UIGraphicsImageRenderer(size: newSize, format: format)
-    let image = renderer.image { _ in
+    let sigarImage = renderer.image { _ in
       draw(in: CGRect(origin: .zero, size: newSize))
     }
-    return image
+    return sigarImage
   }
 }
 
