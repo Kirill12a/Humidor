@@ -11,12 +11,19 @@ import CoreData
 
 protocol TransferText: AnyObject
 {
-  func transfertext(textForms: String, shop: String, date: String, image: Data)
+  func transfertext(textForms: String, shop: String, date: String, image: Data, index: Int)
 }
+
+
+protocol TestSegue: AnyObject {func testSegue(array: Sigars)}
+
+
 class HistoryViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
 {
 
-  weak var delegate: TransferText!
+//  weak var delegate: TransferText!
+
+  weak var delegate: TestSegue!
 
   open var todoCDs: [Sigars] = []
 

@@ -50,15 +50,26 @@ extension HistoryViewController
 
 
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
-    let text = todoCDs[indexPath.row]
+//
+//    let text = todoCDs[indexPath.row]
             let secondVC = SmokeOutViewController()
-            delegate = secondVC
-    delegate.transfertext(textForms: text.name! , shop: text.place!, date: text.date!, image: text.image!)
-//    delegate?.transfertext(textForms: text!)
-            navigationController?.pushViewController(secondVC, animated: true)
+//            delegate = secondVC
+//    delegate.transfertext(textForms: text.name! , shop: text.place!, date: text.date!, image: text.image!, index: indexPath.row)
+
+//    if let detailViewController = segu
 
 
+
+
+
+    let texgd = todoCDs[indexPath.row]
+    delegate = secondVC
+
+    delegate.testSegue(array: texgd)
+
+
+
+    navigationController?.pushViewController(secondVC, animated: true)
 
   }
 

@@ -7,21 +7,33 @@
 
 import SnapKit
 import UIKit
+import CoreData
 
 
 
-class SmokeOutViewController: UIViewController, TransferText, UITextViewDelegate {
-  func transfertext(textForms: String, shop: String, date: String, image: Data) {
-    sigarName.text = textForms
-    placeBuy.text = shop
-    dataLabel.text = date
-    sigarImage.image = UIImage(data: image)
+class SmokeOutViewController: UIViewController,
+//                                TransferText,
+                                TestSegue,
+UITextViewDelegate {
+
+  var value: Sigars?
+  func testSegue(array: Sigars) {
+    sigarName.text = array.name
+    value = array
   }
 
-//  func transfertext(textForms: String) {
+
+
+  var todoCDs: Sigars? = nil
+
+//  func transfertext(textForms: String, shop: String, date: String, image: Data, index: Int ) {
 //    sigarName.text = textForms
-//
+//    placeBuy.text = shop
+//    dataLabel.text = date
+//    sigarImage.image = UIImage(data: image)
 //  }
+
+
 
 
   //MARK: Delegate
@@ -107,17 +119,37 @@ class SmokeOutViewController: UIViewController, TransferText, UITextViewDelegate
     return button
   }()
 
+  var ide = 0
 
   @objc func smoking(){
-    print("Hello")
+     let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
+        if let todo = value {
+          context!.delete(todo)
+          print("Hello")
+
+        }
+        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+
+    navigationController?.popViewController(animated: true)
+
+
   }
+
+
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
       hideKeyboard()
+      print(value)
       reviewSigar.text = "Вывод:"
 
-
+      if let todoCDs = todoCDs {
+        if let name = todoCDs.name {
+          sigarName.text = name
+        }
+      }
 
 
       //MARK:  - Подсчет времени, которое сигара пролежала у меня
