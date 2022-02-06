@@ -11,7 +11,8 @@ import UIKit
 
 extension ProfileViewController: UITableViewDataSource, UITableViewDelegate {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return fds.count
+    return todoCDs.count
+    
   }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -22,12 +23,50 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate {
       tableView.reloadData()
     }
 
-      cell?.textLabel?.text = fds[indexPath.row]
-      cell?.detailTextLabel?.text = fds[indexPath.row]
-    cell?.imageView?.image = UIImage(named: "logo")
+    let selectedSigar = todoCDs[indexPath.row]
+
+    if let name = selectedSigar.name{
+      cell?.textLabel?.text = name
+    }
+
+    if let data = selectedSigar.imageSigar{
+      cell?.imageView?.image = UIImage(data: data)
+    }
+
+
+
+
+
 
 
     return cell!
+  }
+
+
+  func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    if editingStyle == .delete {
+      let alert = UIAlertController(title: "Удалить сигарку ", message: "Удалить сигару из приложения?", preferredStyle: .actionSheet)
+      alert.addAction(UIAlertAction(title: "Да", style: .destructive, handler: { _ in
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+          let selectedToDo = self.todoCDs[indexPath.row]
+          context.delete(selectedToDo)
+          (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+          self.getToDos()
+        }
+      }))
+
+      alert.addAction(UIAlertAction(title: "Оставить", style: .cancel, handler: nil))
+
+      present(alert, animated: true, completion: nil)
+    }
+  }
+
+
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let alert = UIAlertController(title: "name Sigar", message: "papirosk , 20.01.22", preferredStyle: .alert)
+    alert.addAction(UIAlertAction(title: "Отлично", style: .cancel, handler: nil))
+
+    present(alert, animated: true, completion: nil)
   }
 
   

@@ -21,12 +21,10 @@ extension HistoryViewController
 
             }
 
-//            cell?.selectionStyle = .none
-//            cell?.textLabel?.text = itemstringArr[indexPath.row]
+
             cell?.detailTextLabel?.text = "выкурить"
             cell?.detailTextLabel?.font = UIFont .systemFont(ofSize: CGFloat(10))
     cell?.textLabel?.font = UIFont(name: "Domine", size: 15)
-//            cell?.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
 
     let selectedToDo = todoCDs[indexPath.row]
 

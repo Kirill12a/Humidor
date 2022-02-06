@@ -122,9 +122,35 @@ class SmokeOutViewController: UIViewController,TestSegue, UITextViewDelegate {
      let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
         if let todo = value {
           context!.delete(todo)
-
         }
         (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+
+
+
+
+    if let contextSigarHistory = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+      let newHistoryItem = History(context: contextSigarHistory)
+
+      if let nameSigar = sigarName.text {
+        newHistoryItem.name = nameSigar
+      }
+
+      if let place = placeBuy.text {
+        newHistoryItem.shop = place
+      }
+
+      if let review = reviewSigar.text {
+        newHistoryItem.review = review
+      }
+
+
+      newHistoryItem.imageSigar = sigarImage.image?.jpegData(compressionQuality: 1.0)
+      (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+
+      print(newHistoryItem)
+
+    }
+
 
     navigationController?.popViewController(animated: true)
 

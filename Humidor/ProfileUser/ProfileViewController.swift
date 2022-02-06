@@ -10,6 +10,8 @@ import UIKit
 class ProfileViewController: UIViewController
 {
 
+  var todoCDs: [History] = []
+
   var fds = ["Hello","ValueOne"]
   var tableView: UITableView!
   override func viewDidLoad()
@@ -17,8 +19,8 @@ class ProfileViewController: UIViewController
     super.viewDidLoad()
     view.backgroundColor = .gray
     makeTable()
-    title = "\(fds.count) сигары"
-    
+    getToDos()
+
 
   }
 
@@ -28,5 +30,31 @@ class ProfileViewController: UIViewController
     tableView?.dataSource = self
     tableView?.delegate = self
     self.view.addSubview(tableView)
+  }
+
+
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    getToDos()
+    title = "\(todoCDs.count) сигары"
+
+  }
+
+
+
+  func getToDos()
+  {
+
+    if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
+    {
+      if let toDosFromCoreData = try? context.fetch(History.fetchRequest())
+      {
+        if let toDos = toDosFromCoreData as? [History]
+        {
+          todoCDs = toDos
+          tableView!.reloadData()
+        }
+      }
+    }
   }
 }
