@@ -44,33 +44,27 @@ extension HistoryViewController
   }
 
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return todoCDs.count
+    if todoCDs.count == 0  {
+      makeTipsLabel()
+      labelTips.isHidden = false
+      return 0
+    }else {
+      labelTips.isHidden = true
+      return todoCDs.count
+    }
+
+    
+
   }
 
 
-
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//
-//    let text = todoCDs[indexPath.row]
-            let secondVC = SmokeOutViewController()
-//            delegate = secondVC
-//    delegate.transfertext(textForms: text.name! , shop: text.place!, date: text.date!, image: text.image!, index: indexPath.row)
 
-//    if let detailViewController = segu
-
-
-
-
-
+    let secondVC = SmokeOutViewController()
     let texgd = todoCDs[indexPath.row]
     delegate = secondVC
-
     delegate.testSegue(array: texgd)
-
-
-
     navigationController?.pushViewController(secondVC, animated: true)
-
   }
 
 }

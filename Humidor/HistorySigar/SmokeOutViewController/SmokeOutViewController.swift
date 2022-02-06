@@ -11,32 +11,25 @@ import CoreData
 
 
 
-class SmokeOutViewController: UIViewController,
-//                                TransferText,
-                                TestSegue,
-UITextViewDelegate {
+class SmokeOutViewController: UIViewController,TestSegue, UITextViewDelegate {
 
   var value: Sigars?
+  var dateSigar: String?
   func testSegue(array: Sigars) {
+
+    // дефольное значение для фотки
+    let profileImage = UIImage(named:"cigarDefult")!
+    let imageData = profileImage.pngData()
+    //
+
     sigarName.text = array.name
+    sigarImage.image = UIImage(data: array.image ?? imageData! )
+    dataLabel.text = array.date
+    placeBuy.text = array.place
+    // --------------
     value = array
   }
 
-
-
-  var todoCDs: Sigars? = nil
-
-//  func transfertext(textForms: String, shop: String, date: String, image: Data, index: Int ) {
-//    sigarName.text = textForms
-//    placeBuy.text = shop
-//    dataLabel.text = date
-//    sigarImage.image = UIImage(data: image)
-//  }
-
-
-
-
-  //MARK: Delegate
 
   var count = 0
   func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
@@ -46,6 +39,8 @@ UITextViewDelegate {
     }
     return true
   }
+
+
 
 
   func hideKeyboard ()
@@ -58,6 +53,9 @@ UITextViewDelegate {
     view.addGestureRecognizer(tap)
   }
 
+
+
+
   @objc func dismissKeyboard ()
   {
     view.endEditing(true)
@@ -67,7 +65,6 @@ UITextViewDelegate {
   lazy var sigarImage: UIImageView = {
     let image = UIImageView()
     image.image = UIImage(named: "sif")
-    image.backgroundColor = .red // удалить потом
     image.layer.masksToBounds = true
     image.layer.cornerRadius = 125
     image.layer.borderWidth = 2
@@ -125,7 +122,6 @@ UITextViewDelegate {
      let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
         if let todo = value {
           context!.delete(todo)
-          print("Hello")
 
         }
         (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
@@ -142,25 +138,7 @@ UITextViewDelegate {
         super.viewDidLoad()
         setUpView()
       hideKeyboard()
-      print(value)
       reviewSigar.text = "Вывод:"
-
-      if let todoCDs = todoCDs {
-        if let name = todoCDs.name {
-          sigarName.text = name
-        }
-      }
-
-
-      //MARK:  - Подсчет времени, которое сигара пролежала у меня
-      let startDate = "2022-02-1"
-      let dateFormatter = DateFormatter()
-      dateFormatter.dateFormat = "yyyy-MM-dd"
-      let formatedStartDate = dateFormatter.date(from: startDate)
-      let currentDate = Date()
-      let components = Set<Calendar.Component>([ .day, .month, .year])
-      let differenceOfDate = Calendar.current.dateComponents(components, from: formatedStartDate!, to: currentDate)
-      print (differenceOfDate)
     }
 
 
@@ -174,7 +152,6 @@ UITextViewDelegate {
       view.addSubview(sigarImage)
       sigarImage.snp.makeConstraints { make in
         make.topMargin.equalToSuperview().inset(8) // это если шо
-//        make.top.equalToSuperview().offset(45)
         make.centerX.equalToSuperview()
         make.width.height.equalTo(250)
       }
@@ -183,7 +160,6 @@ UITextViewDelegate {
         view.addSubview(sigarName)
         sigarName.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-//          make.centerY.equalToSuperview().offset(image.snp_topMargin + 30) // --- так тоже вроде норм, НО ХЗ
           make.centerY.equalTo(sigarImage.snp_bottomMargin).offset(30)
           make.width.equalTo(view.bounds.width - 25)
           make.height.equalTo(40)

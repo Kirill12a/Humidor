@@ -79,6 +79,31 @@ class MySigarsAddSigarsViewController: UIViewController
       make.height.equalTo(1)
       make.top.equalTo(addSigar.snp_bottomMargin).offset(20)
     }
+
+
+
+  }
+
+  let imageTup: UIImageView =
+  {
+    let imageTup = UIImageView()
+    imageTup.image = UIImage(named: "tup")
+    return imageTup
+  }()
+
+  func imageTupHiden(){
+
+
+    view.addSubview(imageTup)
+    imageTup.snp.makeConstraints { make in
+      make.centerY.equalToSuperview().offset(-150)
+      make.centerX.equalToSuperview()
+    }
+  }
+
+
+  func imageDeleted(){
+    imageTup.isHidden = true
   }
   
   @objc func perfomens(button: UIButton)
@@ -102,7 +127,22 @@ extension MySigarsAddSigarsViewController: UICollectionViewDataSource
 {
 
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return todoCDs.count
+    if todoCDs.count == 0{
+
+      collectionView.backgroundColor =  UIColor(red: 135/255, green: 100/255, blue: 68/255, alpha: 100)
+      myCollectionView?.backgroundColor =  UIColor(red: 135/255, green: 100/255, blue: 68/255, alpha: 100)
+      imageTupHiden()
+      imageTup.isHidden = false
+
+      print("Hello ")
+      return 0
+    }else{
+      imageTup.isHidden = true
+      collectionView.backgroundColor = .white
+      myCollectionView?.backgroundColor = .white
+      return todoCDs.count
+    }
+
   }
 
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell

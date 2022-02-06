@@ -57,6 +57,7 @@ PODS:
     - "MaterialComponents/TextControls+BaseTextFields"
   - MDFInternationalization (3.0.0)
   - SnapKit (5.0.1)
+  - SwiftGifOrigin (1.7.0)
 
 DEPENDENCIES:
   - "MaterialComponents/TextControls+FilledTextAreas"
@@ -64,18 +65,21 @@ DEPENDENCIES:
   - "MaterialComponents/TextControls+OutlinedTextAreas"
   - "MaterialComponents/TextControls+OutlinedTextFields"
   - SnapKit
+  - SwiftGifOrigin (~> 1.7.0)
 
 SPEC REPOS:
   trunk:
     - MaterialComponents
     - MDFInternationalization
     - SnapKit
+    - SwiftGifOrigin
 
 SPEC CHECKSUMS:
   MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
   MDFInternationalization: d697c55307816222a55685c4ccb1044ffb030c12
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftGifOrigin: fbd6cf37afcfcf97a5c3db996ddc0492e5c5c145
 
-PODFILE CHECKSUM: 8dbfc082b1a549c75bdadfc68f86a6661bac23fc
+PODFILE CHECKSUM: e1dfd11d1ebf43157fdc409d5aa8dc2ab29bac05
 
 COCOAPODS: 1.11.2

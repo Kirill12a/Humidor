@@ -39,6 +39,26 @@ class HistoryViewController: UIViewController, UITableViewDataSource, UITableVie
     makeTable()
   }
 
+  let labelTips: UILabel = {
+    var label = UILabel()
+    label.text  = "Тут будут ваши сигары, которые вы можете выкурить"
+    label.numberOfLines = 0
+    label.textAlignment = .center
+    return label
+  }()
+
+  func makeTipsLabel()
+  {
+    view.addSubview(labelTips)
+    labelTips.snp.makeConstraints { make in
+      make.center.equalToSuperview()
+      make.left.equalToSuperview().inset(20)
+      make.right.equalToSuperview().inset(20)
+
+
+    }
+  }
+
 
   func makeTable()
   {
