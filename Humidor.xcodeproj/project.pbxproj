@@ -43,7 +43,7 @@
 		D2E0D98327AB1FC500BEB7A1 /* ActionCoreML.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0D98227AB1FC500BEB7A1 /* ActionCoreML.swift */; };
 		D2E0D98627AC1AED00BEB7A1 /* ExtensionHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0D98527AC1AED00BEB7A1 /* ExtensionHistoryViewController.swift */; };
 		D2E0D98C27AC219600BEB7A1 /* SmokeOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0D98B27AC219600BEB7A1 /* SmokeOutViewController.swift */; };
-		D2E8837227B0481500B872BF /* tap.gif in Resources */ = {isa = PBXBuildFile; fileRef = D2E8837127B0481500B872BF /* tap.gif */; };
+		D2E8837627B0577F00B872BF /* TableViewProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8837527B0577F00B872BF /* TableViewProfileViewController.swift */; };
 		F64AA6B4EA0EC820269FDAF8 /* Pods_Humidor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 646C05B686A163B1514990C8 /* Pods_Humidor.framework */; };
 /* End PBXBuildFile section */
 
@@ -112,7 +112,7 @@
 		D2E0D98227AB1FC500BEB7A1 /* ActionCoreML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCoreML.swift; sourceTree = "<group>"; };
 		D2E0D98527AC1AED00BEB7A1 /* ExtensionHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHistoryViewController.swift; sourceTree = "<group>"; };
 		D2E0D98B27AC219600BEB7A1 /* SmokeOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeOutViewController.swift; sourceTree = "<group>"; };
-		D2E8837127B0481500B872BF /* tap.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tap.gif; sourceTree = "<group>"; };
+		D2E8837527B0577F00B872BF /* TableViewProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,7 +243,6 @@
 		D2254DA9279C9F1400219DAE /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				D2E8837127B0481500B872BF /* tap.gif */,
 				D2254D4A279B4C1300219DAE /* Assets.xcassets */,
 			);
 			path = Image;
@@ -271,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				D2254DA4279C95C900219DAE /* ProfileViewController.swift */,
+				D2E8837427B0576B00B872BF /* ExtensionTableView */,
 			);
 			path = ProfileUser;
 			sourceTree = "<group>";
@@ -389,6 +389,14 @@
 			path = SmokeOutViewController;
 			sourceTree = "<group>";
 		};
+		D2E8837427B0576B00B872BF /* ExtensionTableView */ = {
+			isa = PBXGroup;
+			children = (
+				D2E8837527B0577F00B872BF /* TableViewProfileViewController.swift */,
+			);
+			path = ExtensionTableView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -498,7 +506,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2E8837227B0481500B872BF /* tap.gif in Resources */,
 				D2254D4E279B4C1300219DAE /* LaunchScreen.storyboard in Resources */,
 				D2254D4B279B4C1300219DAE /* Assets.xcassets in Resources */,
 				D2254DDB279F697400219DAE /* Domine.ttf in Resources */,
@@ -646,6 +653,7 @@
 				D277445927A7372C003EA3AE /* NonMaxSuppression.swift in Sources */,
 				D277446527A7386F003EA3AE /* DeepLabV3.mlpackage in Sources */,
 				D277445727A7372C003EA3AE /* MLMultiArray+Image.swift in Sources */,
+				D2E8837627B0577F00B872BF /* TableViewProfileViewController.swift in Sources */,
 				D2E0D98C27AC219600BEB7A1 /* SmokeOutViewController.swift in Sources */,
 				D277445E27A7372C003EA3AE /* Predictions.swift in Sources */,
 				D277446127A7372C003EA3AE /* UIImage+CVPixelBuffer.swift in Sources */,
