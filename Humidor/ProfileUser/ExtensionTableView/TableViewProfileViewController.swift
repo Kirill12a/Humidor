@@ -11,17 +11,26 @@ import UIKit
 
 extension ProfileViewController: UITableViewDataSource, UITableViewDelegate {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return todoCDs.count
-    
+
+    if todoCDs.count == 0{
+      createTipsLabel()
+      tipLabel.isEnabled = false
+      return 0
+    }else{
+      tipLabel.isHidden = true
+      return todoCDs.count
+    }
   }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let identifire = "identifier"
     var cell = tableView.dequeueReusableCell(withIdentifier: identifire)
+    cell?.selectionStyle = .none
     if cell == nil {
       cell = UITableViewCell(style: .default, reuseIdentifier: identifire)
       tableView.reloadData()
     }
+    
 
     let selectedSigar = todoCDs[indexPath.row]
 
@@ -63,7 +72,7 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate {
 
 
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    let alert = UIAlertController(title: "name Sigar", message: "papirosk , 20.01.22", preferredStyle: .alert)
+    let alert = UIAlertController(title: todoCDs[indexPath.row].review, message: "Магазин: \(todoCDs[indexPath.row].shop ?? String())", preferredStyle: .alert)
     alert.addAction(UIAlertAction(title: "Отлично", style: .cancel, handler: nil))
 
     present(alert, animated: true, completion: nil)

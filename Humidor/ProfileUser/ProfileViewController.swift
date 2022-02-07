@@ -24,6 +24,22 @@ class ProfileViewController: UIViewController
 
   }
 
+  var tipLabel: UILabel = {
+    var label = UILabel()
+    label.text = "Тут будут все ваши выкуренные сигары "
+    label.numberOfLines = 0
+    label.textAlignment = .center
+    return label
+  }()
+
+
+  func createTipsLabel(){
+    view.addSubview(tipLabel)
+    tipLabel.snp.makeConstraints { make in
+      make.center.equalToSuperview()
+    }
+  }
+
 
   func makeTable(){
     tableView = UITableView.init(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height), style: .grouped)
