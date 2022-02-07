@@ -42,6 +42,7 @@
 		D2B116AF27B1A4E800FB17A8 /* CollectionSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B116AE27B1A4E800FB17A8 /* CollectionSettings.swift */; };
 		D2B116B227B1A55100FB17A8 /* SettingsCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B116B127B1A55100FB17A8 /* SettingsCV.swift */; };
 		D2B116B527B1A66900FB17A8 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B116B427B1A66900FB17A8 /* Actions.swift */; };
+		D2B116B827B1A82D00FB17A8 /* SettingsElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B116B727B1A82D00FB17A8 /* SettingsElements.swift */; };
 		D2E0D98327AB1FC500BEB7A1 /* ActionCoreML.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0D98227AB1FC500BEB7A1 /* ActionCoreML.swift */; };
 		D2E0D98627AC1AED00BEB7A1 /* ExtensionHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0D98527AC1AED00BEB7A1 /* ExtensionHistoryViewController.swift */; };
 		D2E0D98C27AC219600BEB7A1 /* SmokeOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0D98B27AC219600BEB7A1 /* SmokeOutViewController.swift */; };
@@ -113,6 +114,7 @@
 		D2B116AE27B1A4E800FB17A8 /* CollectionSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSettings.swift; sourceTree = "<group>"; };
 		D2B116B127B1A55100FB17A8 /* SettingsCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCV.swift; sourceTree = "<group>"; };
 		D2B116B427B1A66900FB17A8 /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		D2B116B727B1A82D00FB17A8 /* SettingsElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsElements.swift; sourceTree = "<group>"; };
 		D2E0D98227AB1FC500BEB7A1 /* ActionCoreML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCoreML.swift; sourceTree = "<group>"; };
 		D2E0D98527AC1AED00BEB7A1 /* ExtensionHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHistoryViewController.swift; sourceTree = "<group>"; };
 		D2E0D98B27AC219600BEB7A1 /* SmokeOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeOutViewController.swift; sourceTree = "<group>"; };
@@ -378,6 +380,14 @@
 			path = ElementsActions;
 			sourceTree = "<group>";
 		};
+		D2B116B627B1A81A00FB17A8 /* SettingsViewElements */ = {
+			isa = PBXGroup;
+			children = (
+				D2B116B727B1A82D00FB17A8 /* SettingsElements.swift */,
+			);
+			path = SettingsViewElements;
+			sourceTree = "<group>";
+		};
 		D2E0D98427AB212700BEB7A1 /* MainJob */ = {
 			isa = PBXGroup;
 			children = (
@@ -398,6 +408,7 @@
 			isa = PBXGroup;
 			children = (
 				D2254DA6279C95F000219DAE /* HistoryViewController.swift */,
+				D2B116B627B1A81A00FB17A8 /* SettingsViewElements */,
 				D2E0D98727AC1AF100BEB7A1 /* ExtensionTableView */,
 			);
 			path = HistoryView;
@@ -689,6 +700,7 @@
 				D277445B27A7372C003EA3AE /* UIImage+RawBytes.swift in Sources */,
 				D2254DA7279C95F000219DAE /* HistoryViewController.swift in Sources */,
 				D277446327A7372C003EA3AE /* Math.swift in Sources */,
+				D2B116B827B1A82D00FB17A8 /* SettingsElements.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
