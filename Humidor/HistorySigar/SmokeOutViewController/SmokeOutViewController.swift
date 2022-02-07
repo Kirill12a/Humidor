@@ -10,27 +10,36 @@ import UIKit
 import CoreData
 
 
+//MARK: - Экран выкуривания сигары
+class SmokeOutViewController: UIViewController,SigarSegueProtocol, UITextViewDelegate {
 
-class SmokeOutViewController: UIViewController,TestSegue, UITextViewDelegate {
-
+  //MARK: - Property
+ // ===========================
   var value: Sigars?
   var dateSigar: String?
-  func testSegue(array: Sigars) {
+// ============================
 
-    // дефольное значение для фотки
-    let profileImage = UIImage(named:"cigarDefult")!
-    let imageData = profileImage.pngData()
-    //
+  //MARK: - Delegate
+  func sigarSegue(array: Sigars)
+  {
 
-    sigarName.text = array.name
-    sigarImage.image = UIImage(data: array.image ?? imageData! )
-    dataLabel.text = array.date
-    placeBuy.text = array.place
-    // --------------
+    // ---------------
+    let profileImage  =   UIImage(named:"cigarDefult")!
+    let imageData     =   profileImage.pngData()
+    // ---------------
+
+    sigarName.text      =     array.name
+    sigarImage.image    =     UIImage(data: array.image ?? imageData! )
+    dataLabel.text      =     array.date
+    placeBuy.text       =     array.place
+
+    //!!!!!!!!!!!!!!!
     value = array
+    //!!!!!!!!!!!!!!!
   }
 
 
+  //MARK: - TextViewDelegate
   var count = 0
   func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
     if count < 1  {
@@ -61,7 +70,7 @@ class SmokeOutViewController: UIViewController,TestSegue, UITextViewDelegate {
     view.endEditing(true)
   }
 
-
+//MARK: - Создание UI элементов
   lazy var sigarImage: UIImageView = {
     let image = UIImageView()
     image.image = UIImage(named: "sif")
@@ -157,91 +166,75 @@ class SmokeOutViewController: UIViewController,TestSegue, UITextViewDelegate {
 
   }
 
-
-
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setUpView()
-      hideKeyboard()
-      reviewSigar.text = "Вывод:"
-    }
-
-
-
-
-
-    private func setUpView() {
-      view.backgroundColor = .white
-
-
-      view.addSubview(sigarImage)
-      sigarImage.snp.makeConstraints { make in
-        make.topMargin.equalToSuperview().inset(8) // это если шо
-        make.centerX.equalToSuperview()
-        make.width.height.equalTo(250)
+  override func viewDidLoad() {
+          super.viewDidLoad()
+          setUpView()
+        hideKeyboard()
+        reviewSigar.text = "Вывод:"
       }
 
 
-        view.addSubview(sigarName)
-        sigarName.snp.makeConstraints { make in
-            make.centerX.equalToSuperview()
-          make.centerY.equalTo(sigarImage.snp_bottomMargin).offset(30)
-          make.width.equalTo(view.bounds.width - 25)
-          make.height.equalTo(40)
+
+
+
+      private func setUpView() {
+        view.backgroundColor = .white
+
+
+        view.addSubview(sigarImage)
+        sigarImage.snp.makeConstraints { make in
+          make.topMargin.equalToSuperview().inset(8) // это если шо
+          make.centerX.equalToSuperview()
+          make.width.height.equalTo(250)
         }
 
 
-      view.addSubview(dataLabel)
-      dataLabel.snp.makeConstraints { make in
-        make.centerX.equalToSuperview()
-        make.centerY.equalTo(sigarName.snp_bottomMargin).offset(15)
+          view.addSubview(sigarName)
+          sigarName.snp.makeConstraints { make in
+              make.centerX.equalToSuperview()
+            make.centerY.equalTo(sigarImage.snp_bottomMargin).offset(30)
+            make.width.equalTo(view.bounds.width - 25)
+            make.height.equalTo(40)
+          }
+
+
+        view.addSubview(dataLabel)
+        dataLabel.snp.makeConstraints { make in
+          make.centerX.equalToSuperview()
+          make.centerY.equalTo(sigarName.snp_bottomMargin).offset(15)
+        }
+
+        view.addSubview(placeBuy)
+        placeBuy.snp.makeConstraints { make in
+          make.centerX.equalToSuperview()
+          make.centerY.equalTo(dataLabel.snp_bottomMargin).offset(20)
+
+        }
+
+        view.addSubview(reviewSigar)
+        reviewSigar.snp.makeConstraints { make in
+          make.centerX.equalToSuperview()
+          make.centerY.equalTo(placeBuy.snp_bottomMargin).offset(40)
+          make.height.equalTo(50)
+          make.width.equalTo(200)
+        }
+
+        view.addSubview(smokeOutSigar)
+        smokeOutSigar.snp.makeConstraints { make in
+          make.centerX.equalToSuperview()
+          make.centerY.equalTo(reviewSigar.snp_bottomMargin).offset(100)
+          make.width.height.equalTo(100)
+        }
+
+
+
+
+
+
+
       }
 
-      view.addSubview(placeBuy)
-      placeBuy.snp.makeConstraints { make in
-        make.centerX.equalToSuperview()
-        make.centerY.equalTo(dataLabel.snp_bottomMargin).offset(20)
 
-      }
-
-      view.addSubview(reviewSigar)
-      reviewSigar.snp.makeConstraints { make in
-        make.centerX.equalToSuperview()
-        make.centerY.equalTo(placeBuy.snp_bottomMargin).offset(40)
-        make.height.equalTo(50)
-        make.width.equalTo(200)
-      }
-
-      view.addSubview(smokeOutSigar)
-      smokeOutSigar.snp.makeConstraints { make in
-        make.centerX.equalToSuperview()
-        make.centerY.equalTo(reviewSigar.snp_bottomMargin).offset(100)
-        make.width.height.equalTo(100)
-      }
-
-
-
-
-
-
-
-    }
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
+  }
 
 
