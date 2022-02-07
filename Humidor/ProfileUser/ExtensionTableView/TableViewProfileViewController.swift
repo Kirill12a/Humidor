@@ -29,7 +29,7 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate
     }
   }
 
-//MARK:  - CellForRowAt
+  //MARK:  - CellForRowAt
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
   {
 
@@ -50,7 +50,7 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate
     return cell!
   }
 
-//MARK:  - EditingStyle
+  //MARK:  - EditingStyle
   func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
     if editingStyle == .delete
     {
@@ -73,7 +73,7 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate
     }
   }
 
-//MARK: - DidSelectRowAt
+  //MARK: - DidSelectRowAt
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
   {
 
