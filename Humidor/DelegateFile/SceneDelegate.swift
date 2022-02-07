@@ -24,9 +24,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     home.selectedIndex = 1 // какой индекс будет показан сразу
 
-
   }
 
+  // -------------------------------------- //
   func sceneDidDisconnect(_ scene: UIScene) {}
 
   func sceneDidBecomeActive(_ scene: UIScene) {}
@@ -39,5 +39,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
   {
     (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
   }
+  // -------------------------------------- //
 }
 
