@@ -14,10 +14,19 @@ import CoreData
 class SmokeOutViewController: UIViewController,SigarSegueProtocol, UITextViewDelegate {
 
   //MARK: - Property
- // ===========================
+  // ===========================
   var value: Sigars?
   var dateSigar: String?
-// ============================
+  // ============================
+
+
+  //MARK: - ViewDidLoad
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    setUpView()
+    hideKeyboard()
+    reviewSigar.text = "Вывод:"
+  }
 
   //MARK: - Delegate
   func sigarSegue(array: Sigars)
@@ -70,7 +79,7 @@ class SmokeOutViewController: UIViewController,SigarSegueProtocol, UITextViewDel
     view.endEditing(true)
   }
 
-//MARK: - Создание UI элементов
+  //MARK: - Создание UI элементов
   lazy var sigarImage: UIImageView = {
     let image = UIImageView()
     image.image = UIImage(named: "sif")
@@ -82,14 +91,14 @@ class SmokeOutViewController: UIViewController,SigarSegueProtocol, UITextViewDel
   }()
 
   lazy var sigarName: UILabel = {
-        let label = UILabel()
-        label.text = "ОПС"
+    let label = UILabel()
+    label.text = "ОПС"
     label.textColor = UIColor(red: 38/255, green: 38/255, blue: 38/255, alpha: 100)
     label.textAlignment = .center
     label.numberOfLines = 0
     label.font = UIFont(name:"Domine", size: 25)
-        return label
-    }()
+    return label
+  }()
 
   lazy var dataLabel: UILabel = {
     var label = UILabel()
@@ -128,113 +137,40 @@ class SmokeOutViewController: UIViewController,SigarSegueProtocol, UITextViewDel
   var ide = 0
 
   @objc func smoking(){
-     let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
-        if let todo = value {
-          context!.delete(todo)
-        }
-        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
-
-
+    let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
+    if let todo = value {
+      context!.delete(todo)
+    }
+    (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
 
 
     if let contextSigarHistory = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
       let newHistoryItem = History(context: contextSigarHistory)
 
-      if let nameSigar = sigarName.text {
+      if let nameSigar = sigarName.text, let place = placeBuy.text, let rewiew = reviewSigar.text
+      {
         newHistoryItem.name = nameSigar
-      }
-
-      if let place = placeBuy.text {
         newHistoryItem.shop = place
+        newHistoryItem.review = rewiew
+        newHistoryItem.imageSigar = sigarImage.image?.jpegData(compressionQuality: 1.0)
       }
-
-      if let review = reviewSigar.text {
-        newHistoryItem.review = review
-      }
-
 
       newHistoryItem.imageSigar = sigarImage.image?.jpegData(compressionQuality: 1.0)
       (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
-
-      print(newHistoryItem)
-
     }
 
-
     navigationController?.popViewController(animated: true)
-
-
   }
 
-  override func viewDidLoad() {
-          super.viewDidLoad()
-          setUpView()
-        hideKeyboard()
-        reviewSigar.text = "Вывод:"
-      }
-
-
-
-
-
-      private func setUpView() {
-        view.backgroundColor = .white
-
-
-        view.addSubview(sigarImage)
-        sigarImage.snp.makeConstraints { make in
-          make.topMargin.equalToSuperview().inset(8) // это если шо
-          make.centerX.equalToSuperview()
-          make.width.height.equalTo(250)
-        }
-
-
-          view.addSubview(sigarName)
-          sigarName.snp.makeConstraints { make in
-              make.centerX.equalToSuperview()
-            make.centerY.equalTo(sigarImage.snp_bottomMargin).offset(30)
-            make.width.equalTo(view.bounds.width - 25)
-            make.height.equalTo(40)
-          }
-
-
-        view.addSubview(dataLabel)
-        dataLabel.snp.makeConstraints { make in
-          make.centerX.equalToSuperview()
-          make.centerY.equalTo(sigarName.snp_bottomMargin).offset(15)
-        }
-
-        view.addSubview(placeBuy)
-        placeBuy.snp.makeConstraints { make in
-          make.centerX.equalToSuperview()
-          make.centerY.equalTo(dataLabel.snp_bottomMargin).offset(20)
-
-        }
-
-        view.addSubview(reviewSigar)
-        reviewSigar.snp.makeConstraints { make in
-          make.centerX.equalToSuperview()
-          make.centerY.equalTo(placeBuy.snp_bottomMargin).offset(40)
-          make.height.equalTo(50)
-          make.width.equalTo(200)
-        }
-
-        view.addSubview(smokeOutSigar)
-        smokeOutSigar.snp.makeConstraints { make in
-          make.centerX.equalToSuperview()
-          make.centerY.equalTo(reviewSigar.snp_bottomMargin).offset(100)
-          make.width.height.equalTo(100)
-        }
 
 
 
 
 
 
+  
 
-      }
 
-
-  }
+}
 
 

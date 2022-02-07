@@ -55,16 +55,10 @@ class SigarsCollectionViewCell: UICollectionViewCell
 }
 
 
-
-
-
-
-import UIKit
-import SnapKit
-
 //MARK: - Настройка UI ячейки
 extension SigarsCollectionViewCell
 {
+
   //MARK: Cell elements
   func setupUI()
   {
@@ -80,7 +74,6 @@ extension SigarsCollectionViewCell
     characterImageView.snp.makeConstraints { make in
       make.width.height.equalTo(300)
       make.center.equalToSuperview()
-
     }
   }
 }

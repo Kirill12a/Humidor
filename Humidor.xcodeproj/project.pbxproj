@@ -41,8 +41,10 @@
 		D277446527A7386F003EA3AE /* DeepLabV3.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = D277446427A7386F003EA3AE /* DeepLabV3.mlpackage */; };
 		D2B116AF27B1A4E800FB17A8 /* CollectionSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B116AE27B1A4E800FB17A8 /* CollectionSettings.swift */; };
 		D2B116B227B1A55100FB17A8 /* SettingsCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B116B127B1A55100FB17A8 /* SettingsCV.swift */; };
-		D2B116B527B1A66900FB17A8 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B116B427B1A66900FB17A8 /* Actions.swift */; };
+		D2B116B527B1A66900FB17A8 /* ActionsAndDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B116B427B1A66900FB17A8 /* ActionsAndDelegates.swift */; };
 		D2B116B827B1A82D00FB17A8 /* SettingsElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B116B727B1A82D00FB17A8 /* SettingsElements.swift */; };
+		D2B116BB27B1AAA800FB17A8 /* ViewElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B116BA27B1AAA800FB17A8 /* ViewElements.swift */; };
+		D2B116BE27B1ABE600FB17A8 /* SettingsElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B116BD27B1ABE600FB17A8 /* SettingsElement.swift */; };
 		D2E0D98327AB1FC500BEB7A1 /* ActionCoreML.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0D98227AB1FC500BEB7A1 /* ActionCoreML.swift */; };
 		D2E0D98627AC1AED00BEB7A1 /* ExtensionHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0D98527AC1AED00BEB7A1 /* ExtensionHistoryViewController.swift */; };
 		D2E0D98C27AC219600BEB7A1 /* SmokeOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0D98B27AC219600BEB7A1 /* SmokeOutViewController.swift */; };
@@ -113,8 +115,10 @@
 		D277446427A7386F003EA3AE /* DeepLabV3.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = DeepLabV3.mlpackage; sourceTree = "<group>"; };
 		D2B116AE27B1A4E800FB17A8 /* CollectionSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSettings.swift; sourceTree = "<group>"; };
 		D2B116B127B1A55100FB17A8 /* SettingsCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCV.swift; sourceTree = "<group>"; };
-		D2B116B427B1A66900FB17A8 /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		D2B116B427B1A66900FB17A8 /* ActionsAndDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsAndDelegates.swift; sourceTree = "<group>"; };
 		D2B116B727B1A82D00FB17A8 /* SettingsElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsElements.swift; sourceTree = "<group>"; };
+		D2B116BA27B1AAA800FB17A8 /* ViewElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewElements.swift; sourceTree = "<group>"; };
+		D2B116BD27B1ABE600FB17A8 /* SettingsElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsElement.swift; sourceTree = "<group>"; };
 		D2E0D98227AB1FC500BEB7A1 /* ActionCoreML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCoreML.swift; sourceTree = "<group>"; };
 		D2E0D98527AC1AED00BEB7A1 /* ExtensionHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHistoryViewController.swift; sourceTree = "<group>"; };
 		D2E0D98B27AC219600BEB7A1 /* SmokeOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeOutViewController.swift; sourceTree = "<group>"; };
@@ -321,6 +325,7 @@
 			isa = PBXGroup;
 			children = (
 				D2254E0027A0BE9F00219DAE /* CreateUiViewController.swift */,
+				D2B116B927B1AA7B00FB17A8 /* ViewElements */,
 				D2B116B327B1A64E00FB17A8 /* ElementsActions */,
 			);
 			path = createScreen;
@@ -375,7 +380,7 @@
 		D2B116B327B1A64E00FB17A8 /* ElementsActions */ = {
 			isa = PBXGroup;
 			children = (
-				D2B116B427B1A66900FB17A8 /* Actions.swift */,
+				D2B116B427B1A66900FB17A8 /* ActionsAndDelegates.swift */,
 			);
 			path = ElementsActions;
 			sourceTree = "<group>";
@@ -384,6 +389,22 @@
 			isa = PBXGroup;
 			children = (
 				D2B116B727B1A82D00FB17A8 /* SettingsElements.swift */,
+			);
+			path = SettingsViewElements;
+			sourceTree = "<group>";
+		};
+		D2B116B927B1AA7B00FB17A8 /* ViewElements */ = {
+			isa = PBXGroup;
+			children = (
+				D2B116BA27B1AAA800FB17A8 /* ViewElements.swift */,
+			);
+			path = ViewElements;
+			sourceTree = "<group>";
+		};
+		D2B116BC27B1ABD000FB17A8 /* SettingsViewElements */ = {
+			isa = PBXGroup;
+			children = (
+				D2B116BD27B1ABE600FB17A8 /* SettingsElement.swift */,
 			);
 			path = SettingsViewElements;
 			sourceTree = "<group>";
@@ -418,6 +439,7 @@
 			isa = PBXGroup;
 			children = (
 				D2E0D98B27AC219600BEB7A1 /* SmokeOutViewController.swift */,
+				D2B116BC27B1ABD000FB17A8 /* SettingsViewElements */,
 			);
 			path = SmokeOutViewController;
 			sourceTree = "<group>";
@@ -682,10 +704,12 @@
 				D2254DA5279C95C900219DAE /* ProfileViewController.swift in Sources */,
 				D2254DD1279DDE8A00219DAE /* SigarsCollectionViewCell.swift in Sources */,
 				D277445F27A7372C003EA3AE /* CGImage+RawBytes.swift in Sources */,
+				D2B116BE27B1ABE600FB17A8 /* SettingsElement.swift in Sources */,
 				D277445927A7372C003EA3AE /* NonMaxSuppression.swift in Sources */,
 				D277446527A7386F003EA3AE /* DeepLabV3.mlpackage in Sources */,
 				D2B116AF27B1A4E800FB17A8 /* CollectionSettings.swift in Sources */,
 				D277445727A7372C003EA3AE /* MLMultiArray+Image.swift in Sources */,
+				D2B116BB27B1AAA800FB17A8 /* ViewElements.swift in Sources */,
 				D2B116B227B1A55100FB17A8 /* SettingsCV.swift in Sources */,
 				D2E8837627B0577F00B872BF /* TableViewProfileViewController.swift in Sources */,
 				D2E0D98C27AC219600BEB7A1 /* SmokeOutViewController.swift in Sources */,
@@ -693,7 +717,7 @@
 				D277446127A7372C003EA3AE /* UIImage+CVPixelBuffer.swift in Sources */,
 				D277446227A7372C003EA3AE /* UIImage+Extensions.swift in Sources */,
 				D277445C27A7372C003EA3AE /* CGImage+CVPixelBuffer.swift in Sources */,
-				D2B116B527B1A66900FB17A8 /* Actions.swift in Sources */,
+				D2B116B527B1A66900FB17A8 /* ActionsAndDelegates.swift in Sources */,
 				D2254D41279B4C1200219DAE /* SceneDelegate.swift in Sources */,
 				D277445827A7372C003EA3AE /* CGImagePropertyOrientation.swift in Sources */,
 				D2254DA0279C954500219DAE /* TabBar.swift in Sources */,

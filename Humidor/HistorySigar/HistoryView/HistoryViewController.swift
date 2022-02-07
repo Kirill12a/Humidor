@@ -16,7 +16,6 @@ protocol SigarSegueProtocol: AnyObject
   func sigarSegue(array: Sigars)
 }
 
-
 class HistoryViewController: UIViewController
 {
 

@@ -35,8 +35,8 @@ extension MySigarsAddSigarsViewController: UICollectionViewDataSource
   {
 
     let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath) as! SigarsCollectionViewCell
-    myCell.layer.cornerRadius   =   myCell.bounds.height / 2
-    let selectedToDo            =   todoCDs[indexPath.row]
+    myCell.layer.cornerRadius           =   myCell.bounds.height / 2
+    let selectedToDo                    =   todoCDs[indexPath.row]
 
     if let name = selectedToDo.name, let data = selectedToDo.image
     {
