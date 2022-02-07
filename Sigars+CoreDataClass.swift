@@ -10,6 +10,7 @@ import Foundation
 import CoreData
 
 @objc(Sigars)
-public class Sigars: NSManagedObject {
+public class Sigars: NSManagedObject
+{
 
 }
