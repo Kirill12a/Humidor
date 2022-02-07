@@ -16,6 +16,7 @@ protocol SigarSegueProtocol: AnyObject
   func sigarSegue(array: Sigars)
 }
 
+//MARK: - Экран с доступными сигарами 
 class HistoryViewController: UIViewController
 {
 

@@ -5,7 +5,8 @@ import UIKit
 
 extension UIImage {
 
-  @nonobjc public func toByteArrayRGBA() -> [UInt8]? {
+  @nonobjc public func toByteArrayRGBA() -> [UInt8]?
+  {
     return cgImage?.toByteArrayRGBA()
   }
 
@@ -14,7 +15,8 @@ extension UIImage {
                                                width: Int,
                                                height: Int,
                                                scale: CGFloat = 0,
-                                               orientation: UIImage.Orientation = .up) -> UIImage? {
+                                               orientation: UIImage.Orientation = .up) -> UIImage?
+  {
     if let cgImage = CGImage.fromByteArrayRGBA(bytes, width: width, height: height) {
       return UIImage(cgImage: cgImage, scale: scale, orientation: orientation)
     } else {
@@ -27,8 +29,10 @@ extension UIImage {
                                                width: Int,
                                                height: Int,
                                                scale: CGFloat = 0,
-                                               orientation: UIImage.Orientation = .up) -> UIImage? {
-    if let cgImage = CGImage.fromByteArrayGray(bytes, width: width, height: height) {
+                                               orientation: UIImage.Orientation = .up) -> UIImage?
+  {
+    if let cgImage = CGImage.fromByteArrayGray(bytes, width: width, height: height)
+    {
       return UIImage(cgImage: cgImage, scale: scale, orientation: orientation)
     } else {
       return nil

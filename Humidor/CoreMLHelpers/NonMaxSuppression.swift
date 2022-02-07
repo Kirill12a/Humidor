@@ -3,7 +3,8 @@
 import Foundation
 import Accelerate
 
-public struct BoundingBox {
+public struct BoundingBox
+{
 
   public let classIndex: Int
 
@@ -13,7 +14,8 @@ public struct BoundingBox {
 
   public let rect: CGRect
 
-  public init(classIndex: Int, score: Float, rect: CGRect) {
+  public init(classIndex: Int, score: Float, rect: CGRect)
+  {
     self.classIndex = classIndex
     self.score = score
     self.rect = rect
@@ -21,7 +23,8 @@ public struct BoundingBox {
 }
 
 
-public func IOU(_ a: CGRect, _ b: CGRect) -> Float {
+public func IOU(_ a: CGRect, _ b: CGRect) -> Float
+{
   let areaA = a.width * a.height
   if areaA <= 0 { return 0 }
 
@@ -57,7 +60,8 @@ public func nonMaxSuppression(boundingBoxes: [BoundingBox],
 
   var selected: [Int] = []
 
-  for i in 0..<sortedIndices.count {
+  for i in 0..<sortedIndices.count
+  {
     if selected.count >= maxBoxes { break }
 
     var shouldSelect = true
@@ -66,14 +70,16 @@ public func nonMaxSuppression(boundingBoxes: [BoundingBox],
 
     for j in 0..<selected.count {
       let boxB = boundingBoxes[selected[j]]
-      if IOU(boxA.rect, boxB.rect) > iouThreshold {
+      if IOU(boxA.rect, boxB.rect) > iouThreshold
+      {
         shouldSelect = false
         break
       }
     }
 
 
-    if shouldSelect {
+    if shouldSelect
+    {
       selected.append(sortedIndices[i])
     }
   }
@@ -90,14 +96,18 @@ public func nonMaxSuppressionMultiClass(numClasses: Int,
                                         maxTotal: Int) -> [Int] {
   var selectedBoxes: [Int] = []
 
-  for c in 0..<numClasses {
+  for c in 0..<numClasses
+  {
     var filteredBoxes = [Int]()
 
-    for p in 0..<boundingBoxes.count {
+    for p in 0..<boundingBoxes.count
+    {
       let prediction = boundingBoxes[p]
-      if prediction.classIndex == c {
+      if prediction.classIndex == c
+      {
 
-        if prediction.score > scoreThreshold {
+        if prediction.score > scoreThreshold
+        {
           filteredBoxes.append(p)
         }
       }

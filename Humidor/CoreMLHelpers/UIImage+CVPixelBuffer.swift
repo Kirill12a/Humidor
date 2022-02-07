@@ -5,7 +5,8 @@ import VideoToolbox
 
 extension UIImage {
 
-  public func pixelBuffer(width: Int, height: Int) -> CVPixelBuffer? {
+  public func pixelBuffer(width: Int, height: Int) -> CVPixelBuffer?
+  {
     return pixelBuffer(width: width, height: height,
                        pixelFormatType: kCVPixelFormatType_32ARGB,
                        colorSpace: CGColorSpaceCreateDeviceRGB(),
@@ -13,7 +14,8 @@ extension UIImage {
   }
 
 
-  public func pixelBufferGray(width: Int, height: Int) -> CVPixelBuffer? {
+  public func pixelBufferGray(width: Int, height: Int) -> CVPixelBuffer?
+  {
     return pixelBuffer(width: width, height: height,
                        pixelFormatType: kCVPixelFormatType_OneComponent8,
                        colorSpace: CGColorSpaceCreateDeviceGray(),
@@ -21,7 +23,8 @@ extension UIImage {
   }
 
   func pixelBuffer(width: Int, height: Int, pixelFormatType: OSType,
-                   colorSpace: CGColorSpace, alphaInfo: CGImageAlphaInfo) -> CVPixelBuffer? {
+                   colorSpace: CGColorSpace, alphaInfo: CGImageAlphaInfo) -> CVPixelBuffer?
+  {
     var maybePixelBuffer: CVPixelBuffer?
     let attrs = [kCVPixelBufferCGImageCompatibilityKey: kCFBooleanTrue,
                  kCVPixelBufferCGBitmapContextCompatibilityKey: kCFBooleanTrue]
@@ -32,12 +35,14 @@ extension UIImage {
                                      attrs as CFDictionary,
                                      &maybePixelBuffer)
 
-    guard status == kCVReturnSuccess, let pixelBuffer = maybePixelBuffer else {
+    guard status == kCVReturnSuccess, let pixelBuffer = maybePixelBuffer else
+    {
       return nil
     }
 
     let flags = CVPixelBufferLockFlags(rawValue: 0)
-    guard kCVReturnSuccess == CVPixelBufferLockBaseAddress(pixelBuffer, flags) else {
+    guard kCVReturnSuccess == CVPixelBufferLockBaseAddress(pixelBuffer, flags) else
+    {
       return nil
     }
     defer { CVPixelBufferUnlockBaseAddress(pixelBuffer, flags) }
@@ -63,18 +68,23 @@ extension UIImage {
   }
 }
 
-extension UIImage {
+extension UIImage
+{
 
-  public convenience init?(pixelBuffer: CVPixelBuffer) {
-    if let cgImage = CGImage.create(pixelBuffer: pixelBuffer) {
+  public convenience init?(pixelBuffer: CVPixelBuffer)
+  {
+    if let cgImage = CGImage.create(pixelBuffer: pixelBuffer)
+    {
       self.init(cgImage: cgImage)
     } else {
       return nil
     }
   }
 
-  public convenience init?(pixelBuffer: CVPixelBuffer, context: CIContext) {
-    if let cgImage = CGImage.create(pixelBuffer: pixelBuffer, context: context) {
+  public convenience init?(pixelBuffer: CVPixelBuffer, context: CIContext)
+  {
+    if let cgImage = CGImage.create(pixelBuffer: pixelBuffer, context: context)
+    {
       self.init(cgImage: cgImage)
     } else {
       return nil

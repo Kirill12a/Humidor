@@ -3,7 +3,8 @@
 import Accelerate
 import CoreML
 
-public protocol MultiArrayType: Comparable {
+public protocol MultiArrayType: Comparable
+{
   static var multiArrayDataType: MLMultiArrayDataType { get }
   static func +(lhs: Self, rhs: Self) -> Self
   static func -(lhs: Self, rhs: Self) -> Self
@@ -13,48 +14,26 @@ public protocol MultiArrayType: Comparable {
   var toUInt8: UInt8 { get }
 }
 
-extension Double: MultiArrayType {
+extension Double: MultiArrayType
+{
   public static var multiArrayDataType: MLMultiArrayDataType { return .double }
   public var toUInt8: UInt8 { return UInt8(self) }
 }
 
-extension Float: MultiArrayType {
+extension Float: MultiArrayType
+{
   public static var multiArrayDataType: MLMultiArrayDataType { return .float32 }
   public var toUInt8: UInt8 { return UInt8(self) }
 }
 
-extension Int32: MultiArrayType {
+extension Int32: MultiArrayType
+{
   public static var multiArrayDataType: MLMultiArrayDataType { return .int32 }
   public var toUInt8: UInt8 { return UInt8(self) }
 }
 
-extension MLMultiArray {
-  /**
-    Converts the multi-array to a CGImage.
-
-    The multi-array must have at least 2 dimensions for a grayscale image, or
-    at least 3 dimensions for a color image.
-
-    The default expected shape is (height, width) or (channels, height, width).
-    However, you can change this using the `axes` parameter. For example, if
-    the array shape is (1, height, width, channels), use `axes: (3, 1, 2)`.
-
-    If `channel` is not nil, only converts that channel to a grayscale image.
-    This lets you visualize individual channels from a multi-array with more
-    than 4 channels.
-
-    Otherwise, converts all channels. In this case, the number of channels in
-    the multi-array must be 1 for grayscale, 3 for RGB, or 4 for RGBA.
-
-    Use the `min` and `max` parameters to put the values from the array into
-    the range [0, 255], if not already:
-
-    - `min`: should be the smallest value in the data; this will be mapped to 0.
-    - `max`: should be the largest value in the data; will be mapped to 255.
-
-    For example, if the range of the data in the multi-array is [-1, 1], use
-    `min: -1, max: 1`. If the range is already [0, 255], then use the defaults.
-  */
+extension MLMultiArray
+{
   public func cgImage(min: Double = 0,
                       max: Double = 255,
                       channel: Int? = nil,

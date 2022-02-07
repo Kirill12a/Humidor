@@ -261,8 +261,8 @@
 		D2254DD2279DF01400219DAE /* HumidorScreen */ = {
 			isa = PBXGroup;
 			children = (
-				D2254DFE27A0BE5800219DAE /* mainScreen */,
-				D2254DFF27A0BE6A00219DAE /* createScreen */,
+				D2254DFE27A0BE5800219DAE /* MainScreen */,
+				D2254DFF27A0BE6A00219DAE /* CreateScreen */,
 			);
 			path = HumidorScreen;
 			sourceTree = "<group>";
@@ -310,7 +310,7 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		D2254DFE27A0BE5800219DAE /* mainScreen */ = {
+		D2254DFE27A0BE5800219DAE /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
 				D2254D42279B4C1200219DAE /* MySigarsAddSigarsViewController.swift */,
@@ -318,17 +318,17 @@
 				D2B116B027B1A53600FB17A8 /* CollectionViewSettings */,
 				D2B116AD27B1A4AD00FB17A8 /* ViewSettings */,
 			);
-			path = mainScreen;
+			path = MainScreen;
 			sourceTree = "<group>";
 		};
-		D2254DFF27A0BE6A00219DAE /* createScreen */ = {
+		D2254DFF27A0BE6A00219DAE /* CreateScreen */ = {
 			isa = PBXGroup;
 			children = (
 				D2254E0027A0BE9F00219DAE /* CreateUiViewController.swift */,
 				D2B116B927B1AA7B00FB17A8 /* ViewElements */,
 				D2B116B327B1A64E00FB17A8 /* ElementsActions */,
 			);
-			path = createScreen;
+			path = CreateScreen;
 			sourceTree = "<group>";
 		};
 		D277444327A6A598003EA3AE /* CollectionViewCell */ = {

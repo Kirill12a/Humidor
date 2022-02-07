@@ -6,7 +6,8 @@ import VideoToolbox
 extension CGImage {
 
   public func pixelBuffer(width: Int, height: Int,
-                          orientation: CGImagePropertyOrientation) -> CVPixelBuffer? {
+                          orientation: CGImagePropertyOrientation) -> CVPixelBuffer?
+  {
     return pixelBuffer(width: width, height: height,
                        pixelFormatType: kCVPixelFormatType_32ARGB,
                        colorSpace: CGColorSpaceCreateDeviceRGB(),
@@ -16,7 +17,8 @@ extension CGImage {
 
 
   public func pixelBufferGray(width: Int, height: Int,
-                              orientation: CGImagePropertyOrientation) -> CVPixelBuffer? {
+                              orientation: CGImagePropertyOrientation) -> CVPixelBuffer?
+  {
     return pixelBuffer(width: width, height: height,
                        pixelFormatType: kCVPixelFormatType_OneComponent8,
                        colorSpace: CGColorSpaceCreateDeviceGray(),
@@ -26,7 +28,8 @@ extension CGImage {
 
   func pixelBuffer(width: Int, height: Int, pixelFormatType: OSType,
                    colorSpace: CGColorSpace, alphaInfo: CGImageAlphaInfo,
-                   orientation: CGImagePropertyOrientation) -> CVPixelBuffer? {
+                   orientation: CGImagePropertyOrientation) -> CVPixelBuffer?
+  {
 
 
     assert(orientation == .up)
@@ -41,12 +44,14 @@ extension CGImage {
                                      attrs as CFDictionary,
                                      &maybePixelBuffer)
 
-    guard status == kCVReturnSuccess, let pixelBuffer = maybePixelBuffer else {
+    guard status == kCVReturnSuccess, let pixelBuffer = maybePixelBuffer else
+    {
       return nil
     }
 
     let flags = CVPixelBufferLockFlags(rawValue: 0)
-    guard kCVReturnSuccess == CVPixelBufferLockBaseAddress(pixelBuffer, flags) else {
+    guard kCVReturnSuccess == CVPixelBufferLockBaseAddress(pixelBuffer, flags) else
+    {
       return nil
     }
     defer { CVPixelBufferUnlockBaseAddress(pixelBuffer, flags) }
@@ -67,15 +72,18 @@ extension CGImage {
   }
 }
 
-extension CGImage {
+extension CGImage
+{
 
-  public static func create(pixelBuffer: CVPixelBuffer) -> CGImage? {
+  public static func create(pixelBuffer: CVPixelBuffer) -> CGImage?
+  {
     var cgImage: CGImage?
     VTCreateCGImageFromCVPixelBuffer(pixelBuffer, options: nil, imageOut: &cgImage)
     return cgImage
   }
 
-  public static func create(pixelBuffer: CVPixelBuffer, context: CIContext) -> CGImage? {
+  public static func create(pixelBuffer: CVPixelBuffer, context: CIContext) -> CGImage?
+  {
     let ciImage = CIImage(cvPixelBuffer: pixelBuffer)
     let rect = CGRect(x: 0, y: 0, width: CVPixelBufferGetWidth(pixelBuffer),
                                   height: CVPixelBufferGetHeight(pixelBuffer))

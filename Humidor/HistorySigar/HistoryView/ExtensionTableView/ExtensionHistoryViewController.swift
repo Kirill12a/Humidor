@@ -61,7 +61,10 @@ extension HistoryViewController: UITableViewDataSource, UITableViewDelegate
     let secondVC  =   SmokeOutViewController()
     let texgd     =   todoCDs[indexPath.row]
     delegate      =   secondVC
+    
+    //delegate
     delegate.sigarSegue(array: texgd)
+    //
     navigationController?.pushViewController(secondVC, animated: true)
   }
 

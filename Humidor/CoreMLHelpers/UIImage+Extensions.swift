@@ -3,9 +3,11 @@
 #if canImport(UIKit)
 import UIKit
 
-extension UIImage {
+extension UIImage
+{
  
-  @nonobjc public func resized(to newSize: CGSize, scale: CGFloat = 1) -> UIImage {
+  @nonobjc public func resized(to newSize: CGSize, scale: CGFloat = 1) -> UIImage
+  {
     let format = UIGraphicsImageRendererFormat.default()
     format.scale = scale
     let renderer = UIGraphicsImageRenderer(size: newSize, format: format)

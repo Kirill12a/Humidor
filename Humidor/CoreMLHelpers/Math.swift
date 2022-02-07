@@ -3,7 +3,8 @@ import Foundation
 import Accelerate
 
 
-public func argmax(_ array: [Float], count: Int? = nil) -> (Int, Float) {
+public func argmax(_ array: [Float], count: Int? = nil) -> (Int, Float)
+{
   var maxValue: Float = 0
   var maxIndex: vDSP_Length = 0
   vDSP_maxvi(array, 1, &maxValue, &maxIndex, vDSP_Length(count ?? array.count))
@@ -11,7 +12,8 @@ public func argmax(_ array: [Float], count: Int? = nil) -> (Int, Float) {
 }
 
 
-public func argmax(_ ptr: UnsafePointer<Float>, count: Int, stride: Int = 1) -> (Int, Float) {
+public func argmax(_ ptr: UnsafePointer<Float>, count: Int, stride: Int = 1) -> (Int, Float)
+{
   var maxValue: Float = 0
   var maxIndex: vDSP_Length = 0
   vDSP_maxvi(ptr, vDSP_Stride(stride), &maxValue, &maxIndex, vDSP_Length(count))
@@ -19,7 +21,8 @@ public func argmax(_ ptr: UnsafePointer<Float>, count: Int, stride: Int = 1) -> 
 }
 
 
-public func argmax(_ array: [Double], count: Int? = nil) -> (Int, Double) {
+public func argmax(_ array: [Double], count: Int? = nil) -> (Int, Double)
+{
   var maxValue: Double = 0
   var maxIndex: vDSP_Length = 0
   vDSP_maxviD(array, 1, &maxValue, &maxIndex, vDSP_Length(count ?? array.count))
@@ -27,7 +30,8 @@ public func argmax(_ array: [Double], count: Int? = nil) -> (Int, Double) {
 }
 
 
-public func argmax(_ ptr: UnsafePointer<Double>, count: Int, stride: Int = 1) -> (Int, Double) {
+public func argmax(_ ptr: UnsafePointer<Double>, count: Int, stride: Int = 1) -> (Int, Double)
+{
   var maxValue: Double = 0
   var maxIndex: vDSP_Length = 0
   vDSP_maxviD(ptr, vDSP_Stride(stride), &maxValue, &maxIndex, vDSP_Length(count))
@@ -35,22 +39,26 @@ public func argmax(_ ptr: UnsafePointer<Double>, count: Int, stride: Int = 1) ->
 }
 
 
-public func clamp<T: Comparable>(_ x: T, min: T, max: T) -> T {
+public func clamp<T: Comparable>(_ x: T, min: T, max: T) -> T
+{
   if x < min { return min }
   if x > max { return max }
   return x
 }
 
 
-public func sigmoid(_ x: Float) -> Float {
+public func sigmoid(_ x: Float) -> Float
+{
   return 1 / (1 + exp(-x))
 }
 
-public func sigmoid(_ x: Double) -> Double {
+public func sigmoid(_ x: Double) -> Double
+{
   return 1 / (1 + exp(-x))
 }
 
-public func sigmoid(_ x: UnsafeMutablePointer<Float>, count: Int) {
+public func sigmoid(_ x: UnsafeMutablePointer<Float>, count: Int)
+{
   vDSP_vneg(x, 1, x, 1, vDSP_Length(count))
   var cnt = Int32(count)
   vvexpf(x, x, &cnt)
@@ -59,7 +67,8 @@ public func sigmoid(_ x: UnsafeMutablePointer<Float>, count: Int) {
   vvrecf(x, x, &cnt)
 }
 
-public func sigmoid(_ x: UnsafeMutablePointer<Double>, count: Int) {
+public func sigmoid(_ x: UnsafeMutablePointer<Double>, count: Int)
+{
   vDSP_vnegD(x, 1, x, 1, vDSP_Length(count))
   var cnt = Int32(count)
   vvexp(x, x, &cnt)
@@ -69,7 +78,8 @@ public func sigmoid(_ x: UnsafeMutablePointer<Double>, count: Int) {
 }
 
 
-public func softmax(_ x: [Float]) -> [Float] {
+public func softmax(_ x: [Float]) -> [Float]
+{
   var x = x
   let len = vDSP_Length(x.count)
 

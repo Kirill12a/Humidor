@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-//MARK:  - Настройка ui элементов
+//MARK:  - Настройка UI элементов
 extension SmokeOutViewController
 {
   func setUpView()

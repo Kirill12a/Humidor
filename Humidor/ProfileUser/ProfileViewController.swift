@@ -7,6 +7,7 @@
 
 import UIKit
 
+//MARK: - Экран со всеми использованными
 class ProfileViewController: UIViewController
 {
 //MARK: - Property
@@ -30,9 +31,9 @@ class ProfileViewController: UIViewController
     super.viewWillAppear(animated)
     getToDos()
     title = "\(todoCDs.count) сигары"
-
   }
 
+  //MARK: - View element
   var tipLabel: UILabel = {
     var label = UILabel()
     label.text = "Тут будут все ваши выкуренные сигары "
@@ -41,7 +42,7 @@ class ProfileViewController: UIViewController
     return label
   }()
 
-
+    //MARK: - Так скажем второстепенные методы
   func createTipsLabel(){
     view.addSubview(tipLabel)
     tipLabel.snp.makeConstraints { make in

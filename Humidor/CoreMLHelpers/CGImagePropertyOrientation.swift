@@ -3,8 +3,10 @@
 
 import UIKit
 
-public extension CGImagePropertyOrientation {
-  init(_ orientation: UIImage.Orientation) {
+public extension CGImagePropertyOrientation
+{
+  init(_ orientation: UIImage.Orientation)
+  {
     switch orientation {
     case .up: self = .up
     case .upMirrored: self = .upMirrored
@@ -21,8 +23,10 @@ public extension CGImagePropertyOrientation {
 
 #if !os(tvOS)
 
-public extension CGImagePropertyOrientation {
-  init(_ orientation: UIDeviceOrientation) {
+public extension CGImagePropertyOrientation
+{
+  init(_ orientation: UIDeviceOrientation)
+  {
     switch orientation {
     case .portraitUpsideDown: self = .left
     case .landscapeLeft: self = .up
@@ -34,8 +38,10 @@ public extension CGImagePropertyOrientation {
 
 #endif
 
-extension UIImage.Orientation {
-  init(_ cgOrientation: UIImage.Orientation) {
+extension UIImage.Orientation
+{
+  init(_ cgOrientation: UIImage.Orientation)
+  {
     switch cgOrientation {
     case .up: self = .up
     case .upMirrored: self = .upMirrored

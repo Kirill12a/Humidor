@@ -11,7 +11,8 @@ import CoreData
 
 
 //MARK: - Экран выкуривания сигары
-class SmokeOutViewController: UIViewController,SigarSegueProtocol, UITextViewDelegate {
+class SmokeOutViewController: UIViewController,SigarSegueProtocol, UITextViewDelegate
+{
 
   //MARK: - Property
   // ===========================
@@ -21,7 +22,8 @@ class SmokeOutViewController: UIViewController,SigarSegueProtocol, UITextViewDel
 
 
   //MARK: - ViewDidLoad
-  override func viewDidLoad() {
+  override func viewDidLoad()
+  {
     super.viewDidLoad()
     setUpView()
     hideKeyboard()
@@ -33,10 +35,9 @@ class SmokeOutViewController: UIViewController,SigarSegueProtocol, UITextViewDel
   {
 
     // ---------------
-    let profileImage  =   UIImage(named:"cigarDefult")!
-    let imageData     =   profileImage.pngData()
+    let profileImage    =   UIImage(named:"cigarDefult")!
+    let imageData       =   profileImage.pngData()
     // ---------------
-
     sigarName.text      =     array.name
     sigarImage.image    =     UIImage(data: array.image ?? imageData! )
     dataLabel.text      =     array.date
@@ -50,7 +51,8 @@ class SmokeOutViewController: UIViewController,SigarSegueProtocol, UITextViewDel
 
   //MARK: - TextViewDelegate
   var count = 0
-  func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
+  func textViewShouldBeginEditing(_ textView: UITextView) -> Bool
+  {
     if count < 1  {
       count += 1
       textView.text = ""
@@ -160,8 +162,6 @@ class SmokeOutViewController: UIViewController,SigarSegueProtocol, UITextViewDel
     button.addTarget(self, action: #selector(smoking), for: .touchUpInside)
     return button
   }()
-
-
 
 }
 

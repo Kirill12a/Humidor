@@ -1,13 +1,16 @@
 
 import Swift
 
-extension Array where Element: Comparable {
+extension Array where Element: Comparable
+{
 
-  public func argmax() -> (Int, Element) {
+  public func argmax() -> (Int, Element)
+  {
     precondition(self.count > 0)
     var maxIndex = 0
     var maxValue = self[0]
-    for i in 1..<self.count where self[i] > maxValue {
+    for i in 1..<self.count where self[i] > maxValue
+    {
       maxValue = self[i]
       maxIndex = i
     }
@@ -15,7 +18,8 @@ extension Array where Element: Comparable {
   }
 
 
-  public func argsort(by areInIncreasingOrder: (Element, Element) -> Bool) -> [Array.Index] {
+  public func argsort(by areInIncreasingOrder: (Element, Element) -> Bool) -> [Array.Index]
+  {
     return self.indices.sorted { areInIncreasingOrder(self[$0], self[$1]) }
   }
 

@@ -57,13 +57,25 @@ extension MySigarsAddSigarsViewController: UICollectionViewDelegate
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
   {
 
-    if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
+    if ((UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext) != nil
     {
 
-      let selectedToDo = todoCDs[indexPath.row]
-      context.delete(selectedToDo)
-      (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
-      getToDos()
+      let alert = UIAlertController(title: "Удалить сигарку ", message: "Удалить сигару из хьюмидора?", preferredStyle: .actionSheet)
+      alert.addAction(UIAlertAction(title: "Да", style: .destructive, handler: { _ in
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
+        {
+
+          let selectedToDo = self.todoCDs[indexPath.row]
+          context.delete(selectedToDo)
+          (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+          self.getToDos()
+        }
+      }))
+
+      alert.addAction(UIAlertAction(title: "Оставить", style: .cancel, handler: nil))
+
+      present(alert, animated: true, completion: nil)
+
     }
   }
 }

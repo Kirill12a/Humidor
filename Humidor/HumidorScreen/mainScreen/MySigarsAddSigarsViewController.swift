@@ -13,7 +13,7 @@ class MySigarsAddSigarsViewController: UIViewController
 {
   //MARK:  - Свойства
   var myCollectionView: UICollectionView?
-   var todoCDs: [Sigars] = []
+  var todoCDs: [Sigars] = []
 
   //MARK: - ViewDidLoad
   override func viewDidLoad()
@@ -23,7 +23,7 @@ class MySigarsAddSigarsViewController: UIViewController
     createViewElements()
     view.backgroundColor = UIColor(red: 135/255, green: 100/255, blue: 68/255, alpha: 100)
 
-      // layout
+    // layout
     let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
     layout.sectionInset = UIEdgeInsets(top: 60, left: 0, bottom: 100, right: 0)
     layout.itemSize = CGSize(width: 300 , height: 300) // размер самой ячейки
@@ -66,7 +66,8 @@ class MySigarsAddSigarsViewController: UIViewController
       button.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
 
     },    completion: { _ in
-      UIView.animate(withDuration: 0.6) {
+      UIView.animate(withDuration: 0.6)
+      {
         button.transform = CGAffineTransform.identity
 
         let createVC = CreateUiViewController()

@@ -4,12 +4,14 @@ import Accelerate
 import CoreImage
 
 
-public func createPixelBuffer(width: Int, height: Int) -> CVPixelBuffer? {
+public func createPixelBuffer(width: Int, height: Int) -> CVPixelBuffer?
+{
   var pixelBuffer: CVPixelBuffer?
   let status = CVPixelBufferCreate(nil, width, height,
                                    kCVPixelFormatType_32BGRA, nil,
                                    &pixelBuffer)
-  if status != kCVReturnSuccess {
+  if status != kCVReturnSuccess
+  {
     print("Error: could not create pixel buffer", status)
     return nil
   }
@@ -23,14 +25,17 @@ public func resizePixelBuffer(_ srcPixelBuffer: CVPixelBuffer,
                               cropWidth: Int,
                               cropHeight: Int,
                               scaleWidth: Int,
-                              scaleHeight: Int) -> CVPixelBuffer? {
+                              scaleHeight: Int) -> CVPixelBuffer?
+{
   let flags = CVPixelBufferLockFlags(rawValue: 0)
-  guard kCVReturnSuccess == CVPixelBufferLockBaseAddress(srcPixelBuffer, flags) else {
+  guard kCVReturnSuccess == CVPixelBufferLockBaseAddress(srcPixelBuffer, flags) else
+  {
     return nil
   }
   defer { CVPixelBufferUnlockBaseAddress(srcPixelBuffer, flags) }
 
-  guard let srcData = CVPixelBufferGetBaseAddress(srcPixelBuffer) else {
+  guard let srcData = CVPixelBufferGetBaseAddress(srcPixelBuffer) else
+  {
     print("Error: could not get pixel buffer base address")
     return nil
   }
@@ -42,7 +47,8 @@ public func resizePixelBuffer(_ srcPixelBuffer: CVPixelBuffer,
                                 rowBytes: srcBytesPerRow)
 
   let destBytesPerRow = scaleWidth*4
-  guard let destData = malloc(scaleHeight*destBytesPerRow) else {
+  guard let destData = malloc(scaleHeight*destBytesPerRow) else
+  {
     print("Error: out of memory")
     return nil
   }
@@ -52,7 +58,8 @@ public func resizePixelBuffer(_ srcPixelBuffer: CVPixelBuffer,
                                  rowBytes: destBytesPerRow)
 
   let error = vImageScale_ARGB8888(&srcBuffer, &destBuffer, nil, vImage_Flags(0))
-  if error != kvImageNoError {
+  if error != kvImageNoError
+  {
     print("Error:", error)
     free(destData)
     return nil
@@ -70,7 +77,8 @@ public func resizePixelBuffer(_ srcPixelBuffer: CVPixelBuffer,
                                             pixelFormat, destData,
                                             destBytesPerRow, releaseCallback,
                                             nil, nil, &dstPixelBuffer)
-  if status != kCVReturnSuccess {
+  if status != kCVReturnSuccess
+  {
     print("Error: could not create new pixel buffer")
     free(destData)
     return nil
@@ -80,7 +88,8 @@ public func resizePixelBuffer(_ srcPixelBuffer: CVPixelBuffer,
 
 
 public func resizePixelBuffer(_ pixelBuffer: CVPixelBuffer,
-                              width: Int, height: Int) -> CVPixelBuffer? {
+                              width: Int, height: Int) -> CVPixelBuffer?
+{
   return resizePixelBuffer(pixelBuffer, cropX: 0, cropY: 0,
                            cropWidth: CVPixelBufferGetWidth(pixelBuffer),
                            cropHeight: CVPixelBufferGetHeight(pixelBuffer),
@@ -90,7 +99,8 @@ public func resizePixelBuffer(_ pixelBuffer: CVPixelBuffer,
 
 public func resizePixelBuffer(_ pixelBuffer: CVPixelBuffer,
                               width: Int, height: Int,
-                              output: CVPixelBuffer, context: CIContext) {
+                              output: CVPixelBuffer, context: CIContext)
+{
   let ciImage = CIImage(cvPixelBuffer: pixelBuffer)
   let sx = CGFloat(width) / CGFloat(CVPixelBufferGetWidth(pixelBuffer))
   let sy = CGFloat(height) / CGFloat(CVPixelBufferGetHeight(pixelBuffer))
@@ -100,14 +110,17 @@ public func resizePixelBuffer(_ pixelBuffer: CVPixelBuffer,
 }
 
 
-public func rotate90PixelBuffer(_ srcPixelBuffer: CVPixelBuffer, factor: UInt8) -> CVPixelBuffer? {
+public func rotate90PixelBuffer(_ srcPixelBuffer: CVPixelBuffer, factor: UInt8) -> CVPixelBuffer?
+{
   let flags = CVPixelBufferLockFlags(rawValue: 0)
-  guard kCVReturnSuccess == CVPixelBufferLockBaseAddress(srcPixelBuffer, flags) else {
+  guard kCVReturnSuccess == CVPixelBufferLockBaseAddress(srcPixelBuffer, flags) else
+  {
     return nil
   }
   defer { CVPixelBufferUnlockBaseAddress(srcPixelBuffer, flags) }
 
-  guard let srcData = CVPixelBufferGetBaseAddress(srcPixelBuffer) else {
+  guard let srcData = CVPixelBufferGetBaseAddress(srcPixelBuffer) else
+  {
     print("Error: could not get pixel buffer base address")
     return nil
   }
@@ -129,7 +142,8 @@ public func rotate90PixelBuffer(_ srcPixelBuffer: CVPixelBuffer, factor: UInt8) 
                                 rowBytes: srcBytesPerRow)
 
   let destBytesPerRow = destWidth*4
-  guard let destData = malloc(destHeight*destBytesPerRow) else {
+  guard let destData = malloc(destHeight*destBytesPerRow) else
+  {
     print("Error: out of memory")
     return nil
   }
@@ -139,7 +153,8 @@ public func rotate90PixelBuffer(_ srcPixelBuffer: CVPixelBuffer, factor: UInt8) 
                                  rowBytes: destBytesPerRow)
 
   let error = vImageRotate90_ARGB8888(&srcBuffer, &destBuffer, factor, &color, vImage_Flags(0))
-  if error != kvImageNoError {
+  if error != kvImageNoError
+  {
     print("Error:", error)
     free(destData)
     return nil
@@ -157,7 +172,8 @@ public func rotate90PixelBuffer(_ srcPixelBuffer: CVPixelBuffer, factor: UInt8) 
                                             pixelFormat, destData,
                                             destBytesPerRow, releaseCallback,
                                             nil, nil, &dstPixelBuffer)
-  if status != kCVReturnSuccess {
+  if status != kCVReturnSuccess
+  {
     print("Error: could not create new pixel buffer")
     free(destData)
     return nil
@@ -165,9 +181,11 @@ public func rotate90PixelBuffer(_ srcPixelBuffer: CVPixelBuffer, factor: UInt8) 
   return dstPixelBuffer
 }
 
-public extension CVPixelBuffer {
+public extension CVPixelBuffer
+{
 
-  func copyToMetalCompatible() -> CVPixelBuffer? {
+  func copyToMetalCompatible() -> CVPixelBuffer?
+  {
 
     let attributes: [String: Any] = [
       String(kCVPixelBufferMetalCompatibilityKey): true,
@@ -176,10 +194,12 @@ public extension CVPixelBuffer {
   }
 
   
-  func deepCopy(withAttributes attributes: [String: Any] = [:]) -> CVPixelBuffer? {
+  func deepCopy(withAttributes attributes: [String: Any] = [:]) -> CVPixelBuffer?
+  {
     let srcPixelBuffer = self
     let srcFlags: CVPixelBufferLockFlags = .readOnly
-    guard kCVReturnSuccess == CVPixelBufferLockBaseAddress(srcPixelBuffer, srcFlags) else {
+    guard kCVReturnSuccess == CVPixelBufferLockBaseAddress(srcPixelBuffer, srcFlags) else
+    {
       return nil
     }
     defer { CVPixelBufferUnlockBaseAddress(srcPixelBuffer, srcFlags) }
@@ -187,7 +207,8 @@ public extension CVPixelBuffer {
     var combinedAttributes: [String: Any] = [:]
 
     // Copy attachment attributes.
-    if let attachments = CVBufferGetAttachments(srcPixelBuffer, .shouldPropagate) as? [String: Any] {
+    if let attachments = CVBufferGetAttachments(srcPixelBuffer, .shouldPropagate) as? [String: Any]
+    {
       for (key, value) in attachments {
         combinedAttributes[key] = value
       }
@@ -204,23 +225,27 @@ public extension CVPixelBuffer {
                                      combinedAttributes as CFDictionary,
                                      &maybePixelBuffer)
 
-    guard status == kCVReturnSuccess, let dstPixelBuffer = maybePixelBuffer else {
+    guard status == kCVReturnSuccess, let dstPixelBuffer = maybePixelBuffer else
+    {
       return nil
     }
 
     let dstFlags = CVPixelBufferLockFlags(rawValue: 0)
-    guard kCVReturnSuccess == CVPixelBufferLockBaseAddress(dstPixelBuffer, dstFlags) else {
+    guard kCVReturnSuccess == CVPixelBufferLockBaseAddress(dstPixelBuffer, dstFlags) else
+    {
       return nil
     }
     defer { CVPixelBufferUnlockBaseAddress(dstPixelBuffer, dstFlags) }
 
-    for plane in 0...max(0, CVPixelBufferGetPlaneCount(srcPixelBuffer) - 1) {
+    for plane in 0...max(0, CVPixelBufferGetPlaneCount(srcPixelBuffer) - 1)
+    {
       if let srcAddr = CVPixelBufferGetBaseAddressOfPlane(srcPixelBuffer, plane),
          let dstAddr = CVPixelBufferGetBaseAddressOfPlane(dstPixelBuffer, plane) {
         let srcBytesPerRow = CVPixelBufferGetBytesPerRowOfPlane(srcPixelBuffer, plane)
         let dstBytesPerRow = CVPixelBufferGetBytesPerRowOfPlane(dstPixelBuffer, plane)
 
-        for h in 0..<CVPixelBufferGetHeightOfPlane(srcPixelBuffer, plane) {
+        for h in 0..<CVPixelBufferGetHeightOfPlane(srcPixelBuffer, plane)
+        {
           let srcPtr = srcAddr.advanced(by: h*srcBytesPerRow)
           let dstPtr = dstAddr.advanced(by: h*dstBytesPerRow)
           dstPtr.copyMemory(from: srcPtr, byteCount: srcBytesPerRow)
