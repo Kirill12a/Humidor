@@ -1,13 +1,60 @@
 //
-//  ExtensionVC_CreateUiViewController.swift
+//  Actions.swift
 //  Humidor
 //
-//  Created by Kirill Drozdov on 30.01.2022.
+//  Created by Kirill Drozdov on 07.02.2022.
 //
 
 import UIKit
 import MaterialComponents
 
+
+//MARK: - Нажатия
+extension CreateUiViewController
+{
+  //MARK:  Нажатие на image (с Сигарой)
+  @objc func btnChooseImageOnClick (tapGestureRecognizer: UITapGestureRecognizer){
+    _ = tapGestureRecognizer.view as! UIImageView    // Your action
+
+    let alert = UIAlertController(title: "Выбрать сигару", message: nil, preferredStyle: .actionSheet)
+    alert.addAction(UIAlertAction(title: "Сфоткать сигару", style: .default, handler: { [self] _ in
+      openCamera()
+    }))
+
+    alert.addAction(UIAlertAction(title: "Выбрать сигару", style: .default, handler: { [self] _ in
+      self.openGallery()
+    }))
+
+    alert.addAction(UIAlertAction.init(title: "Отмена", style: .cancel, handler: nil))
+
+    self.present(alert, animated: true, completion: nil)
+  }
+
+  //MARK: Сохранение сигары
+  @objc func btnSaveSigar ()
+  {
+
+    if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
+    {
+      let newTodo = Sigars(context: context)
+
+      if let name   =   nameSigarTF.text,
+         let place  =   shoppingPlaceTF.text,
+         let date   =   yearOfPurchaseTF.text
+      {
+
+        newTodo.name    =   name
+        newTodo.place   =   place
+        newTodo.date    =   date
+        newTodo.image   =   sigarImage.image?.jpegData(compressionQuality: 1.0)
+      }
+
+      (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+    }
+    navigationController?.popViewController(animated: true)
+  }
+
+}
 //MARK: - Дата пикер при касание tf
 extension MDCOutlinedTextField //
 {
@@ -117,64 +164,4 @@ extension CreateUiViewController: UIImagePickerControllerDelegate , UINavigation
 
     picker.dismiss(animated: true, completion: nil)
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//MARK: - Нажатия
-extension CreateUiViewController
-{
-  //MARK:  Нажатие на image (с Сигарой)
-  @objc func btnChooseImageOnClick (tapGestureRecognizer: UITapGestureRecognizer){
-    _ = tapGestureRecognizer.view as! UIImageView    // Your action
-
-    let alert = UIAlertController(title: "Выбрать сигару", message: nil, preferredStyle: .actionSheet)
-    alert.addAction(UIAlertAction(title: "Сфоткать сигару", style: .default, handler: { [self] _ in
-      openCamera()
-    }))
-
-    alert.addAction(UIAlertAction(title: "Выбрать сигару", style: .default, handler: { [self] _ in
-      self.openGallery()
-    }))
-
-    alert.addAction(UIAlertAction.init(title: "Отмена", style: .cancel, handler: nil))
-
-    self.present(alert, animated: true, completion: nil)
-  }
-
-  //MARK: Сохранение сигары
-  @objc func btnSaveSigar ()
-  {
-
-    if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
-    {
-      let newTodo = Sigars(context: context)
-
-      if let name   =   nameSigarTF.text,
-         let place  =   shoppingPlaceTF.text,
-         let date   =   yearOfPurchaseTF.text
-      {
-
-        newTodo.name    =   name
-        newTodo.place   =   place
-        newTodo.date    =   date
-        newTodo.image   =   sigarImage.image?.jpegData(compressionQuality: 1.0)
-      }
-
-      (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
-    }
-    navigationController?.popViewController(animated: true)
-  }
-
 }

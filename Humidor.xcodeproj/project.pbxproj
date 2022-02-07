@@ -25,7 +25,6 @@
 		D2254DD1279DDE8A00219DAE /* SigarsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2254DD0279DDE8A00219DAE /* SigarsCollectionViewCell.swift */; };
 		D2254DDB279F697400219DAE /* Domine.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2254DDA279F697400219DAE /* Domine.ttf */; };
 		D2254E0127A0BE9F00219DAE /* CreateUiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2254E0027A0BE9F00219DAE /* CreateUiViewController.swift */; };
-		D277444827A7238C003EA3AE /* ExtensionVC_CreateUiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D277444727A7238C003EA3AE /* ExtensionVC_CreateUiViewController.swift */; };
 		D277445727A7372C003EA3AE /* MLMultiArray+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D277444A27A7372B003EA3AE /* MLMultiArray+Image.swift */; };
 		D277445827A7372C003EA3AE /* CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D277444B27A7372B003EA3AE /* CGImagePropertyOrientation.swift */; };
 		D277445927A7372C003EA3AE /* NonMaxSuppression.swift in Sources */ = {isa = PBXBuildFile; fileRef = D277444C27A7372C003EA3AE /* NonMaxSuppression.swift */; };
@@ -42,6 +41,7 @@
 		D277446527A7386F003EA3AE /* DeepLabV3.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = D277446427A7386F003EA3AE /* DeepLabV3.mlpackage */; };
 		D2B116AF27B1A4E800FB17A8 /* CollectionSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B116AE27B1A4E800FB17A8 /* CollectionSettings.swift */; };
 		D2B116B227B1A55100FB17A8 /* SettingsCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B116B127B1A55100FB17A8 /* SettingsCV.swift */; };
+		D2B116B527B1A66900FB17A8 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B116B427B1A66900FB17A8 /* Actions.swift */; };
 		D2E0D98327AB1FC500BEB7A1 /* ActionCoreML.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0D98227AB1FC500BEB7A1 /* ActionCoreML.swift */; };
 		D2E0D98627AC1AED00BEB7A1 /* ExtensionHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0D98527AC1AED00BEB7A1 /* ExtensionHistoryViewController.swift */; };
 		D2E0D98C27AC219600BEB7A1 /* SmokeOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0D98B27AC219600BEB7A1 /* SmokeOutViewController.swift */; };
@@ -96,7 +96,6 @@
 		D2254DD0279DDE8A00219DAE /* SigarsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigarsCollectionViewCell.swift; sourceTree = "<group>"; };
 		D2254DDA279F697400219DAE /* Domine.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Domine.ttf; sourceTree = "<group>"; };
 		D2254E0027A0BE9F00219DAE /* CreateUiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUiViewController.swift; sourceTree = "<group>"; };
-		D277444727A7238C003EA3AE /* ExtensionVC_CreateUiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionVC_CreateUiViewController.swift; sourceTree = "<group>"; };
 		D277444A27A7372B003EA3AE /* MLMultiArray+Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MLMultiArray+Image.swift"; sourceTree = "<group>"; };
 		D277444B27A7372B003EA3AE /* CGImagePropertyOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGImagePropertyOrientation.swift; sourceTree = "<group>"; };
 		D277444C27A7372C003EA3AE /* NonMaxSuppression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonMaxSuppression.swift; sourceTree = "<group>"; };
@@ -113,6 +112,7 @@
 		D277446427A7386F003EA3AE /* DeepLabV3.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = DeepLabV3.mlpackage; sourceTree = "<group>"; };
 		D2B116AE27B1A4E800FB17A8 /* CollectionSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSettings.swift; sourceTree = "<group>"; };
 		D2B116B127B1A55100FB17A8 /* SettingsCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCV.swift; sourceTree = "<group>"; };
+		D2B116B427B1A66900FB17A8 /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
 		D2E0D98227AB1FC500BEB7A1 /* ActionCoreML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCoreML.swift; sourceTree = "<group>"; };
 		D2E0D98527AC1AED00BEB7A1 /* ExtensionHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHistoryViewController.swift; sourceTree = "<group>"; };
 		D2E0D98B27AC219600BEB7A1 /* SmokeOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeOutViewController.swift; sourceTree = "<group>"; };
@@ -319,7 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				D2254E0027A0BE9F00219DAE /* CreateUiViewController.swift */,
-				D277444627A72355003EA3AE /* extension */,
+				D2B116B327B1A64E00FB17A8 /* ElementsActions */,
 			);
 			path = createScreen;
 			sourceTree = "<group>";
@@ -330,14 +330,6 @@
 				D2254DD0279DDE8A00219DAE /* SigarsCollectionViewCell.swift */,
 			);
 			path = CollectionViewCell;
-			sourceTree = "<group>";
-		};
-		D277444627A72355003EA3AE /* extension */ = {
-			isa = PBXGroup;
-			children = (
-				D277444727A7238C003EA3AE /* ExtensionVC_CreateUiViewController.swift */,
-			);
-			path = extension;
 			sourceTree = "<group>";
 		};
 		D277444927A736D8003EA3AE /* CoreMLHelpers */ = {
@@ -376,6 +368,14 @@
 				D2B116B127B1A55100FB17A8 /* SettingsCV.swift */,
 			);
 			path = CollectionViewSettings;
+			sourceTree = "<group>";
+		};
+		D2B116B327B1A64E00FB17A8 /* ElementsActions */ = {
+			isa = PBXGroup;
+			children = (
+				D2B116B427B1A66900FB17A8 /* Actions.swift */,
+			);
+			path = ElementsActions;
 			sourceTree = "<group>";
 		};
 		D2E0D98427AB212700BEB7A1 /* MainJob */ = {
@@ -661,7 +661,6 @@
 				D2254E0127A0BE9F00219DAE /* CreateUiViewController.swift in Sources */,
 				D277445D27A7372C003EA3AE /* Array+Extensions.swift in Sources */,
 				D2254DA3279C959900219DAE /* ViewControllerSplashScreen.swift in Sources */,
-				D277444827A7238C003EA3AE /* ExtensionVC_CreateUiViewController.swift in Sources */,
 				D2254D49279B4C1200219DAE /* Humidor.xcdatamodeld in Sources */,
 				D2254D43279B4C1200219DAE /* MySigarsAddSigarsViewController.swift in Sources */,
 				D2E0D98627AC1AED00BEB7A1 /* ExtensionHistoryViewController.swift in Sources */,
@@ -683,6 +682,7 @@
 				D277446127A7372C003EA3AE /* UIImage+CVPixelBuffer.swift in Sources */,
 				D277446227A7372C003EA3AE /* UIImage+Extensions.swift in Sources */,
 				D277445C27A7372C003EA3AE /* CGImage+CVPixelBuffer.swift in Sources */,
+				D2B116B527B1A66900FB17A8 /* Actions.swift in Sources */,
 				D2254D41279B4C1200219DAE /* SceneDelegate.swift in Sources */,
 				D277445827A7372C003EA3AE /* CGImagePropertyOrientation.swift in Sources */,
 				D2254DA0279C954500219DAE /* TabBar.swift in Sources */,

@@ -77,19 +77,6 @@ class MySigarsAddSigarsViewController: UIViewController
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 //MARK: - Read the Core Data
 extension MySigarsAddSigarsViewController
 {
