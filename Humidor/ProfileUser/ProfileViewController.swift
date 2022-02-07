@@ -9,18 +9,27 @@ import UIKit
 
 class ProfileViewController: UIViewController
 {
-
+//MARK: - Property
   var todoCDs: [History] = []
-
-  var fds = ["Hello","ValueOne"]
   var tableView: UITableView!
+// ----------------------------
+
+  //MARK:  - ViewDidLoad
   override func viewDidLoad()
   {
+
     super.viewDidLoad()
     view.backgroundColor = .gray
     makeTable()
     getToDos()
+  }
 
+  override func viewWillAppear(_ animated: Bool)
+  {
+
+    super.viewWillAppear(animated)
+    getToDos()
+    title = "\(todoCDs.count) сигары"
 
   }
 
@@ -48,16 +57,7 @@ class ProfileViewController: UIViewController
     self.view.addSubview(tableView)
   }
 
-
-  override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(animated)
-    getToDos()
-    title = "\(todoCDs.count) сигары"
-
-  }
-
-
-
+//MARK: - CoreData
   func getToDos()
   {
 
@@ -73,4 +73,5 @@ class ProfileViewController: UIViewController
       }
     }
   }
+
 }

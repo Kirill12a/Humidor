@@ -8,6 +8,7 @@
 import UIKit
 import SnapKit
 
+//MARK:  - Настройка ui элементов
 extension SmokeOutViewController
 {
   func setUpView()
@@ -17,7 +18,7 @@ extension SmokeOutViewController
 
     view.addSubview(sigarImage)
     sigarImage.snp.makeConstraints { make in
-      make.topMargin.equalToSuperview().inset(8) // это если шо
+      make.topMargin.equalToSuperview().inset(8)
       make.centerX.equalToSuperview()
       make.width.height.equalTo(250)
     }
@@ -29,7 +30,6 @@ extension SmokeOutViewController
       make.width.equalTo(view.bounds.width - 25)
       make.height.equalTo(40)
     }
-
 
     view.addSubview(dataLabel)
     dataLabel.snp.makeConstraints { make in

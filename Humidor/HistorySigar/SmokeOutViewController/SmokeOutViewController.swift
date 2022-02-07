@@ -58,9 +58,8 @@ class SmokeOutViewController: UIViewController,SigarSegueProtocol, UITextViewDel
     return true
   }
 
-
-
-
+//MARK: - Скрытие клавы
+  // -------------------------
   func hideKeyboard ()
   {
     let tap: UITapGestureRecognizer = UITapGestureRecognizer(
@@ -71,12 +70,40 @@ class SmokeOutViewController: UIViewController,SigarSegueProtocol, UITextViewDel
     view.addGestureRecognizer(tap)
   }
 
-
-
-
   @objc func dismissKeyboard ()
   {
     view.endEditing(true)
+  }
+// --------------------------
+
+  //MARK: - Нажатие на кнопку "выкурить"
+  @objc func smoking()
+  {
+
+    let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
+    if let todo = value {
+      context!.delete(todo)
+    }
+    (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+
+    if let contextSigarHistory = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
+    {
+
+      let newHistoryItem = History(context: contextSigarHistory)
+
+      if let nameSigar = sigarName.text, let place = placeBuy.text, let rewiew = reviewSigar.text
+      {
+
+        newHistoryItem.name = nameSigar
+        newHistoryItem.shop = place
+        newHistoryItem.review = rewiew
+        newHistoryItem.imageSigar = sigarImage.image?.jpegData(compressionQuality: 1.0)
+      }
+
+      newHistoryItem.imageSigar = sigarImage.image?.jpegData(compressionQuality: 1.0)
+      (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+    }
+    navigationController?.popViewController(animated: true)
   }
 
   //MARK: - Создание UI элементов
@@ -134,41 +161,6 @@ class SmokeOutViewController: UIViewController,SigarSegueProtocol, UITextViewDel
     return button
   }()
 
-  var ide = 0
-
-  @objc func smoking(){
-    let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
-    if let todo = value {
-      context!.delete(todo)
-    }
-    (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
-
-
-    if let contextSigarHistory = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
-      let newHistoryItem = History(context: contextSigarHistory)
-
-      if let nameSigar = sigarName.text, let place = placeBuy.text, let rewiew = reviewSigar.text
-      {
-        newHistoryItem.name = nameSigar
-        newHistoryItem.shop = place
-        newHistoryItem.review = rewiew
-        newHistoryItem.imageSigar = sigarImage.image?.jpegData(compressionQuality: 1.0)
-      }
-
-      newHistoryItem.imageSigar = sigarImage.image?.jpegData(compressionQuality: 1.0)
-      (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
-    }
-
-    navigationController?.popViewController(animated: true)
-  }
-
-
-
-
-
-
-
-  
 
 
 }
