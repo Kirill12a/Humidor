@@ -165,4 +165,9 @@ extension CreateUiViewController: UIImagePickerControllerDelegate , UINavigation
 
     picker.dismiss(animated: true, completion: nil)
   }
+
+  // MARK: - Methods for UI configuration.
+   func setUpView() {
+    self.tabBarController?.tabBar.isHidden = false // скрыть tabBar
+  }
 }

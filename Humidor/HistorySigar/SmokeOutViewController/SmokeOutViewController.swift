@@ -25,7 +25,7 @@ class SmokeOutViewController: UIViewController,SigarSegueProtocol, UITextViewDel
   override func viewDidLoad()
   {
     super.viewDidLoad()
-    setUpView()
+    setUplView()
     hideKeyboard()
     reviewSigar.text = "Вывод:"
   }
@@ -106,6 +106,11 @@ class SmokeOutViewController: UIViewController,SigarSegueProtocol, UITextViewDel
       (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
     navigationController?.popViewController(animated: true)
+  }
+
+  // MARK: - Methods for UI configuration.
+   func setUplView() {
+    self.tabBarController?.tabBar.isHidden = false // скрыть tabBar // поменял на фолс
   }
 
   //MARK: - Создание UI элементов
