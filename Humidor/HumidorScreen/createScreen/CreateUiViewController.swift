@@ -84,6 +84,7 @@ class CreateUiViewController: UIViewController
     super.viewDidLoad()
     view.backgroundColor = .green
     configuration()
+    setUpView()
     hideKeyboard()
     yearOfPurchaseTF.setInputViewDatePicker(target: self, selector: #selector(tapDone))
     view.backgroundColor = UIColor(red: 202/255, green: 150/255, blue: 92/255, alpha: 100)

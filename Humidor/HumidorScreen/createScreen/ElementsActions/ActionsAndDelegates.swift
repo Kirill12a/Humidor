@@ -168,6 +168,6 @@ extension CreateUiViewController: UIImagePickerControllerDelegate , UINavigation
 
   // MARK: - Methods for UI configuration.
    func setUpView() {
-    self.tabBarController?.tabBar.isHidden = true // скрыть tabBar
+    self.tabBarController?.tabBar.isHidden = false // скрыть tabBar
   }
 }

@@ -110,7 +110,7 @@ class SmokeOutViewController: UIViewController,SigarSegueProtocol, UITextViewDel
 
   // MARK: - Methods for UI configuration.
    func setUplView() {
-    self.tabBarController?.tabBar.isHidden = true // скрыть tabBar
+    self.tabBarController?.tabBar.isHidden = false // скрыть tabBar // поменял на фолс
   }
 
   //MARK: - Создание UI элементов

@@ -12,7 +12,8 @@ import CoreData
 
 extension Sigars {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<Sigars> {
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<Sigars>
+  {
         return NSFetchRequest<Sigars>(entityName: "Sigars")
     }
 
